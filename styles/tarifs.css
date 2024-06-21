@@ -1,0 +1,281 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+root {
+  --orange-basic-color: #fedf17;
+  --rouge-color: #ff0f5b;
+  --violet-color: #be01fe;
+  --blue-color: #01b4ff;
+  --vert-color: #72f367;
+}
+
+.tarifs-overlay-modale {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* background: #333333d3; */
+  /* left: 50%;
+  transform: translateX(-50%); */
+  transition: opacity 0.4s 0.2s ease-out;
+  /* background: url(/home/Images/fond-piscine-original.jpg); */
+  /* filter: blur(9px); */
+  }
+  
+  .tarifs-modal-container.active .tarifs-overlay-modale {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+    background: rgba(181, 236, 248, 0.7);
+    background: rgba(142, 183, 192, 0.7);
+    background: #333333d3;
+
+}
+
+.tarifs-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  /* min-height: 100vh; */
+  /* background: #eff0f4; */
+  /* background: #fafab7; */
+  /* background: #b5ecf8; */
+  /* background: #72f367; */
+  /* background: rgb(98, 109, 141); */
+  background: transparent;
+
+  transform: translateY(calc(+50% - 50px));
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+
+  font-family: "poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+
+.tarifs-modal-container.active .tarifs-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s 0.2s ease-out, transform 0.4s 0.2s ease-out;
+}
+
+.tarifs-modale-btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    border: none;
+    width: 40px;
+    height: 40px;
+    box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.09),
+      5px 5px 20px rgba(0, 0, 0, 0.2), 5px 0px 30px rgba(255, 255, 255, 0.9),
+      inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+    border-radius: 55% 45% 49% 51% / 56% 60% 40% 44%;
+    font-size: 18px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    background: rgb(154, 230, 253);
+    transition: transform 0.5s;
+}
+
+.tarifs-modale-btn:hover {
+    border-radius: 50%;
+    transform: scale(1.1);
+    color: rgba(0, 106, 255, 1);
+ 
+}
+
+.tarifs-modale-btn::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border-radius: 55% 45% 65% 35% / 64% 39% 61% 36%;
+    background: rgba(255, 255, 255, 0.9);
+    /* background: #fdf907; */
+    opacity: 0.8;    
+}
+
+.tarifs-modale-btn:hover::before {
+    border-radius: 50%;   
+}
+
+.tarifs-modale-btn::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 18px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+    /* background: #fdf907; */
+    opacity: 0.8;
+}
+
+.tarifs-modale-btn p {
+    font-family: "poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: rgba(0, 106, 255, 0.6);
+    /* color: rgba(0, 0, 0,0.8); */    
+}
+
+.tarifs-modale-btn p:hover {
+    color: rgba(0, 106, 255, 1);    
+}
+
+.tarifs-titre-container {
+  position: relative;
+  top: 20px;
+  margin-bottom: 30px;
+}
+
+.tarifs-titre-container h1 {
+  font-size: 2.3em;
+  color: #fff;
+  text-shadow: -3px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.tarifs-container {
+  position: relative;
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  gap: 40px 60px;
+  width: 85%;
+  /* background: #b5ecf8; */
+}
+
+.tarifs-container .tarifs-drop {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  /* background: #333; */
+  background: #b5ecf8;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+    25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.9);
+  transition: 0.5s ease-in-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  opacity: 0.8;
+}
+
+.tarifs-container .tarifs-drop:nth-child(1) {
+  border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
+}
+.tarifs-container .tarifs-drop:nth-child(2) {
+  border-radius: 61% 39% 52% 48% / 44% 59% 41% 56%;
+}
+.tarifs-container .tarifs-drop:nth-child(3) {
+  border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
+}
+.tarifs-container .tarifs-drop:nth-child(4) {
+  border-radius: 41% 59% 52% 48% / 52% 42% 58% 48%;
+}
+
+.tarifs-container .tarifs-drop:hover {
+  border-radius: 50%;
+  opacity: 1;
+}
+
+.tarifs-container .tarifs-drop::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 85px;
+  width: 35px;
+  height: 35px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+  opacity: 0.8;
+}
+
+.tarifs-container .tarifs-drop::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 130px;
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: 0.9;
+  opacity: 0.8;
+}
+
+.tarifs-container .tarifs-drop .tarifs-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 40px;
+  gap: 15px;
+}
+
+.tarifs-container .tarifs-drop .tarifs-content h2 {
+  position: relative;
+  width: 80px;
+  width: 300px;
+  height: 80px;
+  background: #eff0f4;
+  background: transparent;
+  border-radius: 50%;
+  /* box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.2),
+    inset -2px -5px 10px rgba(255, 255, 255, 1),
+    15px 15px 10px rgba(0, 0, 0, 0.05),
+    15px 15px 10px rgba(0, 0, 0, 0.25); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-size: 1.8em;
+  color: var(--clr);
+}
+
+.tarifs-content a {
+  position: relative;
+  padding: 10px 25px;
+  background: var(--clr);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 25px;
+  font-weight: 500;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+  opacity: 0.75;
+  transition: 0.5s;
+}
+
+.tarifs-content a:hover {
+  opacity: 1;
+}
+
+.tarifs-content a::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 65%;
+  height: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.5);
+}

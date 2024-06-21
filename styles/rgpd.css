@@ -1,0 +1,74 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.rgpd-modale-overlay {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2 ease-out;
+}
+
+.rgpd-modal-container.active .rgpd-modale-overlay {
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+}
+
+.rgpd-modale-content {
+  position: relative;
+  opacity: 0;
+  width: 70%;
+  height: 590px;
+  top: 30px;
+  border: 2px solid #006aff;
+  border-radius: 15px;
+  margin: 0 auto;
+  padding: 20px 30px;
+  text-align: justify;
+  overflow-y: scroll;
+  background: #fff;
+  transform: translateY(calc(+50% - 50px));
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+}
+
+.rgpd-modal-container.active .rgpd-modale-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.4s 0.2s ease-out, 
+            transform 0.4s 0.2s ease-out;
+}
+
+.rgpd-modale-content span {
+  font-weight: 600;
+}
+
+.rgpd-modale-content h1 {
+  font-size: 2em;
+  text-align: center;
+}
+
+.rgpd-modale-content h2 {
+  margin-bottom: 15px;
+}
+
+.rgpd-modale-content strong {
+  color: tomato;
+}
+
+.rgpd-modale-content h3 {
+  margin-bottom: 10px;
+}
+
+.rgpd-modale-content ul {
+  padding-left: 30px;
+}
+
+.rgpd-modale-content ul li {
+  padding-bottom: 10px;
+}

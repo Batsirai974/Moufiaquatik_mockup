@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Club de Natation Mouffia Aquatique</title>
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/card.css">
+    <link rel="stylesheet" href="styles/bubles-anim-bkg.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/educateurs.css">
+    <link rel="stylesheet" href="styles/rgpd.css">
+    <link rel="stylesheet" href="styles/tarifs.css">
+    <link rel="stylesheet" href="styles/inforations.css">
+    <link rel="stylesheet" href="styles/jardin-aqua-tarif.css">
+
+    
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <!-- lien de connexion : https://firebase.google.com/ -->
+
+  </head>
+  <body>
+
+    
+    <div class="main-container">
+      <!-- START  -----------  Nav ------------------>
+      <nav class="nav-container">
+        <div class="logo-container">
+          <img
+            class="logo"
+            src="images/logo/customLogo_bkg Alpha0.png"
+            alt="Logo Moufia-Aquatik"
+          />
+        </div>
+
+        <!-- ?---------Start Menu  ---- -->
+
+        <ul class="list-items-nav">
+          <li class="item item-01">
+            <a href="#">Accueil</a>
+          </li>
+          <li class="item item-02 information-toggle">
+            <a href="pages/inscription_page.html">Inscription</a>
+          </li>
+
+          <li class="item item-03">
+            <a href="#activités">Activités</a>
+          </li>
+
+          <li class="item item-04  tarifs-toggle">
+            <a href="#">Planning & Tarifs</a>
+          </li>
+
+          <li class="item item-05">
+            <a href="#">Le Club</a>
+
+            <ul class="sous-list-club">
+              <li class="item-sous-list-club about-toggle">
+                <a href="#">A propos du club</a>
+              </li>
+              <li class="item-sous-list-club educ-toggle">
+                <a href="#">Educateur</a>
+              </li>
+              <li class="item-sous-list-club information-toggle">
+                <a href="#">Documents Association</a>
+              </li>
+              <li class="item-sous-list-club item-bottom rpgd-toggle">
+                <a href="#">Mention légale - RGPD</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="item item-06 information-toggle">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+
+        <!-- ?---------End Menu   ---- -->
+      </nav>
+      <!-- END  -----------  Nav Section|||||||||||||||||||||| -->
+      <!-- START  -----------  HEADER  ------------------>
+        <!-- Start  ---------  Accueil   ---------------- -->
+        <div class="accueil-container">
+
+                <div class="img-container">
+                    <img src="images/accueil/image.webp" alt="personne nageant dans piscine avec bonnet jaune sur lequel est inscrit le logo de Moufia Aquatik">
+                </div>
+
+
+        </div>
+        <!-- End  ---------  Accueil  ---------------- -->
+        <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+        <!-- Start  ---------  Galerie  ---------------- -->
+        <div class="cards-section">
+
+              <div class="ancre-activites" id="activités"></div>
+
+              <div class="card-container">
+
+
+  
+                  <div class="card ecole">
+                  <div class="card-img">
+                      <img src="Images/activités/ecole1.jpg" alt="">
+                  </div>
+                  <div class="card-content">
+      
+                      <h1 class="titre-carte titre-ecole">ECOLE DE NATATION FRANCAISE</h1>
+                      <HR></HR>
+                      <div class="text-card txtcard-ecole">
+      
+                          <h2 class="sous-titre st-ecole">Découverte, apprentissage et perfectionnement.
+                          </h2>
+                          <p>Suivant les âges et les niveaux des débutant.</p>
+      
+                          <h2 class="sous-titre st-ecole">
+                              Les objectifs de l'apprentissage au sein de notre école de natation.
+                          </h2>
+                          <p>
+                              _ Epanouissement des enfants dans le cadre du club;<br>
+                              _ Développement moteur des enfants;<br>
+                              _ Autonomie dans le milieu aquatique;<br>
+                              _ Autonomie et aquisition des techniques de nage.
+                          </p>
+                         
+                          <h2 class="sous-titre st-ecole">
+                              Plusieurs groupes :
+                          </h2>
+                          <ul>
+                              <li>Etoile de mer - Zourite - Requin - Marlin <br>
+                              <span>Un test sera effectué avec un éducateur pour l'attribution des groupes.</span></li>
+                          </ul>
+                          <a href="#" class="inscription information-toggle">Je m'incrit !</a>
+                      </div>
+      
+                    
+                      <span class="see-more-btn">Voir plus...</span>
+                  </div>
+                  </div>
+  
+                  <div class="card  jardin-aquatique">
+  
+                      <div class="card-img">
+                          <img src="Images/activités/Jardin aquatique.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+          
+                          <h1 class="titre-carte">JARDIN AQUATIQUE</h1>
+                          <HR></HR>
+                          <div class="text-card">
+          
+                              <h2 class="sous-titre">De 2 à 5 ans, découverte du milieu aquatique en toute sécurité en présence d'un parent
+                              </h2>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, voluptatibus soluta debitis animi mollitia accusamus corrupti similique id nesciunt minima minus amet vero necessitatibus unde quibusdam enim! Iure, repellendus deleniti.</p>
+                              
+                              <a href="#" class="inscription information-toggle">Je m'incrit !</a>
+                      
+                          </div>
+                        
+                          <span class="see-more-btn">Voir plus...</span>
+                      </div>
+  
+                  </div>
+  
+                  <div class="card  adolescent">
+                      <div class="card-img">
+                          <img src="Images/activités/ado2.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+                          
+                          <h1 class="titre-carte">ADOLESCENT</h1>
+                          <HR></HR>
+                          <div class="text-card">
+                              
+                              <h2 class="sous-titre">Perf. et Loisirs
+                              </h2>
+                              <p>Il permet aux nageurs et nageuses de tous niveaux de progresser techniquement, tout en entretenant leur forme physique et/ou se préparer pour l'épreuve du Baccalauréat.                                           
+                              </p>
+  
+                              <a href="#" class="inscription information-toggle">Je m'incrit !</a>
+                     
+                          </div>
+                        
+                          <span class="see-more-btn">Voir plus...</span>
+                      </div>
+                  </div>
+  
+                  <div class="card  adultes">
+                      <div class="card-img">
+                          <img src="images/activités/adultes4.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+          
+                          <h1 class="titre-carte">NATATION ADULTES</h1>
+                          <HR></HR>
+                          <div class="text-card">
+          
+                              <h2 class="sous-titre">Séances en fonction de 3 niveaux.
+                              </h2>
+                              <p>Pour les adultes ne sachant pas nager aux nageurs autonomes : Adultes débutants, Perfectionnement adultes et Master adultes</p>
+          
+                              <h2 class="sous-titre">
+                                  Adultes débutants <br>
+                                  (2 séances de 1 hr /semaine)
+                              </h2>
+                              <p>
+                                  Pour les non nageurs et/ou aquaphobes à partir de 18 ans :
+                                  apprendre à nager et dépasser sa peur de l’eau à son rythme.
+                              </p>
+                              <h2 class="sous-titre">
+                                  Perf adultes <br>
+                                  (2 séances de 1 hr /semaine)
+                              </h2>
+                              <p>
+                                  Approfondir et perfectionner les différents types de nages.
+                              </p>
+                              <a href="#" class="inscription information-toggle">Je m'incrit !</a>
+  
+                          </div>
+                        
+                          <span class="see-more-btn">Voir plus...</span>
+                      </div>
+                  </div>
+  
+                  <div class="card  aquaform">
+                      <div class="card-img">
+                          <img src="Images/activités/aquaform.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+          
+                          <h1 class="titre-carte">AQUAFORM</h1>
+                          <HR></HR>
+                          <div class="text-card">
+          
+                              <h2 class="sous-titre">Pratique dynamique du fitness dans l'eau en petites profondeurs rythmée par une musique entrainante.
+                              </h2>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, voluptatibus soluta debitis animi mollitia accusamus corrupti similique id nesciunt minima minus amet vero necessitatibus unde quibusdam enim! Iure, repellendus deleniti.</p>
+          
+                              <a href="#" class="inscription information-toggle">Je m'incrit !</a>
+  
+                          </div>
+                        
+                          <span class="see-more-btn">Voir plus...</span>
+                      </div>
+  
+                  </div>
+  
+                  <div class="card  aqua-bike">
+                      <div class="card-img">
+                          <img src="Images/activités/aquabike.jpg" alt="">
+                      </div>
+                      <div class="card-content">
+                      
+                          <h1 class="titre-carte">AQUA-BIKE</h1>
+                          <HR></HR>
+                          <div class="text-card">
+                      
+                              <h2 class="sous-titre">1 heure d'efforts intense qui développera votre capacité cardiovasculaire et qui tonifiera votre peau gràce à l'hydro massage.
+                              </h2>
+                              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime, voluptatibus soluta debitis animi mollitia accusamus corrupti similique id nesciunt minima minus amet vero necessitatibus unde quibusdam enim! Iure, repellendus deleniti.</p>
+                      
+                              <a href="#" class="inscription information-toggle">Je m'incrit !</a>
+  
+                          </div>
+                                    
+                          <span class="see-more-btn">Voir plus...</span>
+                      </div>
+                  </div>
+           
+              </div>
+          
+        </div>
+        <!-- End  ---------  Galerie   ---------------- -->
+        <!-- END  -------------  HEADER  ------------------>
+        <!-- ||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-- START  -----------  FOOTER  ------------------>
+        <footer class="footer-container">
+      
+        </footer>
+        <!-- END  -----------  FOOTER  ------------------>
+        <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <!-----------------   START MODALES ----------------------->
+
+        <!-- Start  -----------  Information  --------------->
+        <div class="information-modale-container">
+            <div class="information-overlay-modale information-toggle">
+            </div>
+                <div class="information-content">
+                    <button class="information-btn information-toggle">X</button>
+                        <H2>Page en cours de construction</H2>
+                        <img src="Images/vlc_14658.png" alt="">
+                    
+                </div>
+        </div>
+        <!-- End  -----------  Information  --------------->
+
+        <!-- Start Jardin Aquatique tarif niv 1-->
+        <div class="jardin-aqua-tarif-niv1-container">
+            <div class="overlay-modale-jardin-aqua-tarif tarif-btn-toggle"></div>
+            <div class="jardin-aqua-tarif-niv1-content">
+                <button class="tarif-btn-toggle">X</button>
+                <h2 class="titre-tarif-nv2">Jardin Aquatique</h2>
+                <p>( Novembre à Mai )</p>
+
+                <div class="horaire-container">
+                    <p class="horaire-01">Mercredi  13h30 - 14h15</p>
+                    <p class="horaire-02">Samedi    9h00 - 9h45</p>
+                </div>
+                <div class="tarif-container">
+                    <p>1 cours/semaine = 120€</p>
+                    <p>2 cours/semaine = 180€</p>
+                </div>
+
+                <a href="" class="tarif-btn-go">Je m'inscris</a>
+
+            </div>
+        </div>
+
+
+        <!-- End Jardin Aquatique tarif niv 1 -->
+
+        <!-- Start  --------  Planning & Tarifs niv 0 --------->
+        <div class="tarifs-modal-container">
+            <div class="tarifs-overlay-modale tarifs-toggle">
+            </div>
+            <div class="tarifs-content">
+                <button class="tarifs-modale-btn tarifs-toggle">X</button>
+                <div class="tarifs-titre-container">
+                    <h1>SAISON 2024 / 2025</h1>
+                </div>
+                <div class="tarifs-container">
+                    <div class="tarifs-drop" style="--clr:#ff0f5b">
+                        <div class="tarifs-content jardin-aqua">
+                            <h2>Jardin<br>Aquatique</h2>
+                            <p>De 2 à 5 ans, découverte du milieu aquatique en toute sécurité en présence d'un parent.</p>
+                            <a href="#" class="information-toggle">Je m'inscris</a>
+                        </div>
+                    </div>
+                    <div class="tarifs-drop" style="--clr:#fedf17">
+                        <div class="tarifs-content">
+                            <h2>Ecole de<br>Natation Française</h2>
+                            <p>Découverte, apprentissage et perfectionnement...</p>
+                            <a href="#" class="information-toggle">Je m'inscris</a>
+                        </div>
+                    </div>
+                    <div class="tarifs-drop" style="--clr:#72f367">
+                        <div class="tarifs-content">
+                            <h2>Natation Adultes</h2>
+                            <p>Progresser techniquement, tout en entretenant sa forme physique et/ou se préparer.</p>
+                            <a href="#"  class="information-toggle">Je m'inscris</a>
+                        </div>
+                    </div>
+                    <div class="tarifs-drop" style="--clr:#01b4ff">
+                        <div class="tarifs-content">
+                            <h2>Aqua Gym</h2>
+                            <p>Pratique dynamique d'exercises physique en petites profondeurs.</p>
+                            <a href="#" class="information-toggle">Je m'inscris</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End  --------  Planning & Tarifs niv --------->
+
+          <!-- Start--------  About  -------------- -->
+          <div class="about-modal_container">
+            <div class="overlay-modale about-toggle"></div>
+    
+            <div class="about-content">
+    
+                <button class="about-modale-btn about-toggle"><p>X</p></button>
+    
+                <h1>Qui sommes-Nous...</h1>
+                
+                <p>Le club du Moufia Aquatik, anciennement appelé Moufia Promotion Sport, a été créé en 1992 à l’initiative de M. Thierry Duplain.
+                    Cette association de type Loi 1901 a pour but de promouvoir les activités aquatiques dans le quartier du Moufia.
+                    Le club propose des activités pour tous les âges tels que le jardin aquatique, l’école de natation, la natation perfectionnement, l’aquaforme, etc.
+                    
+                    En 1996, le club se nomme désormais Moufia Aquatik et conserve sa volonté de promouvoir les activités aquatiques.
+                    En plus de ses nombreuses activités et fort du succès de son école de natation, le Moufia Aquatik s’initie à la compétition en étant de plus en plus présent lors des compétitions proposées par le Comité régional de natation.  Le club se classe ainsi dans la moyenne et en 1999 un nageur participe au 11ème meeting international de l’Océan Indien.
+                    
+                    En 2002, l’arrivée au Moufia Aquatik de l’entraîneur Frédéric Delmotte va redynamiser la section compétition grâce à la mise en place d’une nouvelle politique sportive, tout en gardant cette volonté de développer en parallèle, les nombreuses activités de loisirs très prisées par les habitants du quartier du Moufia, toujours en plein essor avec la constructions de logements et d’établissements scolaires.
+                    
+                    Le club Moufia a pu ainsi mettre en place une collaboration avec le collège Bois de Nèfles en 2005 et permettre ainsi l’adhésion de quelques élèves en section water-polo et en natation compétition.
+                    
+                    Le club connait une augmentation croissante de ses adhérents d’année en année et passe de 200 à plus de 350 membres à ce jour.
+                    
+                    Grâce à sa politique sportive, le club a pu former de nombreux nageurs de compétition.
+                    Au niveau du classement national , le club se maintient dans les 300 premiers , le Club est le  4ème Club de l'Ile  (Interclubs 2012) .
+                    Pour la saison 2012-2013, le Moufia Aquatik est fier d'avoir pu permettre l'admission d' un nageur, Desprez Pierre-Yves, au pôle France de Dijon.
+                    <br><br>
+                    
+                    <strong>Aujourd’hui, grâce à son équipe de bénévoles et de salariés dynamiques et motivés, le Moufia Aquatik veut consolider ses efforts afin d’optimiser ses performances en compétition tout en développant ses activités de loisirs, afin d’élargir son public et répondre ainsi aux besoins de la population de Saint Denis.</strong>
+                    
+                </p>
+            </div>
+          </div>
+          <!-- End--------  About  -------------- -->
+
+          <!-- Start--------  Educateurs  -------------- -->
+          <div class="educ-modale-container">
+            <div class="educ-overlay-modale educ-toggle">
+
+              <div class="educ-content">
+                <div class="educ-titre-container">
+
+                  <H1 class="educ-titre">Nos Educateurs</H1>
+    
+                  <button class="educ-btn-toggle">X</button>
+        
+                </div>
+                
+    
+                <div class="educ-txt-presentation">
+                    <p>Les éducateurs, tous titulaire d'un brevet d'état natation, de part leur expérience, leur engagement ont à coeur de familiariser l'adhérent au milieu aquatique. Tous les éducateurs suivent les recommandations pédagogiques prônées par la Fédération française de Natation (FFN). Le travail rigoureux de notre équipe d'éducateurs amène le nageur débutant aussi bien que le compétiteur à s’épanouir.</p>
+                </div>
+                <div class="educ-card-container">
+                    <div class="educ-card">
+                        <div class="card-body">
+                            <div class="card-images">
+                                <img src="Images/educateurs/bg-card_500x332.jpg" alt="" class="card-bg">
+                                <img src="Images/educateurs/Maillot Gilou détouré_278x300.png" alt="" class="card-figure glass-bg-01">
+                            </div>
+                            <div class="card-info">
+                                <h2 class="card-name">MAILLOT Gilou</h2>
+                                <p class="card-description">Maître nageur de la ville de Saint Denis.  Titulaire du  BEESAN et du BAFA.<br>
+                                    Ce passionné de waterpolo est tombé dans l'eau à l'age de 6 ans.<br>
+                                    Ses compétences d'animateur et ses 10 ans d'expérience dans l'enseignement de la natation font de Gilou, un éducateur apprécié par les jeunes et les moins jeunes. Il intervient sur des groupes de l'école de natation et sur les groupes 3 et 4 (collège et lycées loisirs).</p>
+                                <!-- <div class="card-media">
+                                    <a href="#"><img src="facebook.svg"> </a>
+                                    <a href="#"><img src="twitter.svg"> </a>
+                                    <a href="#"><img src="instagram.svg"> </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="educ-card">
+                        <div class="card-body">
+                            <div class="card-images">
+                                <img src="Images/educateurs/bg-card_500x332.jpg" alt="" class="card-bg">
+                                <img src="Images/educateurs/Jane_do_278x300.png" alt="" class="card-figure glass-bg-02">
+                            </div>
+                            <div class="card-info">
+                                <h2 class="card-name">Jane Doe</h2>
+                                <p class="card-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae harum tempore ipsa, illo delectus sed pariatur suscipit, animi, quos minima fugit nam. Tempore, vero nisi illo mollitia voluptates facere repellendus!</p>
+                                <!-- <div class="card-media">
+                                    <a href="#"><img src="facebook.svg"> </a>
+                                    <a href="#"><img src="twitter.svg"> </a>
+                                    <a href="#"><img src="instagram.svg"> </a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+    
+                <img src="Images/educateurs/customLogo_bkg Alpha0_recadrer.png" alt="" class="logo-n"><b></b>
+                       
+              </div>
+            </div>
+        </div>
+        <!-- End--------  Educateurs  -------------- -->
+        
+        <!-- Start--------  RGPD  -------------- -->
+        <div class="rgpd-modal-container">
+          <div class="rgpd-modale-overlay rpgd-toggle">
+            <div class="rgpd-modale-content">
+              <h1 class="titre-rgpd">
+                Mentions légales - RGPD
+            </h1>
+            <br><br>
+    
+            <h2>Définitions</h2>
+                <p>
+                    <span>Client :</span> tout professionnel ou personne physique capable au sens des articles 1123 et suivants du Code civil, ou personne morale, qui visite le Site objet des présentes conditions générales.
+                    <br><br>
+                    <span>Prestations et Services :</span> https://moufiaquatik.re met à disposition des Clients :
+                    <br><br>
+                    <span>Contenu :</span> Ensemble des éléments constituants l’information présente sur le Site, notamment textes – images – vidéos.
+                    <br><br>
+                    <span>Informations clients :</span> Ci après dénommé « Information (s) » qui correspondent à l’ensemble des données personnelles susceptibles d’être détenues par https://moufiaquatik.re pour la gestion de votre compte, de la gestion de la relation client et à des fins d’analyses et de statistiques.
+                    <br><br>
+                    <span>Utilisateur :</span> Internaute se connectant, utilisant le site susnommé.
+                    <br><br>
+                    <span>Informations personnelles :</span> « Les informations qui permettent, sous quelque forme que ce soit, directement ou non, l'identification des personnes physiques auxquelles elles s'appliquent » (article 4 de la loi n° 78-17 du 6 janvier 1978).
+                    <br>
+                    Les termes « données à caractère personnel », « personne concernée », « sous traitant » et « données sensibles » ont le sens défini par le Règlement Général sur la Protection des Données (RGPD : n° 2016-679)
+                </p>
+                    <br><br>
+    
+            <h2>1. Présentation du site internet.</h2>
+    
+                <p>En vertu de l'article 6 de la loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, il est précisé aux utilisateurs du site internet https://moufiaquatik.re l'identité des différents intervenants dans le cadre de sa réalisation et de son suivi:
+                    <br><br>
+                    <span>NOM :</span> Moufia Aquatik
+                    <br>                
+                    Forme juridique : association loi 1901<br>
+                    Numéro RCS : 404 285 231 00027 - APE : 9312Z<br>
+                    7 allée des kentias Moufia, 97490 Sainte-Clotilde<br>
+                    <br>
+                    <span>Responsable publication :</span> M. Robert Fabrice – secretariatmoufiaquatik@gmail.com - 02.62.46.52.47<br>
+                    <span>Webmaster :</span> 9 7 quart Academie - 0693 48 88 86<br>
+                    <span>Hébergeur :</span> <strong>Site Web Réunion – 31, Chemin Des Champacs, Reunion 97417 St Denis, La Montagne 0692 86 31 41</strong><br>
+                    <!-- !  CHanger hebergeur qui doit être Cloudfare -->
+                    <span>Délégué à la protection des données :</span> M. Robert Fabrice – secretariatmoufiaquatik@gmail.com - 02.62.46.52.47</p>
+                    
+                    <br><br>
+    
+                <h2>2. Conditions générales d’utilisation du site et des services proposés.</h2>
+    
+                    <p>Le Site constitue une œuvre de l’esprit protégée par les dispositions du Code de la Propriété Intellectuelle et des Réglementations Internationales applicables. Le Client ne peut en aucune manière réutiliser, céder ou exploiter pour son propre compte tout ou partie des éléments ou travaux du Site.
+                    <br><br>
+                    L’utilisation du site https://moufiaquatik.re implique l’acceptation pleine et entière des conditions générales d’utilisation ci-après décrites. Ces conditions d’utilisation sont susceptibles d’être modifiées ou complétées à tout moment, les utilisateurs du site https://moufiaquatik.re sont donc invités à les consulter de manière régulière.
+                    <br><br>
+                    Ce site internet est normalement accessible à tout moment aux utilisateurs. Une interruption pour raison de maintenance technique peut être toutefois décidée par https://moufiaquatik.re, qui s’efforcera alors de communiquer préalablement aux utilisateurs les dates et heures de l’intervention. Le site web https://moufiaquatik.re est mis à jour régulièrement par M. Robert Fabrice, responsable de la publication. De la même façon, les mentions légales peuvent être modifiées à tout moment : elles s’imposent néanmoins à l’utilisateur qui est invité à s’y référer le plus souvent possible afin d’en prendre connaissance.</p>
+                    <br><br>
+    
+            <h2>3. Description des services fournis.</h2>
+                    <p>Le site internet https://moufiaquatik.re a pour objet de fournir une information concernant l’ensemble des activités de la société.https://moufiaquatik.re s’efforce de fournir sur le site https://moufiaquatik.re des informations aussi précises que possible. Toutefois, il ne pourra être tenu responsable des oublis, des inexactitudes et des carences dans la mise à jour, qu’elles soient de son fait ou du fait des tiers partenaires qui lui fournissent ces informations.
+                    <br><br>
+                    Toutes les informations indiquées sur le site https://moufiaquatik.re sont données à titre indicatif, et sont susceptibles d’évoluer. Par ailleurs, les renseignements figurant sur le site https://moufiaquatik.re ne sont pas exhaustifs. Ils sont donnés sous réserve de modifications ayant été apportées depuis leur mise en ligne.</p>
+                
+                
+                    <br><br>
+    
+            <h2>4. Limitations contractuelles sur les données techniques.</h2>
+    
+                <p>Le site utilise la technologie JavaScript. Le site Internet ne pourra être tenu responsable de dommages matériels liés à l’utilisation du site. De plus, l’utilisateur du site s’engage à accéder au site en utilisant un matériel récent, ne contenant pas de virus et avec un navigateur de dernière génération mis-à-jour Le site https://moufiaquatik.re est hébergé chez un prestataire sur le territoire de l’Union Européenne conformément aux dispositions du Règlement Général sur la Protection des Données (RGPD : n° 2016-679)
+                <br><br>
+                L’objectif est d’apporter une prestation qui assure le meilleur taux d’accessibilité. L’hébergeur assure la continuité de son service 24 Heures sur 24, tous les jours de l’année. Il se réserve néanmoins la possibilité d’interrompre le service d’hébergement pour les durées les plus courtes possibles notamment à des fins de maintenance, d’amélioration de ses infrastructures, de défaillance de ses infrastructures ou si les Prestations et Services génèrent un trafic réputé anormal.
+                <br><br>
+                https://moufiaquatik.re et l’hébergeur ne pourront être tenus responsables en cas de dysfonctionnement du réseau Internet, des lignes téléphoniques ou du matériel informatique et de téléphonie lié notamment à l’encombrement du réseau empêchant l’accès au serveur.</p>
+    
+                <br><br>
+    
+            <h2>5. Propriété intellectuelle et contrefaçons.</h2>
+    
+                https://moufiaquatik.re est propriétaire des droits de propriété intellectuelle et détient les droits d’usage sur tous les éléments accessibles sur le site internet, notamment les textes, images, graphismes, logos, vidéos, icônes et sons. Toute reproduction, représentation, modification, publication, adaptation de tout ou partie des éléments du site, quel que soit le moyen ou le procédé utilisé, est interdite, sauf autorisation écrite préalable de : https://moufiaquatik.re.
+                <br><br>
+                Toute exploitation non autorisée du site ou de l’un quelconque des éléments qu’il contient sera considérée comme constitutive d’une contrefaçon et poursuivie conformément aux dispositions des articles L.335-2 et suivants du Code de Propriété Intellectuelle.
+    
+                <br><br>
+    
+            <h2>6. Limitations de responsabilité.</h2>
+    
+                <p>https://moufiaquatik.re agit en tant qu’éditeur du site. https://moufiaquatik.re  est responsable de la qualité et de la véracité du Contenu qu’il publie.
+                <br><br>
+                https://moufiaquatik.re ne pourra être tenu responsable des dommages directs et indirects causés au matériel de l’utilisateur, lors de l’accès au site internet https://moufiaquatik.re, et résultant soit de l’utilisation d’un matériel ne répondant pas aux spécifications indiquées au point 4, soit de l’apparition d’un bug ou d’une incompatibilité.
+                <br><br>
+                https://moufiaquatik.re ne pourra également être tenu responsable des dommages indirects (tels par exemple qu’une perte de marché ou perte d’une chance) consécutifs à l’utilisation du site https://moufiaquatik.re. Des espaces interactifs (possibilité de poser des questions dans l’espace contact) sont à la disposition des utilisateurs. https://moufiaquatik.re se réserve le droit de supprimer, sans mise en demeure préalable, tout contenu déposé dans cet espace qui contreviendrait à la législation applicable en France, en particulier aux dispositions relatives à la protection des données. Le cas échéant, https://moufiaquatik.re se réserve également la possibilité de mettre en cause la responsabilité civile et/ou pénale de l’utilisateur, notamment en cas de message à caractère raciste, injurieux, diffamant, ou pornographique, quel que soit le support utilisé (texte, photographie …).</p>
+    
+                <br><br>
+    
+            <h2>7. Gestion des données personnelles.</h2>
+    
+                <p>Le Client est informé des réglementations concernant la communication marketing, la loi du 21 Juin 2014 pour la confiance dans l’Economie Numérique, la Loi Informatique et Liberté du 06 Août 2004 ainsi que du Règlement Général sur la Protection des Données (RGPD : n° 2016-679).</p>
+                <br>
+    
+                <h3>7.1 Responsables de la collecte des données personnelles</h3>
+                
+                    <p>Pour les Données Personnelles collectées dans le cadre de la création du compte personnel de l’Utilisateur et de sa navigation sur le Site, le responsable du traitement des Données Personnelles est : MOUFIA AQUATIK. https://moufiaquatik.re est représenté par M. Robert Fabrice, son représentant légal.
+                    <br><br>
+                    En tant que responsable du traitement des données qu’il collecte, https://moufiaquatik.re s’engage à respecter le cadre des dispositions légales en vigueur. Il lui appartient notamment au Client d’établir les finalités de ses traitements de données, de fournir à ses prospects et clients, à partir de la collecte de leurs consentements, une information complète sur le traitement de leurs données personnelles et de maintenir un registre des traitements conforme à la réalité. Chaque fois que https://moufiaquatik.re traite des Données Personnelles, https://moufiaquatik.re prend toutes les mesures raisonnables pour s’assurer de l’exactitude et de la pertinence des Données Personnelles au regard des finalités pour lesquelles https://moufiaquatik.re les traite.</p>
+                    <br>
+                <h3>7.2 Finalité des données collectées</h3>
+                
+                    <p>https://moufiaquatik.re est susceptible de traiter tout ou partie des données :</p>
+                    <br>
+                    <ul>
+                        <li>pour permettre la navigation sur le Site et la gestion et la traçabilité des prestations et services commandés par l’utilisateur : données de connexion et d’utilisation du Site, facturation, historique des commandes, etc.</li>
+                        <li>pour prévenir et lutter contre la fraude informatique (spamming, hacking…) : matériel informatique utilisé pour la navigation, l’adresse IP, le mot de passe (hashé).</li>
+                        <li>pour améliorer la navigation sur le Site : données de connexion et d’utilisation.</li>
+                        <li>pour mener des enquêtes de satisfaction facultatives sur https://moufiaquatik.re : adresse email.</li>
+                        <li>pour mener des campagnes de communication (sms, mail) : numéro de téléphone, adresse email</li>
+                    </ul>
+                    <br>
+                    <p>https://moufiaquatik.re ne commercialise pas vos données personnelles qui sont donc uniquement utilisées par nécessité ou à des fins statistiques et d’analyses.</p>
+                    <br>
+                <h3>7.3 Droit d’accès, de rectification et d’opposition</h3>
+                
+                    <p>
+                        Conformément à la réglementation européenne en vigueur, les Utilisateurs de https://moufiaquatik.re disposent des droits suivants :
+                    </p>
+                    <br>
+                    <ul>
+                        <li>droit d'accès (article 15 RGPD) et de rectification (article 16 RGPD), de mise à jour, de complétude des données des Utilisateurs droit de verrouillage ou d’effacement des données des Utilisateurs à caractère personnel (article 17 du RGPD), lorsqu’elles sont inexactes, incomplètes, équivoques, périmées, ou dont la collecte, l'utilisation, la communication ou la conservation est interdite.</li>
+                        <li>droit de retirer à tout moment un consentement (article 13-2c RGPD).</li>
+                        <li>droit à la limitation du traitement des données des Utilisateurs (article 18 RGPD).</li>
+                        <li>droit d’opposition au traitement des données des Utilisateurs (article 21 RGPD).</li>
+                        <li>droit à la portabilité des données que les Utilisateurs auront fournies, lorsque ces données font l’objet de traitements automatisés fondés sur leur consentement ou sur un contrat (article 20 RGPD).</li>
+                        <li>droit de définir le sort des données des Utilisateurs après leur mort et de choisir à qui https://moufiaquatik.re devra communiquer (ou non) ses données à un tiers qu’ils aura préalablement désigné.</li>
+                    </ul>
+    
+                    <p>Dès que https://moufiaquatik.re a connaissance du décès d’un Utilisateur et à défaut d’instructions de sa part, https://moufiaquatik.re s’engage à détruire ses données, sauf si leur conservation s’avère nécessaire à des fins probatoires ou pour répondre à une obligation légale.</p>
+                    <br>
+                    <p>Si l’Utilisateur souhaite savoir comment https://moufiaquatik.re utilise ses Données Personnelles, demander à les rectifier ou s’oppose à leur traitement, l’Utilisateur peut contacter https://moufiaquatik.re, M. Robert Fabrice – secretariatmoufiaquatik@gmail.com - 02.62.46.52.47</p>
+    
+                    <p>ou par écrit à l’adresse suivante : 
+                    <br><br>
+                    Moufia Aquatik, 7 allée des kentias Moufia 97490 sainte-clotilde
+                    <br><br>
+                    Dans ce cas, l’Utilisateur doit indiquer les Données Personnelles qu’il souhaiterait que https://moufiaquatik.re corrige, mette à jour ou supprime, en s’identifiant précisément avec une copie d’une pièce d’identité (carte d’identité ou passeport).
+                    <br><br>
+                    Les demandes de suppression de Données Personnelles seront soumises aux obligations qui sont imposées à https://moufiaquatik.re par la loi, notamment en matière de conservation ou d’archivage des documents. Enfin, les Utilisateurs de https://moufiaquatik.re peuvent déposer une réclamation auprès des autorités de contrôle, et notamment de la CNIL (https://www.cnil.fr/fr/plaintes).
+                    </p>
+                    <br>
+                <h3>7.4 Non-communication des données personnelles</h3>
+                    <p>
+                        https://moufiaquatik.re s’interdit de traiter, héberger ou transférer les Informations collectées sur ses Clients vers un pays situé en dehors de l’Union européenne ou reconnu comme « non adéquat » par la Commission européenne sans en informer préalablement le client. Pour autant, https://moufiaquatik.re reste libre du choix de ses sous-traitants techniques et commerciaux à la condition qu’il présentent les garanties suffisantes au regard des exigences du Règlement Général sur la Protection des Données (RGPD : n° 2016-679).
+                        <br><br>                https://moufiaquatik.re s’engage à prendre toutes les précautions nécessaires afin de préserver la sécurité des Informations et notamment qu’elles ne soient pas communiquées à des personnes non autorisées. Cependant, si un incident impactant l’intégrité ou la confidentialité des Informations du Client est portée à la connaissance de https://moufiaquatik.re, celle-ci devra dans les meilleurs délais informer le Client et lui communiquer les mesures de corrections prises. Par ailleurs https://moufiaquatik.re ne collecte aucune « données sensibles ».
+                        <br><br>
+                        Les Données Personnelles de l’Utilisateur peuvent être traitées par des filiales de https://moufiaquatik.re et des sous-traitants (prestataires de services), exclusivement afin de réaliser les finalités de la présente politique.
+                        <br><br>
+                        Dans la limite de leurs attributions respectives et pour les finalités rappelées ci-dessus, les principales personnes susceptibles d’avoir accès aux données des Utilisateurs de https://moufiaquatik.re sont principalement les agents de notre service client.
+                    </p>
+                    <br>
+                <h3>7.5 Types de données collectées</h3>
+                    <p>
+                        Concernant les utilisateurs du site https://moufiaquatik.re, nous collectons les données suivantes qui sont indispensables au fonctionnement du service , et qui seront conservées pendant une période maximale de 60 mois après la fin de la relation contractuelle:
+                        <br>
+                        nom, prénom, date de naissance, adresse, nom et prénom des responsables légaux, email, numéro de téléphone, numéro de GSM, numéro du fixe,
+                    </p>
+                <br><br>
+    
+            <h2>8. Notification d’incident</h2>
+                    <p>
+                        Quels que soient les efforts fournis, aucune méthode de transmission sur Internet et aucune méthode de stockage électronique n'est complètement sûre. Nous ne pouvons en conséquence pas garantir une sécurité absolue. Si nous prenions connaissance d'une brèche de la sécurité, nous avertirions les utilisateurs concernés afin qu'ils puissent prendre les mesures appropriées. Nos procédures de notification d’incident tiennent compte de nos obligations légales, qu'elles se situent au niveau national ou européen. Nous nous engageons à informer pleinement nos clients de toutes les questions relevant de la sécurité de leur compte et à leur fournir toutes les informations nécessaires pour les aider à respecter leurs propres obligations réglementaires en matière de reporting.
+                        <br><br>
+                        Aucune information personnelle de l'utilisateur du site https://moufiaquatik.re n'est publiée à l'insu de l'utilisateur, échangée, transférée, cédée ou vendue sur un support quelconque à des tiers. Seule l'hypothèse du rachat de https://moufiaquatik.re et de ses droits permettrait la transmission des dites informations à l'éventuel acquéreur qui serait à son tour tenu de la même obligation de conservation et de modification des données vis à vis de l'utilisateur du site https://moufiaquatik.re.
+                        <br><br>
+                        <span>Sécurité</span>
+                        <br>
+                        Pour assurer la sécurité et la confidentialité des Données Personnelles et des Données Personnelles de Santé, https://moufiaquatik.re utilise des réseaux protégés par des dispositifs standards tels que par pare-feu, la pseudonymisation, l’encryption et mot de passe.
+                        <br><br>
+                        Lors du traitement des Données Personnelles, https://moufiaquatik.reprend toutes les mesures raisonnables visant à les protéger contre toute perte, utilisation détournée, accès non autorisé, divulgation, altération ou destruction.
+                    </p>
+                <br><br>
+            
+            <h2>9. Liens hypertextes « cookies » et balises (“tags”) internet</h2>
+                    <p>
+                        Le site https://moufiaquatik.re contient un certain nombre de liens hypertextes vers d’autres sites, mis en place avec l’autorisation de https://moufiaquatik.re. Cependant, https://moufiaquatik.re n’a pas la possibilité de vérifier le contenu des sites ainsi visités, et n’assumera en conséquence aucune responsabilité de ce fait.
+                        <br><br>
+                        Sauf si vous décidez de désactiver les cookies, vous acceptez que le site puisse les utiliser. Vous pouvez à tout moment désactiver ces cookies et ce gratuitement à partir des possibilités de désactivation qui vous sont offertes et rappelées ci-après, sachant que cela peut réduire ou empêcher l’accessibilité à tout ou partie des Services proposés par le site.
+                    </p>
+                    <br>
+                <h3>9.1. « COOKIES »</h3>
+                    <p>
+                        Un « cookie » est un petit fichier d’information envoyé sur le navigateur de l’Utilisateur et enregistré au sein du terminal de l’Utilisateur (ex : ordinateur, smartphone), (ci-après « Cookies »). Ce fichier comprend des informations telles que le nom de domaine de l’Utilisateur, le fournisseur d’accès Internet de l’Utilisateur, le système d’exploitation de l’Utilisateur, ainsi que la date et l’heure d’accès. Les Cookies ne risquent en aucun cas d’endommager le terminal de l’Utilisateur. 
+                        <br><br>
+                        https://moufiaquatik.re est susceptible de traiter les informations de l’Utilisateur concernant sa visite du Site, telles que les pages consultées, les recherches effectuées. Ces informations permettent à https://moufiaquatik.re d’améliorer le contenu du Site, de la navigation de l’Utilisateur.
+                        <br><br>
+                        Les Cookies facilitant la navigation et/ou la fourniture des services proposés par le Site, l’Utilisateur peut configurer son navigateur pour qu’il lui permette de décider s’il souhaite ou non les accepter de manière à ce que des Cookies soient enregistrés dans le terminal ou, au contraire, qu’ils soient rejetés, soit systématiquement, soit selon leur émetteur. L’Utilisateur peut également configurer son logiciel de navigation de manière à ce que l’acceptation ou le refus des Cookies lui soient proposés ponctuellement, avant qu’un Cookie soit susceptible d’être enregistré dans son terminal. https://moufiaquatik.re informe l’Utilisateur que, dans ce cas, il se peut que les fonctionnalités de son logiciel de navigation ne soient pas toutes disponibles.
+                        <br><br>
+                        Si l’Utilisateur refuse l’enregistrement de Cookies dans son terminal ou son navigateur, ou si l’Utilisateur supprime ceux qui y sont enregistrés, l’Utilisateur est informé que sa navigation et son expérience sur le Site peuvent être limitées. Cela pourrait également être le cas lorsque https://moufiaquatik.re ou l’un de ses prestataires ne peut pas reconnaître, à des fins de compatibilité technique, le type de navigateur utilisé par le terminal, les paramètres de langue et d’affichage ou le pays depuis lequel le terminal semble connecté à Internet.
+                        <br><br>
+                        Le cas échéant, https://moufiaquatik.re décline toute responsabilité pour les conséquences liées au fonctionnement dégradé du Site et des services éventuellement proposés par https://moufiaquatik.re, résultant (i) du refus de Cookies par l’Utilisateur (ii) de l’impossibilité pour https://moufiaquatik.re d’enregistrer ou de consulter les Cookies nécessaires à leur fonctionnement du fait du choix de l’Utilisateur. Pour la gestion des Cookies et des choix de l’Utilisateur, la configuration de chaque navigateur est différente. Elle est décrite dans le menu d’aide du navigateur, qui permettra de savoir de quelle manière l’Utilisateur peut modifier ses souhaits en matière de Cookies.
+                        <br><br>
+                        À tout moment, l’Utilisateur peut faire le choix d’exprimer et de modifier ses souhaits en matière de Cookies. https://moufiaquatik.re pourra en outre faire appel aux services de prestataires externes pour l’aider à recueillir et traiter les informations décrites dans cette section.
+                        <br><br>
+                        Enfin, en cliquant sur les icônes dédiées aux réseaux sociaux Twitter, Facebook, Linkedin et Google Plus figurant sur le Site de https://moufiaquatik.re ou dans son application mobile et si l’Utilisateur a accepté le dépôt de cookies en poursuivant sa navigation sur le Site Internet ou l’application mobile de https://moufiaquatik.re, Twitter, Facebook, Linkedin et Google Plus peuvent également déposer des cookies sur vos terminaux (ordinateur, tablette, téléphone portable).
+                        <br><br>
+                        Ces types de cookies ne sont déposés sur vos terminaux qu’à condition que vous y consentiez, en continuant votre navigation sur le Site Internet ou l’application mobile de https://moufiaquatik.re. À tout moment, l’Utilisateur peut néanmoins revenir sur son consentement à ce que https://moufiaquatik.re dépose ce type de cookies.
+                    </p>
+                    <br>
+                <h3>Article 9.2. BALISES (“TAGS”) INTERNET</h3>
+                    <p>
+                        https://moufiaquatik.re peut employer occasionnellement des balises Internet (également appelées « tags », ou balises d’action, GIF à un pixel, GIF transparents, GIF invisibles et GIF un à un) et les déployer par l’intermédiaire d’un partenaire spécialiste d’analyses Web susceptible de se trouver (et donc de stocker les informations correspondantes, y compris l’adresse IP de l’Utilisateur) dans un pays étranger.
+                        <br><br>
+                        Ces balises sont placées à la fois dans les publicités en ligne permettant aux internautes d’accéder au Site, et sur les différentes pages de celui-ci.  
+                        <br><br>
+                        Cette technologie permet à https://moufiaquatik.re d’évaluer les réponses des visiteurs face au Site et l’efficacité de ses actions (par exemple, le nombre de fois où une page est ouverte et les informations consultées), ainsi que l’utilisation de ce Site par l’Utilisateur.
+                        <br><br>
+                        Le prestataire externe pourra éventuellement recueillir des informations sur les visiteurs du Site et d’autres sites Internet grâce à ces balises, constituer des rapports sur l’activité du Site à l’attention de https://moufiaquatik.re, et fournir d’autres services relatifs à l’utilisation de celui-ci et d’Internet.
+                    </p>
+                <br><br>
+                
+            <h2>10. Droit applicable et attribution de juridiction.</h2>
+                    <p>
+                        Tout litige en relation avec l’utilisation du site https://moufiaquatik.re est soumis au droit français. En dehors des cas où la loi ne le permet pas, il est fait attribution exclusive de juridiction aux tribunaux compétents de SAINT-DENIS de la Réunion
+                    </p>
+                    <br><br><br>
+    
+            </div>
+          </div>
+        </div>
+
+        <!-- End--------  RGPD  -------------- -->
+    
+        <!-----------------    END MODALES ----------------------->
+
+
+
+
+
+    </div>
+        <!-- ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    <!-----------------   START Animation Bubble ----------------------->
+    <div id="background-wrap">
+      <div class="bubble x1"></div>
+      <div class="bubble x2"></div>
+      <div class="bubble x3"></div>
+      <div class="bubble x4"></div>
+      <div class="bubble x5"></div>
+      <div class="bubble x6"></div>
+      <div class="bubble x7"></div>
+      <div class="bubble x8"></div>
+      <div class="bubble x9"></div>
+      <div class="bubble x10"></div>
+  </div>
+    <!-----------------    END Animation Bubble ----------------------->
+
+
+
+
+    <script src="script/app.js"></script>
+
+  </body>
+</html>
