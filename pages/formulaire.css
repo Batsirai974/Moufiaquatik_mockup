@@ -20,7 +20,7 @@ body {
     grid-template: 100px 600px 1fr 300px / 150px repeat(3, 1fr) 150px;
     z-index: 1;
     /* background-image:url(fond-piscine-original.jpg); */
-    background-image:url(/images/fond-piscine-original.jpg);
+    background-image:url(../images/fond-piscine-original.jpg);
     background-color: rgb(100, 187, 245);
   }
 
