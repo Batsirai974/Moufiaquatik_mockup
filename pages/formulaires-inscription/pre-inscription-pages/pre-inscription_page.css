@@ -1,0 +1,164 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Montserrat, sans-serif;
+    background: #333;
+    /* height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.main-container {
+    display: grid;
+    /* grid-template: 70px 700px 1000px 10% / 100px repeat(3, 1fr) 100px; */
+    grid-template: 100px 600px 1fr 300px / 150px repeat(3, 1fr) 150px;
+    z-index: 1;
+    /* background-image:url(fond-piscine-original.jpg); */
+    background-image:url(../images/fond-piscine-original.jpg);
+    background-color: rgb(100, 187, 245);
+  }
+
+    /* START ---------- Nav-Bar ---------------*/
+
+.nav-container {
+    grid-area: 1 / 1 / 2 / 6;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 200;
+    transition: 0.8s;
+    background: #ffffff;
+    box-shadow: inset 0px -5px 0px #fedf17;
+  }
+
+  .list-items-nav {
+    width: 60%;
+  }
+ 
+  /* END ---------- Nav-Bar ---------------*/
+
+
+  
+.pre-inscription-container {
+    grid-area: 2/1/5/6;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pre-inscription-overlay-modale {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: #333333d3;
+    /* transform: translateX(-50%); */
+    transition: opacity 0.4s 0.2s ease-out;
+}  
+
+.pre-inscription-container.active .pre-inscription-overlay-modale {
+    opacity: 1;
+    transition: opacity 0.4s ease-out;
+}
+
+.pre-inscription-content {
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%, -50%);
+    width: 650px;
+    height: auto;
+    padding: 40px;
+    border: 1px solid #b5ecf8;
+    border-radius: 15px;
+    background: #fff;
+    font-family: "poppins", sans-serif;
+}
+
+.pre-inscription-content .pre-inscription-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.pre-inscription-content h2 {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #006aff;
+
+}
+
+.pre-inscription-content form {
+    font-size: 18px;
+}
+
+.pre-inscription-content form p {
+    font-weight: 550;
+    padding: 15px 0;
+    margin-top: 20px;
+}
+
+.pre-inscription-content form input[type="radio"] {
+    appearance: none;
+    outline: none;
+}
+
+.pre-inscription-content form input[type="radio"]  {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-right: 5px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.pre-inscription-content form input[type="radio"]:hover  {
+    border-color: #999;
+}
+
+.pre-inscription-content form input[type="radio"]:checked  {
+    border-color: #006aff;
+    background-color: #2196f3;
+    box-shadow: inset 0 0 0 4px #fff;
+}
+
+.pre-inscription-content form label {
+    margin-right: 20px;
+    font-weight: 500;
+}
+
+.pre-inscription-content form button {
+    display: block;
+    width: auto;
+    margin: 50px auto 30px;
+    padding: 15px 60px;
+    border: 3px solid #8b97d7;
+    border-radius: 999px;
+    background-image: linear-gradient(to right, transparent 50%, #5260ad 50%, #8b97d7);
+    background-size: 200%;
+    color: #8b97d7;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+
+.pre-inscription-content form button:hover {
+    color: #fff;
+    background-position: 100%;
+    border: 3px solid #fff;
+}
+

@@ -1,0 +1,328 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Montserrat, sans-serif;
+    background: #333;
+    /* height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.main-container {
+    display: grid;
+    /* grid-template: 70px 700px 1000px 10% / 100px repeat(3, 1fr) 100px; */
+    grid-template: 100px 600px 1fr 300px / 150px repeat(3, 1fr) 150px;
+    z-index: 1;
+    /* background-image:url(fond-piscine-original.jpg); */
+    background-image:url(../images/fond-piscine-original.jpg);
+    background-color: rgb(100, 187, 245);
+  }
+
+    /* START ---------- Nav-Bar ---------------*/
+
+.nav-container {
+    grid-area: 1 / 1 / 2 / 6;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    z-index: 200;
+    transition: 0.8s;
+    background: #ffffff;
+    box-shadow: inset 0px -5px 0px #fedf17;
+  }
+
+  .list-items-nav {
+    width: 60%;
+  }
+ 
+  /* END ---------- Nav-Bar ---------------*/
+
+
+
+
+
+  .inscription-majeur-container {
+    grid-area: 2/1/5/6;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+
+  .inscription-majeur-overlay {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    background: #333333d3;
+    /* transform: translateX(-50%); */
+    transition: opacity 0.4s 0.2s ease-out;
+}  
+
+  .inscription-majeur-content {
+    position: relative;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+
+    width: 500px;
+    height: auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+
+  /* Form -----------------------*/
+
+.formBloc h3 strong {
+    color: #5260ad;
+    font-weight: 900;
+}
+
+.formBloc h3 {
+    color: #666;
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+
+.formBloc .formGroupe {
+    position: relative;
+    display: flex;
+    /* margin-bottom: 50px; */
+    margin-bottom: 40px;
+}
+.formBloc .formGroupe label {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    color: #aaa;
+    font-size: 18px;
+    transition: 0.4s ease-out;
+}
+
+.formBloc .formGroupe .special-field {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  color: #8b97d7;
+
+  /* background: lightblue; */
+}
+
+.formBloc .sexe-fields-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  height: 40px;
+  /* background-color: tomato; */
+}
+
+.formBloc .sexe-fields-box .sex-field{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* background: lightpink; */
+  width: 100px;
+  height: 25px;
+  font-size: 18px;
+  color: #555;
+}
+
+.formBloc .formGroupe span {
+  font-size: 16px;
+
+}
+
+.formBloc .formGroupe input {
+    display: block;
+    width: 100%;
+    padding: 10px 0px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 3px solid #aaa;
+    color: #666;
+    font-size: 20px;
+    transition: 0.4s ease-out;
+}
+
+
+
+.formBloc .formGroupe input[type="date"] {
+  /* text-align: center; */
+  /* padding-left: 40px; */
+  color: #aaa;
+}
+
+
+
+
+
+/* Start exemple liste choix activité */
+
+/* .choix-groupe {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2.toggle-options {
+    text-align: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .multi-select {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .multi-select.hidden {
+    display: none;
+  }
+  
+  .multi-select li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .multi-select input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .multi-select label {
+    cursor: pointer;
+  } */
+
+  /* End exemple liste choix activité */
+
+
+  /* Start liste choix activité */
+
+  .choix-activites {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border: 1px solid #8b97d7;
+    border-radius: 5px;
+  }
+
+  .choix-activites h2 {
+    /* color: #555; */
+    color: #8b97d7;
+    font-size: 20px;
+    font-weight: 600;
+    /* margin-bottom: 40px; */
+    margin-bottom: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .choix-activites h2:hover {
+    color: #374ab1;
+
+  }
+
+.multi-select {
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+    color: #555;
+  }
+
+  .multi-select li:first-child {
+    margin-left: 8px;
+  }
+
+  .multi-select.hidden {
+    display: none;
+  }
+  
+  .multi-select li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .multi-select input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .multi-select label {
+    cursor: pointer;
+  }
+
+  .multi-select fieldset {
+    border: none;
+    padding: 10px;
+  }
+
+.multi-select fieldset legend {
+font-size: 20px;
+padding: 20px 0px 15px 0;
+/* color: #5260ad; */
+color: #8b97d7;
+/* background-color: tomato; */
+}
+
+  /* End liste choix activité */
+
+
+
+/* button submit */
+
+.formBloc .formGroupe .buttonSub {
+    display: block;
+    width: auto;
+    margin: 30px auto;
+    padding: 15px 60px;
+    border: 3px solid #8b97d7;
+    border-radius: 999px;
+    background-image: linear-gradient(to right, transparent 50%, #5260ad 50%, #8b97d7);
+    background-size: 200%;
+    color: #8b97d7;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.formBloc .formGroupe .buttonSub:hover {
+    color: #fff;
+    background-position: 100%;
+    border: 3px solid #fff;
+}
+
+
+/* Animation */
+
+.field-anime:focus-within label,
+.field-anime.animation label {
+  top: 0px;
+  transform: translateY(-100%);
+  color: #8b97d7;
+}
+
+.field-anime:focus-within input,
+.field-anime.animation input {
+  border-bottom-color: #8b97d7;
+}

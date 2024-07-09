@@ -159,7 +159,24 @@
 
 /* END  --------  TARIFS SECTION  ------------ */
 
+/*  Start Formulaire pre-Inscription ***********************/
+.pre-inscription-modale-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  grid-area: 2/1/4/6;
+  z-index: 100;
+  visibility: hidden;
+  transition: visibility 0.4s;
+}
 
+.pre-inscription-modale-container.active {
+  visibility: visible;
+}
+
+
+/*  End Formulaire pre-Inscription ***********************/
 
 /* START  --------  ABOUT SECTION  ------------ */
 

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire inscription - 18</title>
+   <!-- <link rel="stylesheet" href="basic-page-tarif.css"> -->
+   <!-- <link rel="stylesheet" href="nav.css"> -->
+   <link rel="stylesheet" href="/styles/nav.css">
+   <link rel="stylesheet" href="/styles/toggle-button.css">
+   <link rel="stylesheet" href="incription-mineur-page.css">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body>
+
+  <div class="main-container">
+    <!-- START  -----------  Nav ------------------>
+      <nav class="nav-container">
+        <div class="logo-container">
+          <img
+            class="logo"
+            src="/images/logo/customLogo_bkg Alpha0.png"
+            alt="Logo Moufia-Aquatik"
+          />
+        </div>
+
+        <!-- ?---------Start Menu  ---- -->
+
+        <ul class="list-items-nav">
+          <li class="item item-01">
+            <a href="/index.html">Accueil</a>
+          </li>
+          <!-- <li class="item item-02 information-toggle">
+            <a href="../index.html">Inscription</a>
+          </li> -->
+
+          <!-- <li class="item item-03">
+            <a href="../index.html">Activités</a>
+          </li> -->
+
+          <!-- <li class="item item-04  tarifs-toggle">
+            <a href="../index.html">Planning & Tarifs</a>
+          </li> -->
+
+          <!-- <li class="item item-05">
+            <a href="../index.html">Le Club</a>
+
+            <ul class="sous-list-club">
+              <li class="item-sous-list-club about-toggle">
+                <a href="../index.html">A propos du club</a>
+              </li>
+              <li class="item-sous-list-club educ-toggle">
+                <a href="../index.html">Educateur</a>
+              </li>
+              <li class="item-sous-list-club information-toggle">
+                <a href="../index.html">Documents Association</a>
+              </li>
+              <li class="item-sous-list-club item-bottom rpgd-toggle">
+                <a href="../index.html">Mention légale - RGPD</a>
+              </li>
+            </ul>
+          </li> -->
+
+          <!-- <li class="item item-06 information-toggle">
+            <a href="/index.html">Contact</a>
+          </li> -->
+          
+        </ul>
+
+        <!-- ?---------End Menu   ---- -->
+      </nav>
+    <!-- END  -----------  Nav Section                  -->
+
+
+
+
+
+
+
+    <div class="inscription-mineur-container">
+      <div class="inscription-mineur-overlay">
+        <div class="inscription-mineur-content">
+          <!-- <button class="inscription-btn inscription-toggle">X</button> -->
+        <!-- possible de mettre direct un script php -->
+
+        <form action="" class="formBloc">
+          <h3>Formulaire d'<strong>Inscription</strong></h3>
+          <p class="sous-titre">(personne mineur)</p>
+          <div class="formGroupe field-anime">
+              <label for="nom">Nom (de l'enfant)</span></label>
+              <input type="text" id="nom" required >
+          </div>
+          <div class="formGroupe field-anime">
+              <label for="prenom">Prénom (de l'enfant)</span></label>
+              <input type="text" id="prenom" required>
+          </div>
+          <div class="formGroupe field-anime">
+              <label for="mail">Adresse mail @</label>
+              <input type="email" id="mail" required>
+          </div>
+          <div class="formGroupe field-anime">
+              <label for="nom">Nom du représentant légale</span></label>
+              <input type="text" id="nom" required >
+          </div>
+          <div class="formGroupe field-anime">
+              <label for="prenom">Prénom du représentant légale</span></label>
+              <input type="text" id="prenom" required>
+          </div>
+          <div class="formGroupe field-anime">
+              <label for="phone">Telephone</label>
+              <input type="tel" id="phone">
+          </div>
+          <div class="formGroupe">
+              <label for="birthday" class="special-field">Date de Naissance</label>
+              <input type="date" id="birthday">
+          </div>
+          <div class="formGroupe">
+              <label for="sexe" class="special-field">Sexe</label>
+                      <div class="sexe-fields-box">
+                          <div class="sex-field">
+                              <input type="checkbox">Femme
+                          </div>
+                          <div class="sex-field">
+                              <input type="checkbox" id="sex-h" value="Homme">Homme
+                          </div>
+                      </div>
+                 
+          </div>
+
+          <div class="choix-activites">
+              <h2 class="toggle-options">Cliquer pour sélectionner votre choix</h2>
+
+              <ul class="multi-select hidden">
+                  <li>
+                      <input type="checkbox" id="option1" name="options[]" value="option1">
+                      <label for="option1">Jardin Aquatique</label>
+                  </li>
+                  <fieldset>
+                      <legend>Ecole de Natation Française</legend>
+                      <li>
+                          <input type="checkbox" id="option1" name="options[]" value="option1">
+                          <label for="option1">Etoile de mer 1</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" id="option1" name="options[]" value="option1">
+                          <label for="option1">Etoile de mer 2</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" id="option1" name="options[]" value="option1">
+                          <label for="option1">Zourite 1</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" id="option1" name="options[]" value="option1">
+                          <label for="option1">Zourite 2</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" id="option1" name="options[]" value="option1">
+                          <label for="option1">Requin 1</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" id="option1" name="options[]" value="option1">
+                          <label for="option1">Marlin / Ados</label>
+                      </li>
+                  </fieldset>
+
+              </ul>
+          </div>
+          <!--End liste choix activités -->
+
+          <div class="formGroupe">
+              <input type="submit" value="Envoyer" class="buttonSub">
+          </div>
+
+      </form>
+      </div>
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+  <script src="inscription-mineur-page.js"></script>
+
+
+</body>

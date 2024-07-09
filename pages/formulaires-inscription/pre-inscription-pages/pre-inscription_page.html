@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription Moufia Aquatique</title>
    <!-- <link rel="stylesheet" href="basic-page-tarif.css"> -->
    <!-- <link rel="stylesheet" href="nav.css"> -->
-   <link rel="stylesheet" href="../styles/nav.css">
-   <link rel="stylesheet" href="formulaire.css">
+   <link rel="stylesheet" href="/styles/nav.css">
+   <link rel="stylesheet" href="pre-inscription_page.css">
+   <link rel="stylesheet" href="/styles/toggle-button.css">
 
     <link
       href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <a href="/pages/formulaires-inscription/formulaire-inscription-majeur/inscription-majeur-page.html"></a>
+    
 </head>
 <body>
 
@@ -23,7 +25,7 @@
         <div class="logo-container">
           <img
             class="logo"
-            src="../images/logo/customLogo_bkg Alpha0.png"
+            src="/images/logo/customLogo_bkg Alpha0.png"
             alt="Logo Moufia-Aquatik"
           />
         </div>
@@ -32,7 +34,7 @@
 
         <ul class="list-items-nav">
           <li class="item item-01">
-            <a href="../index.html">Accueil</a>
+            <a href="/index.html">Accueil</a>
           </li>
           <!-- <li class="item item-02 information-toggle">
             <a href="../index.html">Inscription</a>
@@ -75,40 +77,41 @@
       </nav>
     <!-- END  -----------  Nav Section                  -->
 
-    <section class="inscription-container">
-      <div class="box">
 
-        <!-- <button class="inscription-btn inscription-toggle">X</button> -->
 
-        <form action="" class="formBloc">
-            <h3>Formulaire d'<strong>Inscription</strong></h3>
-            <div class="formGroupe">
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" required>
-            </div>
-            <div class="formGroupe">
-                <label for="prenom">Prénom</label>
-                <input type="text" id="prenom" required>
-            </div>
-            <div class="formGroupe">
-                <label for="mail">Adresse mail</label>
-                <input type="email" id="mail" required>
-            </div>
-            <div class="formGroupe">
-                <label for="phone">Telephone</label>
-                <input type="tel" id="phone" >
-            </div>
-            <div class="formGroupe">
-                <label for="phone">Activité</label>
-                <input type="text" id="activite" >
-            </div>
-            <div class="formGroupe">
-                <input type="submit" value="Valider" class="buttonSub">
-            </div>
-        </form>
-    </div>
+        <div class="pre-inscription-container">
+          <div class="pre-inscription-overlay-modale pre-inscription-toggle">
+              <div class="pre-inscription-content">
 
-    </section>
+                  <!-- <button class="btn-toggle pre-inscription-close ">X</button> -->
+
+                  <h2>Merci de cocher les cases correspondantes a votre situation.</h2>
+
+
+                  <form action="" class="form-pre-inscription">
+
+                      <p>Etiez vous adhérent à la saison dernière?</p>
+                      <input type="radio" id="oui" name="adherent" value="oui" required>
+                      <label for="oui">Oui</label>
+                      <input type="radio" id="non" name="adherent" value="non" required>
+                      <label for="non">Non</label>
+  
+                      <p>Avez-vous plus de 18 ans??</p>
+                      <input type="radio" id="oui-majeur" name="majeur" value="oui" required>
+                      <label for="oui">Oui</label>
+                      <input type="radio" id="non-majeur" name="majeur" value="non" required>
+                      <label for="non">Non</label>
+                      <br>
+                      <button type="submit" id="btn-submit">Validez</button>
+  
+  
+                  
+                  
+              </div>
+          </div>
+  
+        
+
       
 
 
@@ -116,7 +119,7 @@
 
 
 
-    <script src="formulaire.js"></script>
+    <script src="pre-inscription_page.js"></script>
 
     
 </body>
