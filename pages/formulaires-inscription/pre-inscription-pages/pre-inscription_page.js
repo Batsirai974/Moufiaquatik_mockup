@@ -17,11 +17,11 @@ form.addEventListener('submit', (event) => {
     console.log("Affiche formulaire de test");
   }
   else if (adherent === 'oui' && majeur === 'non'){
-    window.location.href = '..////pages/formulaires-inscription/formulaire-inscription-mineur/inscription-mineur-page.html';
+    window.location.href = '/pages/formulaires-inscription/formulaire-inscription-mineur/inscription-mineur-page.html';
     console.log("Affiche formulaire inscription jeune");
   }
   else {
-    window.location.href = '.../pages/formulaires-inscription/formulaire-inscription-majeur/inscription-majeur-page.html';
+    window.location.href = '../formulaire-inscription-majeur/inscription-majeur-page.html';
     console.log("Affiche formulaire inscription adultes");
   }
  
