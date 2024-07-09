@@ -203,3 +203,16 @@ function toggleRgpdModale(){
 
 
 // END ------------ RGPD Modale -----------------------
+
+// Start contact modale -----------------------------
+
+const contactModale = document.querySelector('.contact-modale-container');
+const contactTriger = document.querySelectorAll('.contact-toggle')
+
+contactTriger.forEach(triger => triger.addEventListener('click', toggleContactModale));
+
+function toggleContactModale() {
+    contactModale.classList.toggle("active");
+}
+
+// End contact modale -----------------------------

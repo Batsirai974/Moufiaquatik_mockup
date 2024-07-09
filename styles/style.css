@@ -234,6 +234,24 @@
 /* END  --------  RGPD SECTION  ------------ */
 
 
+/* Start Contact ---------------------------------*/
+
+.contact-modale-container {
+  position: relative;
+  grid-area: 2/1/4/6;
+  z-index: 100;
+  visibility: hidden;
+  transition: visibility 0.4s;
+}
+
+.contact-modale-container.active {
+  visibility: visible;
+    /* background: #333333d3; */
+}
+
+/* End Contact ------------------------------------*/
+
+
 /*  -----------  END MODALES  ----------------------*/
 
 /* START  -----  FOOTER  ------------------------- */
