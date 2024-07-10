@@ -260,9 +260,68 @@
   grid-area: 4/1/5/6;
   background: #333;
   z-index: 100;
+  flex-shrink: 0;
 }
 
-.demo-carousel {
+.content-footer {
+  display: flex;
+  width: 100%;
+  color: #fff;
+}
+
+.content-footer .bloc {
+  width: 700px;
+}
+
+.footer-horaire {
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+.footer-horaire img {
+  width: 200px;
+}
+
+.footer-horaire  h3 {
+  font-weight: 400;
+  font-size: 1.2em;
+  padding-bottom: 20px;
+}
+
+.footer-horaire .permamence-list {
+  list-style-type: none;
+}
+
+.footer-sponsors {
+  padding: 20px 15px
+  /* margin: 0 auto; */
+}
+
+.footer-sponsors h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.footer-sponsors img {
+  height: 120px;
+  margin: 0 5px;
+}
+
+.footer-other {
+
+}
+
+.footer-other span {
+  color: #fff;
+  font-size: 2em;
+}
+
+
+
+/* .demo-carousel {
   position: relative;
   top: 20px;
   left: 20px;
@@ -273,6 +332,6 @@
 
 .demo-carousel:hover {
   color: orange;
-}
+} */
 
 /* END  -------  FOOTER  ------------------------- */
