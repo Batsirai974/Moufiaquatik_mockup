@@ -31,11 +31,12 @@ body {
   .contact-content {
     position: relative;
     opacity: 0;
-    top: 20px;
-    margin: 0 auto;
     width: 450px;
     height: 600px;
+    top: 20px;
+    border: 2px solid #006aff;
     border-radius: 15px;
+    margin: 0 auto;
     background: #fff;
     transform: translateY(calc(+50% - 50px));
     transition: opacity 0.4s ease-out, transform 0.4s ease-out;
