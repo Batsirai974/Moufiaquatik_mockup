@@ -147,7 +147,6 @@
   z-index: 100;
   visibility: hidden;
   transition: visibility 0.4s;
-  /* background-color: #f2f2f2d7 */
 }
 
 .tarifs-modal-container.active {
@@ -157,9 +156,9 @@
 
 
 
-/* END  --------  TARIFS SECTION  ------------ */
+/* End TARIFS SECTION  ------------------------------------ */
 
-/*  Start Formulaire pre-Inscription ***********************/
+/*  Start Formulaire pre-Inscription ------------------------*/
 .pre-inscription-modale-container {
   position: relative;
   display: flex;
@@ -174,68 +173,54 @@
 .pre-inscription-modale-container.active {
   visibility: visible;
 }
+/*  End Formulaire pre-Inscription --------------------------------*/
 
-
-/*  End Formulaire pre-Inscription ***********************/
-
-/* START  --------  ABOUT SECTION  ------------ */
-
+/* Start ABOUT SECTION  -------------------------------- */
 .about-modal_container {
   position: relative;
   grid-area: 2/1/4/6;
   z-index: 100;
   visibility: hidden;
   transition: visibility 0.4s;
-  /* background-color: #f2f2f2d7 */
 }
 
 .about-modal_container.active {
   visibility: visible;
-  /* background: #333333d3; */
 }
 
-/* END  --------  ABOUT SECTION  ------------ */
+/* End ABOUT SECTION  ------------------------------ */
 
-/* START  --------  EDUCATEURS SECTION  ------------ */
-    
+/* Start EDUCATEURS SECTION  ----------------------- */
 .educ-modale-container {
     position: relative;
     grid-area: 2/1/4/6;
     z-index: 100;
     visibility: hidden;
     transition: visibility 0.4s;
-    /* background-color: #f2f2f2d7 */
-
   }
   
   .educ-modale-container.active {
     visibility: visible;
-    /* background: #333333d3; */  
   }
-  
-/* END  --------  EDUCATEURS SECTION  ------------ */
+/* End EDUCATEURS SECTION  ------------------------- */
 
-/* START  --------  RGPD SECTION  ------------ */
+/* Start RGPD SECTION  ----------------------------- */
 .rgpd-modal-container {
   position: relative;
   grid-area: 2/1/4/6;
   z-index: 100;
   visibility: hidden;
   transition: visibility 0.4s;
-  /* background-color: #f2f2f2d7 */
-
 }
 
 .rgpd-modal-container.active {
   visibility: visible;
-    /* background: #333333d3; */
 }
 
-/* END  --------  RGPD SECTION  ------------ */
+/* End RGPD SECTION  ---------------------------- */
 
 
 /* Start Contact ---------------------------------*/
-
 .contact-modale-container {
   position: relative;
   grid-area: 2/1/4/6;
@@ -243,12 +228,9 @@
   visibility: hidden;
   transition: visibility 0.4s;
 }
-
 .contact-modale-container.active {
   visibility: visible;
-    /* background: #333333d3; */
 }
-
 /* End Contact ------------------------------------*/
 
 
