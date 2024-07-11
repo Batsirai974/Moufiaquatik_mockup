@@ -266,11 +266,8 @@
 .content-footer {
   display: flex;
   width: 100%;
-  color: #fff;
+  color: #f1f1f1;
 }
-
-/* .content-footer .bloc {
-} */
 
 .footer-horaire {
   padding: 20px;
@@ -318,9 +315,14 @@
 
 } */
 
-.footer-other span {
-  color: #fff;
-  font-size: 2em;
+.footer-assoc {
+  font-size: .9em;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+.footer-assoc p:hover {
+  color: #fedf17;
 }
 
 
