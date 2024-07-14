@@ -91,42 +91,43 @@
           <h3>Formulaire d'<strong>Inscription</strong></h3>
           <p class="sous-titre">(personne mineur)</p>
           <div class="formGroupe field-anime">
-              <label for="nom">Nom (de l'enfant)</span></label>
+              <label for="nom">Nom <span>(de l'enfant)</span></label>
               <input type="text" id="nom" required >
           </div>
           <div class="formGroupe field-anime">
-              <label for="prenom">Prénom (de l'enfant)</span></label>
+              <label for="prenom">Prénom <span>(de l'enfant)</span></label>
               <input type="text" id="prenom" required>
           </div>
           <div class="formGroupe field-anime">
-              <label for="mail">Adresse mail @</label>
+              <label for="mail">Adresse mail @ <span>(du représentant légal)</span></label>
               <input type="email" id="mail" required>
           </div>
           <div class="formGroupe field-anime">
-              <label for="nom">Nom du représentant légale</span></label>
+              <label for="nom">Nom <span>(du représentant légal)</span></label>
               <input type="text" id="nom" required >
           </div>
           <div class="formGroupe field-anime">
-              <label for="prenom">Prénom du représentant légale</span></label>
+              <label for="prenom">Prénom <span>(du représentant légal)</span></label>
               <input type="text" id="prenom" required>
           </div>
           <div class="formGroupe field-anime">
-              <label for="phone">Telephone</label>
+              <label for="phone">Telephone <span>(du représentant légal)</span></label>
               <input type="tel" id="phone">
           </div>
           <div class="formGroupe">
-              <label for="birthday" class="special-field">Date de Naissance</label>
+              <label for="birthday" class="special-field">Date de Naissance </label>
               <input type="date" id="birthday">
           </div>
           <div class="formGroupe">
               <label for="sexe" class="special-field">Sexe</label>
                       <div class="sexe-fields-box">
                           <div class="sex-field">
-                              <input type="checkbox">Femme
+                              <input type="checkbox" name="option-sex" id="sex-option" value="femme">Femme
+                           </div>
+                           <div class="sex-field">
+                              <input type="checkbox" name="option-sex" id="sex-option" value="homme">Homme
                           </div>
-                          <div class="sex-field">
-                              <input type="checkbox" id="sex-h" value="Homme">Homme
-                          </div>
+                          
                       </div>
                  
           </div>
@@ -136,33 +137,33 @@
 
               <ul class="multi-select hidden">
                   <li>
-                      <input type="checkbox" id="option1" name="options[]" value="option1">
+                      <input type="checkbox" id="option1" name="options" value="option1">
                       <label for="option1">Jardin Aquatique</label>
                   </li>
                   <fieldset>
                       <legend>Ecole de Natation Française</legend>
                       <li>
-                          <input type="checkbox" id="option1" name="options[]" value="option1">
+                          <input type="checkbox" id="option1" name="options" value="option1">
                           <label for="option1">Etoile de mer 1</label>
                       </li>
                       <li>
-                          <input type="checkbox" id="option1" name="options[]" value="option1">
+                          <input type="checkbox" id="option1" name="options" value="option1">
                           <label for="option1">Etoile de mer 2</label>
                       </li>
                       <li>
-                          <input type="checkbox" id="option1" name="options[]" value="option1">
+                          <input type="checkbox" id="option1" name="options" value="option1">
                           <label for="option1">Zourite 1</label>
                       </li>
                       <li>
-                          <input type="checkbox" id="option1" name="options[]" value="option1">
+                          <input type="checkbox" id="option1" name="options" value="option1">
                           <label for="option1">Zourite 2</label>
                       </li>
                       <li>
-                          <input type="checkbox" id="option1" name="options[]" value="option1">
+                          <input type="checkbox" id="option1" name="options" value="option1">
                           <label for="option1">Requin 1</label>
                       </li>
                       <li>
-                          <input type="checkbox" id="option1" name="options[]" value="option1">
+                          <input type="checkbox" id="option1" name="options" value="option1">
                           <label for="option1">Marlin / Ados</label>
                       </li>
                   </fieldset>
@@ -180,12 +181,56 @@
       </div>
     </div>
 
+        
+        <!-- START  -----------  FOOTER  ------------------>
+        <footer class="footer-container">
+          <div class="content-footer">
+              <div class="bloc footer-horaire">
+                  <!-- <img src="./images/logo/logo Moufia_officiel 01.png" alt="logo Moufia Aquatique"> -->
+                  
+                  <h3>Permanence bureau</h3>
+                  <ul class="permamence-list">
+                      <li>✔️ Lun 16h-19h</li>
+                      <li>❌ Mar </li>
+                      <li>✔️ Mer 16h-19h</li>
+                      <li>❌ Jeu </li>
+                      <li>✔️ Ven 16h-19h</li>
+                      <li>❌ Sam </li>
+                      <li>❌ Dim </li>
+                  </ul>
+              </div>
+              <div class="bloc footer-sponsors">
+                  <!-- <h2>Nos partenaires</h2> -->
+                  
+                  <img src="../../../images/ponsors/logo_ffn_390_height-200.png" alt="Logo fédération ecole nationale française">
+                  <img src="../../../images/ponsors/Logo_region_couleur_2011_height-200.jpg" alt="Logo departement Region Réunion">
+                  <img src="../../../images/ponsors/St-Denis_logo_height-200.png">
+              </div>
+              <div class="bloc footer-assoc">
+                  <h3>Contact</h3>
+                  <p>secretariatmoufiaquatik@gmail.com</p>
+                  <p>tel : 02 62 46 52 47</p>
+                  <p>Ste Clotilde 7 allée Kantias <br>BP 23 97490 Saint Denis </p>
+                  <p>FaceBook</p>
+                  <p><span>👤</span>Admin.</p>
+              </div>
+          </div>
+          
+    
+          <!-- <a href="/pages/pages_horaires-&-tarifs/demo-carousel.html" class="demo-carousel">Voir Demo Carousel pour presentation cartes planning & tarif</a> -->
+    
+      </footer>
+      <!-- END  -----------  FOOTER  ------------------>
+
+
+
 
 
 
   </div>
 
   <script src="inscription-mineur-page.js"></script>
+  <script src="../one-select-option.js"></script>
 
 
 </body>

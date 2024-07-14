@@ -85,16 +85,17 @@
       <div class="inscription-test-overlay">
         <div class="inscription-test-content">
           <!-- <button class="inscription-btn inscription-toggle">X</button> -->
+
         <!-- possible de mettre direct un script php -->
         <form action="" class="formBloc">
           <h3>Formulaire de <strong>test</strong></h3>
-          <p class="sous-titre">(personne mineur)</p>
+          <p class="sous-titre">(personne mineur, à partir de 5ans)</p>
           <div class="formGroupe field-anime">
-              <label for="nom">Nom (de l'enfant)</span></label>
+              <label for="nom">Nom <span>(de l'enfant)</span></label>
               <input type="text" id="nom" required >
           </div>
           <div class="formGroupe field-anime">
-              <label for="prenom">Prénom (de l'enfant)</span></label>
+              <label for="prenom">Prénom <span>(de l'enfant)</span></label>
               <input type="text" id="prenom" required>
           </div>
           <div class="formGroupe  field-anime">
@@ -102,19 +103,19 @@
               <input type="date" id="birthday">
           </div>           
           <div class="formGroupe field-anime">
-              <label for="nom-representant">Nom du représentant légale</span></label>
+              <label for="nom-representant">Nom _ <span>(du représentant légal)</span></label>
               <input type="text" id="nom-representant" required >
           </div>
           <div class="formGroupe field-anime">
-              <label for="prenom-representant">Prénom du représentant légale</span></label>
+              <label for="prenom-representant">Prénom _ <span>(du représentant légal)</span></label>
               <input type="text" id="prenom-representant" required>
           </div>
           <div class="formGroupe field-anime">
-              <label for="mail">Adresse mail @ _ <span>(du représentant légale)</span></label>
+              <label for="mail">Adresse mail @ _ <span>(du représentant légal)</span></label>
               <input type="email" id="mail" required>
           </div>
           <div class="formGroupe field-anime">
-              <label for="phone">Telephone _ <span>(du représentant légale)</span></label>
+              <label for="phone">Telephone _ <span>(du représentant légal)</span></label>
               <input type="tel" id="phone">
           </div>
           
@@ -124,35 +125,33 @@
 
               <ul class="multi-select hidden">
                   <li>
-                      <input type="checkbox" id="option1" name="options[]" value="option1">
+                      <input type="checkbox" id="option1" name="options" value="option1">
                       <label for="option1"> (en attente)</label>
                   </li>
                   <li>
-                      <input type="checkbox" id="option1" name="options[]" value="option1">
+                      <input type="checkbox" id="option1" name="options" value="option1">
                       <label for="option1"> (en attente)</label>
                   </li>
                   <li>
-                      <input type="checkbox" id="option1" name="options[]" value="option1">
+                      <input type="checkbox" id="option1" name="options" value="option1">
                       <label for="option1"> (en attente)</label>
                   </li>
                   <li>
-                      <input type="checkbox" id="option1" name="options[]" value="option1">
+                      <input type="checkbox" id="option1" name="options" value="option1">
                       <label for="option1"> (en attente)</label>
                   </li>
                   <li>
-                      <input type="checkbox" id="option1" name="options[]" value="option1">
+                      <input type="checkbox" id="option1" name="options" value="option1">
                       <label for="option1"> (en attente)</label>
                   </li>
                   <li>
-                      <input type="checkbox" id="option1" name="options[]" value="option1">
+                      <input type="checkbox" id="option1" name="options" value="option1">
                       <label for="option1"> (en attente)</label>
                   </li>
                   <li>
-                      <input type="checkbox" id="option1" name="options[]" value="option1">
+                      <input type="checkbox" id="option1" name="options" value="option1">
                       <label for="option1"> (en attente)</label>
                   </li>
-                 
-
               </ul>
           </div>
           <!--End liste choix activités -->
@@ -167,12 +166,56 @@
       </div>
     </div>
 
+        
+        <!-- START  -----------  FOOTER  ------------------>
+        <footer class="footer-container">
+          <div class="content-footer">
+              <div class="bloc footer-horaire">
+                  <!-- <img src="./images/logo/logo Moufia_officiel 01.png" alt="logo Moufia Aquatique"> -->
+                  
+                  <h3>Permanence bureau</h3>
+                  <ul class="permamence-list">
+                      <li>✔️ Lun 16h-19h</li>
+                      <li>❌ Mar </li>
+                      <li>✔️ Mer 16h-19h</li>
+                      <li>❌ Jeu </li>
+                      <li>✔️ Ven 16h-19h</li>
+                      <li>❌ Sam </li>
+                      <li>❌ Dim </li>
+                  </ul>
+              </div>
+              <div class="bloc footer-sponsors">
+                  <!-- <h2>Nos partenaires</h2> -->
+                  
+                  <img src="../../../images/ponsors/logo_ffn_390_height-200.png" alt="Logo fédération ecole nationale française">
+                  <img src="../../../images/ponsors/Logo_region_couleur_2011_height-200.jpg" alt="Logo departement Region Réunion">
+                  <img src="../../../images/ponsors/St-Denis_logo_height-200.png">
+              </div>
+              <div class="bloc footer-assoc">
+                  <h3>Contact</h3>
+                  <p>secretariatmoufiaquatik@gmail.com</p>
+                  <p>tel : 02 62 46 52 47</p>
+                  <p>Ste Clotilde 7 allée Kantias <br>BP 23 97490 Saint Denis </p>
+                  <p>FaceBook</p>
+                  <p><span>👤</span>Admin.</p>
+              </div>
+          </div>
+          
+    
+          <!-- <a href="/pages/pages_horaires-&-tarifs/demo-carousel.html" class="demo-carousel">Voir Demo Carousel pour presentation cartes planning & tarif</a> -->
+    
+      </footer>
+      <!-- END  -----------  FOOTER  ------------------>
+
+
+
 
 
 
   </div>
 
   <script src="formulaire-test.js"></script>
+  <script src="../one-select-option.js"></script>
 
 
 </body>
