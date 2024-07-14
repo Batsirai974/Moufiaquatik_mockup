@@ -20,7 +20,7 @@ body {
     grid-template: 100px 600px 1fr 300px / 150px repeat(3, 1fr) 150px;
     z-index: 1;
     /* background-image:url(fond-piscine-original.jpg); */
-    background-image:url(../images/fond-piscine-original.jpg);
+    background-image:url(../../../images/fond-piscine-original.jpg);
     background-color: rgb(100, 187, 245);
   }
 
@@ -52,7 +52,7 @@ body {
   .inscription-mineur-container {
     grid-area: 2/1/5/6;
     width: 100%;
-    height: 800px;
+    height: 1500px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -174,51 +174,9 @@ font-size: 20px;
   color: #aaa;
 }
 
-
-
-
-
-/* Start exemple liste choix activité */
-
-/* .choix-groupe {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.sex-field input[type="checkbox"] {
+  height: 15px;
 }
-
-h2.toggle-options {
-    text-align: center;
-    margin-bottom: 20px;
-    cursor: pointer;
-  }
-  
-  .multi-select {
-    list-style-type: none;
-    padding: 0;
-  }
-
-  .multi-select.hidden {
-    display: none;
-  }
-  
-  .multi-select li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .multi-select input[type="checkbox"] {
-    margin-right: 10px;
-  }
-  
-  .multi-select label {
-    cursor: pointer;
-  } */
-
-  /* End exemple liste choix activité */
-
 
   /* Start liste choix activité */
 
@@ -316,6 +274,80 @@ color: #8b97d7;
     background-position: 100%;
     border: 3px solid #fff;
 }
+
+
+/* START  -----  FOOTER  ------------------------- */
+
+.footer-container {
+  grid-area: 5/1/6/6;
+  background: #333;
+  z-index: 100;
+  flex-shrink: 0;
+}
+
+.content-footer {
+  display: flex;
+  width: 100%;
+  color: #f1f1f1;
+}
+
+.footer-horaire {
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+.footer-horaire img {
+  width: 200px;
+}
+
+.footer-horaire  h3 {
+  font-weight: 400;
+  font-size: 1.2em;
+  padding-bottom: 20px;
+}
+
+.footer-horaire .permamence-list {
+  list-style-type: none;
+}
+
+.footer-sponsors {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 15px
+  /* margin: 0 auto; */
+}
+
+.footer-sponsors h2 {
+  display: block;
+  width: 1000px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.footer-sponsors img {
+  height: 120px;
+  margin: 0 15px;
+}
+
+/* .footer-other {
+
+} */
+
+.footer-assoc {
+  font-size: .9em;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+.footer-assoc p:hover {
+  color: #fedf17;
+}
+
+
 
 
 /* Animation */
