@@ -115,10 +115,10 @@ body {
   }
   
   .tarif-container p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     text-align: center;
     line-height: 2;
-    font-weight: 600;
+    font-weight: 500;
   }
   
   .tarif-container {
