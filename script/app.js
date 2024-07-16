@@ -16,7 +16,7 @@ window.onscroll = function() {
     }
     
     startScroll = currentScrolpas;
-    console.log("La position courante est égale à : " +  Math.floor(currentScrolpas));
+    // console.log("La position courante est égale à : " +  Math.floor(currentScrolpas));
     
 }
 
@@ -118,8 +118,8 @@ function toggleModal() {
 const educModal = document.querySelector('.educ-modale-container');
 const educTriger = document.querySelectorAll('.educ-toggle');
 
-console.log(educModal);
-console.log(educTriger);
+// console.log(educModal);
+// console.log(educTriger);
 
 educTriger.forEach(triger => triger.addEventListener('click', toggleEducModale));
 
