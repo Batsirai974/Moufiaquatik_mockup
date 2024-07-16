@@ -25,6 +25,18 @@ window.onscroll = function() {
 
 //  End Show / Hide Nav bar """"""""""""""
 
+
+// Animation texte pass Sport et pass loisir
+setTimeout(() => {
+    document.querySelector('.pass-loisir-container').classList.add('animate');
+  }, 3502); // ajouter la classe animate après 1.5 seconde
+
+
+
+
+
+
+
 // *~~~~~~~~~~~~~~ Start Card """"""""""""""
 const cards = document.querySelectorAll('.card');
 
