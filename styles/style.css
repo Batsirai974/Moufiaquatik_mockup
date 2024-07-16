@@ -80,7 +80,7 @@
   font-size: 1.5em;
   font-weight: 500;
   color: transparent;
-  font-size: 0px;
+  /* font-size: 0px; */
   
 }
 
@@ -135,6 +135,8 @@
  .animate span{
     color: #fedf17;
   }
+
+ 
 
   .pass-loisir-container p:nth-child(2) span::after {
     background: royalblue;
