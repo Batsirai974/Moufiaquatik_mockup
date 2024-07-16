@@ -86,43 +86,43 @@
       <div class="inscription-majeur-overlay">
         <div class="inscription-majeur-content">
           <!-- <button class="inscription-btn inscription-toggle">X</button> -->
-        <!-- possible de mettre direct un script php -->
-        <form action="" class="formBloc">
-            <h3>Formulaire d'<strong>Inscription</strong></h3>
-            <div class="formGroupe field-anime">
-                <label for="nom">Nom</label>
-                <input type="text" id="nom" required >
-            </div>
-            <div class="formGroupe field-anime">
-                <label for="prenom">Prénom</span></label>
-                <input type="text" id="prenom" required>
-            </div>
-            <div class="formGroupe field-anime">
-                <label for="mail">Adresse mail @</label>
-                <input type="email" id="mail" required>
-            </div>
-            <div class="formGroupe field-anime">
-                <label for="phone">Telephone</label>
-                <input type="tel" id="phone">
-            </div>
-            <div class="formGroupe">
-                <label for="birthday" class="special-field">Date de Naissance</label>
-                <input type="date" id="birthday">
-            </div>
-            <div class="formGroupe">
-
-                <label for="sexe" class="special-field">Sexe</label>
-                        <div class="sexe-fields-box">
-                            <div class="sex-field">
-                                <input type="checkbox"  id="sex-option" value="femme">Femme
-                            </div>
-                            <div class="sex-field">
-                                <input type="checkbox"  id="sex-option" value="homme">Homme
-                            </div>
-                        </div>
-                   
-            </div>
-
+          <!-- possible de mettre direct un script php -->
+          <form action="" class="formBloc">
+              <h3>Formulaire d'<strong>Inscription</strong></h3>
+              <div class="formGroupe field-anime">
+                  <label for="nom">Nom</label>
+                  <input type="text" id="nom" required >
+              </div>
+              <div class="formGroupe field-anime">
+                  <label for="prenom">Prénom</span></label>
+                  <input type="text" id="prenom" required>
+              </div>
+              <div class="formGroupe field-anime">
+                  <label for="mail">Adresse mail @</label>
+                  <input type="email" id="mail" required>
+              </div>
+              <div class="formGroupe field-anime">
+                  <label for="phone">Telephone</label>
+                  <input type="tel" id="phone">
+              </div>
+              <div class="formGroupe">
+                  <label for="birthday" class="special-field">Date de Naissance</label>
+                  <input type="date" id="birthday">
+              </div>
+              <div class="formGroupe">
+              
+                  <label for="sexe" class="special-field">Sexe</label>
+                          <div class="sexe-fields-box">
+                              <div class="sex-field">
+                                  <input type="checkbox"  id="sex-option" value="femme">Femme
+                              </div>
+                              <div class="sex-field">
+                                  <input type="checkbox"  id="sex-option" value="homme">Homme
+                              </div>
+                          </div>
+                        
+              </div>
+            
             <div class="choix-activites ">
                 <h2 class="toggle-options">Cliquer pour sélectionner votre choix</h2>
                 
@@ -132,27 +132,27 @@
                     <fieldset>
                         <legend>Natation Adultes</legend>
                         <li>
-                            <input type="checkbox" id="option1" name="options" value="option1">
+                            <input type="checkbox" class="tarif-value" id="option1" name="options" value="option1" data-tarif="230">
                             <label for="option1">Adultes Débutants</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="option1" name="options" value="option1">
+                            <input type="checkbox" class="tarif-value" id="option1" name="options" value="option1"  data-tarif="230">
                             <label for="option1">Adultes Perfectionnment</label>
                         </li>
                     </fieldset>
                     <fieldset>
                         <legend>AquaGym</legend>
                         <li>
-                            <input type="checkbox" id="option2" name="options" value="option2">
+                            <input type="checkbox" class="tarif-value" id="option2" name="options" value="option2" data-tarif="230">
                             <label for="option2">Aqua-Forme</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="option2" name="options" value="option2">
+                            <input type="checkbox" class="tarif-value" id="option2" name="options" value="option2" data-tarif="230">
                             <label for="option2">Aqua-Palmes</label>
                         </li>
                         <li>
-                            <input type="checkbox" id="option2" name="options" value="option2">
-                            <label for="option2">Aqua-Bike</label>
+                            <input type="checkbox" class="tarif-value" id="option4" name="options" value="option4" data-tarif="130">
+                            <label for="option4">Aqua-Bike</label>
                         </li>
                     </fieldset>
 
@@ -161,11 +161,44 @@
             </div>
             <!--End liste choix activités -->
 
+            <div class="Cotisation-bloc">
+              <p id="tarif">Le montant total de votre cotisation est de : <span id="tarif-value">0 €</span></p>
+            </div>
+
+            <!-- Start Mode paiement ----------------------------->
+            <div class="paiement-bloc">
+              <h2>Mode de paiement</h2>
+              <div class="info-paiement">
+                <h4>Vous souhaitez payer par chèque ou en espèces?</h4>
+                <p>Présentez-vous directement au bureau pendant les heures d'ouverture <strong>(Paiement possible en 3 fois en 3 chèques)</strong></p>
+                <p id="permanence"><span>Permanence le : <br>lundi, mercredi et vendredi de 16h15 à 18h00</span></p>
+                <h4>Vous préférez effectuer votre règlement par virement banquaire?</h4>
+                <p>Nous vous communiquons les informations nécessaires par mail après votre inscription.</p>
+              </div>
+              <div class="choix-reglement">
+                <ul>
+                  <legend>Mode de paiement choisi</legend>
+                  <li>
+                    <input type="checkbox" id="option-paiement" name="option-paiement">
+                    <label for="option-paiement">Espèce</label>
+                    <input type="checkbox" id="option-paiement" name="option-paiement">
+                    <label for="option-paiement">Chèque</label>
+                    <input type="checkbox" id="option-paiement" name="option-paiement">
+                    <label for="option-paiement">virement</label>
+                  </li>
+                 
+                </ul>
+              </div>
+
+            </div>
+            <!-- End Mode paiement ----------------------------->
+
+
             <div class="formGroupe">
                 <input type="submit" value="Envoyer" class="buttonSub">
             </div>
 
-        </form>
+          </form>
         </div>
       </div>
     </div>

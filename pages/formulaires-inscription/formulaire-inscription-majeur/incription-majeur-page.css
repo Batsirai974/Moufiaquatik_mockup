@@ -52,7 +52,7 @@ body {
   .inscription-majeur-container {
     grid-area: 2/1/5/6;
     width: 100%;
-    height: 1300px;
+    height: 1750px;
     display: flex;
     justify-content: center;
     /* align-items: center; */
@@ -245,6 +245,68 @@ color: #8b97d7;
 
   /* End liste choix activité */
 
+  /* Start Montant cotisation */
+  .Cotisation-bloc {
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #8b97d7;
+  }
+
+  /* End Montant cotisation */
+
+  /* Start mode de paiement ----------------------- */
+
+.paiement-bloc {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border: 1px solid #8b97d7;
+    border-radius: 5px;
+}
+
+.paiement-bloc h2 {      color: #8b97d7;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      text-align: center;
+}
+
+.info-paiement {
+  margin-bottom: 20px;
+  color: #222;
+  line-height: 1.3;
+  font-size: 1em;
+}
+
+.info-paiement h4 {
+  padding: 10px 0;
+}
+
+.info-paiement strong {
+  color: #777;
+  font-weight: 300;
+}
+
+.info-paiement #permanence {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.info-paiement span {
+  color: #5260ad;
+}
+
+.choix-reglement li{
+  list-style-type: none;
+  padding: 10px 20px
+}
+
+.choix-reglement label {
+  margin-right: 20px;
+}
+
+  /* End mode de paiement ----------------------- */
 
 
 /* button submit */
