@@ -11,7 +11,7 @@ body {
 .main-container {
     display: grid;
     /* grid-template: 70px 700px 1000px 10% / 100px repeat(3, 1fr) 100px; */
-    grid-template: 100px 700px 1fr 300px / 150px repeat(3, 1fr) 150px;
+    grid-template: 100px 720px 1fr 300px / 150px repeat(3, 1fr) 150px;
     z-index: 1;
     background-image:url(../../images/fond-piscine-original.jpg);
     background-color: rgb(100, 187, 245);
@@ -51,7 +51,7 @@ body {
 .planning-tarif-content {
     position: relative;
     width: 30%;
-    height: 630px;
+    height: 650px;
     top: 40px;
     border: 2px solid #fff;
     border-radius: 15px;
@@ -61,27 +61,14 @@ body {
     background: #fff;
   }
 
- 
-.tarif-main-content {
-  position: relative;
-  opacity: 0;
-  width: 30%;
-  height: 550px;
-  top: 40px;
-  border: 2px solid #72f367;
-  border-radius: 15px;
-  margin: 0 auto;
-  padding: 0 30px;
-  text-align: justify;
-  background: #fff;
-}
+
 
 /* Content ------------------------------------------ */
 
 .planning-tarif-content h2 {
   text-align: center;
   font-size: 2rem;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 5px;
   color: #72f367;
 }
@@ -111,8 +98,18 @@ body {
   font-size: 0.9em;
   font-weight: 400;
   padding: 8px 10px;
-  border: 1px solid #72f367;
+  margin-bottom: 15px;
+  border: 1px solid #c0fabb;
   border-radius: 5px;
+}
+
+.places-dispo {
+  font-size: 1.1em;
+  text-align: center;
+  background-color: #c6fdc1;
+}
+.places-dispo span {
+  font-weight: 500;
 }
 
 .tarif-container {
@@ -135,8 +132,8 @@ body {
   border: 2px solid #fedf17;
   border: 2px solid #72f367;
   border-radius: 5px;
-  width: auto;
-  margin-top: 15px;
+  width: 300px;
+  margin: 15px auto ;
   padding: 15px 0;
 }
 
@@ -151,7 +148,7 @@ body {
 
 .tarif-btn-go {
   position: absolute;
-  top: 530px;
+  top: 580px;
   left: 50%;
   transform: translateX(-50%);
   padding: 10px 25px;
@@ -252,3 +249,11 @@ body {
     color: #fedf17;
   }
   
+.facebook-icone-footer {
+  position: relative;
+}
+
+.facebook-icone-footer img {
+  height: 30px;
+  width: 30px;
+}
