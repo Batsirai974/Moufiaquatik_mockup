@@ -11,7 +11,7 @@ body {
 .main-container {
     display: grid;
     /* grid-template: 70px 700px 1000px 10% / 100px repeat(3, 1fr) 100px; */
-    grid-template: 100px 900px 1fr 300px / 150px repeat(3, 1fr) 150px;
+    grid-template: 100px 1100px 1fr 300px / 150px repeat(3, 1fr) 150px;
     z-index: 1;
     background-image:url(../../images/fond-piscine-original.jpg);
     background-color: rgb(100, 187, 245);
@@ -37,6 +37,8 @@ body {
     left: -130px; */
     width: 65%;
   }
+
+  
   
   /* END ---------- Nav-Bar ---------------*/
   
@@ -52,7 +54,7 @@ body {
     position: relative;
     width: 30%;
     /* height: 550px; */
-    height: 800px;
+    height: 970px;
     top: 40px;
     border: 2px solid #fff;
     border-radius: 15px;
@@ -100,12 +102,28 @@ body {
   padding-top: 10px;
 }
 
-.planning-01 {
-  font-size: 0.9em;
-  font-weight: 400;
+.horaire-box {
   padding: 8px 10px;
   border: 1px solid #fedf17;
   border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.planning-01 {
+  font-size: 0.9em;
+  font-weight: 480;
+  /* padding: 8px 10px; */
+  /* border: 1px solid #fedf17; */
+  /* border-radius: 5px; */
+}
+
+.places-dispo {
+  text-align: end;
+  font-size: 0.85em;
+}
+
+.places-dispo span {
+  font-size: 1.2em;
 }
 
 .tarif-container {
