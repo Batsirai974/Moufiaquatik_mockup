@@ -126,6 +126,17 @@
     animation-delay: 3s;
   }
 
+  .facebook-icone-main {
+    position: fixed;
+    top: 650px;
+    left: 30px;
+    z-index: 50;
+  }
+
+  .facebook-icone-main img {
+    width: 40px;
+  }
+
   /* .animate {
     border-radius: 15px;
     background: rgba(255, 255, 255, 0.2);
@@ -404,7 +415,14 @@
   color: #fedf17;
 }
 
+.facebook-icone-footer {
+  position: relative;
+}
 
+.facebook-icone-footer img {
+  height: 30px;
+  width: 30px;
+}
 
 /* .demo-carousel {
   position: relative;

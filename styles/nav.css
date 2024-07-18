@@ -5,7 +5,7 @@
 
 .list-items-nav {
     position: relative;
-    width: 100%;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -98,4 +98,14 @@
 .sous-list-club .item-sous-list-club a:hover::after {
     transform: scaleX(1);
 
+}
+
+.facebook-icone-nav {
+    position: absolute;
+    right: 30px;
+}
+
+.facebook-icone-nav img {
+    height: 50px;
+    width: 50px;
 }

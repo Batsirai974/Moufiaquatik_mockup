@@ -49,6 +49,16 @@ body {
               transform 0.4s 0.2s ease-out;
   }
 
+  .facebook-icone-contact {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+
+  .facebook-icone-contact img {
+    width: 30px;
+  }
+
   .contact-content h2 {
     text-align: center;
     padding: 20px;
