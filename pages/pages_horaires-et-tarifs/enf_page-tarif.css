@@ -269,3 +269,12 @@ body {
   color: #fedf17;
 }
 
+
+.facebook-icone-footer {
+  position: relative;
+}
+
+.facebook-icone-footer img {
+  height: 30px;
+  width: 30px;
+}

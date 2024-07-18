@@ -78,7 +78,7 @@ body {
   .horaire-container {
     position: relative;
     width: 300px;
-    top: 50px;
+    top: 10px;
     padding: 20px;
     font-size: 1.3rem;
     text-align: center;
@@ -88,10 +88,19 @@ body {
     /* background: lightblue; */
   }
   
+    .places-dispo {
+      font-size: 1.1em;
+      text-align: center;
+      background-color: #ffccdc;
+    }
+    .places-dispo span {
+      font-weight: 500;
+    }
+  
   .tarif-container {
       position: relative;
       width: 300px;
-      top: 40px;
+      top: 20px;
       padding: 15px;
       font-size: 1.3rem;
       text-align: center;
@@ -105,7 +114,7 @@ body {
   
   .tarif-btn-go {
       position: absolute;
-      top: 430px;
+      top: 440px;
       left: 50%;
       transform: translateX(-50%);
       margin-top: 20px;
@@ -207,4 +216,11 @@ body {
   color: #fedf17;
 }
 
+.facebook-icone-footer {
+  position: relative;
+}
 
+.facebook-icone-footer img {
+  height: 30px;
+  width: 30px;
+}
