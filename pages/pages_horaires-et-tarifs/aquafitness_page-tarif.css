@@ -49,7 +49,7 @@ body {
 
 }
   
-.aqua-bike-planning-tarif-content {
+.aqua-fitness-planning-tarif-content {
     position: relative;
     width: 30%;
     height: 550px;
@@ -63,15 +63,15 @@ body {
   }
 
 
-  .aqua-bike-planning-tarif-content h2 {
+  .aqua-fitness-planning-tarif-content h2 {
     text-align: center;
     font-size: 2rem;
     margin-top: 40px;
     margin-bottom: 5px;
-    color: #be01fe;
+    color: #01b4ff;
   }
   
-  .aqua-bike-planning-tarif-content h2 + p {
+  .aqua-fitness-planning-tarif-content h2 + p {
     text-align: center;
     font-size: 1.1rem;
   }
@@ -91,7 +91,7 @@ body {
   
   .tarif-container {
       position: relative;
-      width: 300px;
+      width: auto;
       top: 20px;
       padding: 15px;
       font-size: 1.3rem;
@@ -99,9 +99,18 @@ body {
       line-height: 2;
       font-weight: 600;
       margin: 10px auto;
-      /* background: lightblue; */
-      border: 2px solid #be01fe;
+      border: 2px solid #01b4ff;
+
       border-radius: 5px;
+  }
+
+  .tarif-container p {
+    line-height: 1.3;
+  }
+  
+  .tarif-container span {
+    font-size: 1rem;
+    font-weight: 400;
   }
 
   #note-adhesion {
@@ -119,7 +128,7 @@ body {
       transform: translateX(-50%);
       margin-top: 20px;
       padding: 10px 25px;
-      background: #be01fe;
+      background: #01b4ff;
       text-decoration: none;
       color: #fff;
       border-radius: 25px;

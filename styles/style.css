@@ -147,8 +147,6 @@
     color: #fedf17;
   }
 
- 
-
   .pass-loisir-container p:nth-child(2) span::after {
     background: royalblue;
     /* animation: slide-in 2s 0.3s ease-out forwards, */
@@ -261,8 +259,6 @@
   visibility: visible;
   /* background: #333333d3; */
 }
-
-
 
 /* End TARIFS SECTION  ------------------------------------ */
 

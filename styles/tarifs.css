@@ -49,10 +49,8 @@ root {
   /* background: #72f367; */
   /* background: rgb(98, 109, 141); */
   background: transparent;
-
   transform: translateY(calc(+50% - 50px));
   transition: opacity 0.4s ease-out, transform 0.4s ease-out;
-
   font-family: "poppins", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1em;
 }
@@ -90,7 +88,7 @@ root {
 
 .tarifs-container .tarifs-drop {
   position: relative;
-  width: 350px;
+  width: 380px;
   height: 350px;
   /* background: #333; */
   background: #b5ecf8;
@@ -112,10 +110,16 @@ root {
   border-radius: 61% 39% 52% 48% / 44% 59% 41% 56%;
 }
 .tarifs-container .tarifs-drop:nth-child(3) {
-  border-radius: 35% 65% 31% 69% / 57% 59% 41% 43%;
+  border-radius: 39% 61% 47% 53% / 52% 60% 40% 48% ;
 }
 .tarifs-container .tarifs-drop:nth-child(4) {
   border-radius: 41% 59% 52% 48% / 52% 42% 58% 48%;
+}
+.tarifs-container .tarifs-drop:nth-child(5) {
+  border-radius: 61% 39% 52% 48% / 44% 59% 41% 56%;
+}
+.tarifs-container .tarifs-drop:nth-child(6) {
+  border-radius: 57% 43% 43% 57% / 43% 43% 57% 57%;
 }
 
 .tarifs-container .tarifs-drop:hover {
@@ -162,9 +166,9 @@ root {
 
 .tarifs-container .tarifs-drop .tarifs-content h2 {
   position: relative;
-  width: 80px;
+  /* width: 80px; */
   width: 300px;
-  height: 80px;
+  height: 70px;
   background: #eff0f4;
   background: transparent;
   border-radius: 50%;
@@ -175,7 +179,7 @@ root {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2em;
+  /* font-size: 2em; */
   font-size: 1.8em;
   color: var(--clr);
 }
