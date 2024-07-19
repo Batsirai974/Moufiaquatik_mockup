@@ -11,7 +11,7 @@ body {
 .main-container {
     display: grid;
     /* grid-template: 70px 700px 1000px 10% / 100px repeat(3, 1fr) 100px; */
-    grid-template: 100px 600px 1fr 300px / 150px repeat(3, 1fr) 150px;
+    grid-template: 100px 650px 1fr 300px / 150px repeat(3, 1fr) 150px;
     z-index: 1;
     background-image:url(../../images/fond-piscine-original.jpg);
     background-color: rgb(100, 187, 245);
@@ -241,4 +241,19 @@ body {
 
 .footer-assoc p:hover {
   color: #fedf17;
+}
+  
+.facebook-icone-footer {
+  position: relative;
+  margin-right: 25px;
+}
+
+.facebook-icone-footer img {
+  height: 30px;
+  width: 30px;
+}
+
+#logo-admin {
+  /* height: 50px; */
+  font-size: 2em;
 }

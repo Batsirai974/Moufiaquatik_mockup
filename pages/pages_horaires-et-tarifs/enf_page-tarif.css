@@ -272,9 +272,16 @@ body {
 
 .facebook-icone-footer {
   position: relative;
+  margin-right: 25px;
+
 }
 
 .facebook-icone-footer img {
   height: 30px;
   width: 30px;
+}
+
+#logo-admin {
+  /* height: 50px; */
+  font-size: 2em;
 }
