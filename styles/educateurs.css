@@ -60,7 +60,7 @@
 
 .educ-card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   column-gap: 2.5em;
   /* row-gap: 2.5em; */
 }
@@ -72,7 +72,7 @@
 .card-body {
   position: relative;
   background: #fff;
-  width: 349px;
+  width: 300px;
   /* height: fit-content; */
   height: 500px;
   border-radius: 15px;
@@ -97,7 +97,7 @@
 
 .card-images .card-figure {
   position: relative;
-  top: 8px;
+  top: 7px;
   z-index: 1;
   width: 57.3%;
   transition: transform 0.3s ease-out;
