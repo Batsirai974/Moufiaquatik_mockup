@@ -49,6 +49,22 @@
   /* background-color: lightgray; */
 }
 
+.img-sport-loisirs {
+  position: absolute;
+  top: 150px;
+  /* width: 120px; */
+  height: 50px;
+}
+
+.pass-sport {
+  left: 20px;
+  height: 40px;
+}
+
+.pass-loisirs {
+  right: 20px;
+}
+
 .accueil-container .img-container {
   position: relative;
   top: 0px;
