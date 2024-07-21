@@ -3,6 +3,10 @@
     margin-left: 30px;
 }
 
+.hamburger {
+    display: none;
+}
+
 .list-items-nav {
     position: relative;
     width: 70%;
@@ -108,4 +112,88 @@
 .facebook-icone-nav img {
     height: 50px;
     width: 50px;
+}
+
+@media (max-width: 940px) {
+
+    .nav-container {
+        position: relative;
+    }
+
+    .logo-container {
+        order: 2;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        position: relative;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        left: 20px;
+        cursor: pointer;
+        border: none;
+        display: flex;
+        background: #fafafa;
+      }
+    
+      .hamburger span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #333;
+        position: absolute;
+        pointer-events: none;
+        transition: opacity 0.3s 0.15s ease-out;
+      }
+
+      .hamburger span:nth-child(1),
+  .hamburger span:nth-child(3) {
+    transition: transform 0.3s ease-out;
+  }
+  .hamburger span:nth-child(1) {
+    transform: translateY(10px);
+  }
+  .hamburger span:nth-child(3) {
+    transform: translateY(-10px);
+  }
+
+  .hamburger.open span:nth-child(1) {
+    transform: translate(0) rotate(135deg);
+  }
+  .hamburger.open span:nth-child(2) {
+    opacity: 0;
+    transition: opacity 0s ease-out;
+  }
+  .hamburger.open span:nth-child(3) {
+    transform: translate(0) rotate(-135deg);
+  }
+
+    .list-items-nav {
+        position: absolute;
+        order: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 0;
+        top: 100%;
+        left: 0;
+        width: auto;
+        height: 100vh;
+        padding: 15px 50px 15px 20px;
+        border-right: 1px solid #c5c5c6;
+        background-color: #fafafa;
+        transform: translate(-100%);
+        transition: transform 0.3s ease-out;
+    }
+
+    .open {
+        transform: translate(0%);
+    }
+
+    .facebook-icone-nav {
+        order: 3;
+    }    
+
 }

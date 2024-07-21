@@ -25,6 +25,29 @@ window.onscroll = function() {
 
 //  End Show / Hide Nav bar """"""""""""""
 
+//   Start anime hamburger  """""""""""""""""
+const hamburgerToggler = document.querySelector('.hamburger');
+const navLinksContainer = document.querySelector('.list-items-nav');
+
+const toggleNav = () => {
+    hamburgerToggler.classList.toggle("open");
+
+    const ariaToggle = hamburgerToggler.getAttribute('aria-expanded') === 'true'? 'false': 'true';
+    hamburgerToggler.setAttribute('aria-expanded', ariaToggle)
+    navLinksContainer.classList.toggle("open");
+}
+
+hamburgerToggler.addEventListener("click", toggleNav);
+new ResizeObserver(entries => {
+    if(entries[0].contentRect.width <= 900){
+        navLinksContainer.style.transition = "transform 0.3s ease-out"
+    } else {
+        navLinksContainer.style.transition = "none"
+    }
+}).observe(document.body)
+
+//   End anime hamburger  """""""""""""""""
+
 
 // Animation texte pass Sport et pass loisir
 setTimeout(() => {
