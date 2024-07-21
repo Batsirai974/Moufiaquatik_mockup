@@ -252,6 +252,11 @@ color: #8b97d7;
     border: 1px solid #8b97d7;
   }
 
+  #nb-txt {
+    font-size: 0.8em;
+    color: #333;
+  }
+
   /* End Montant cotisation */
 
   /* Start mode de paiement ----------------------- */
@@ -290,6 +295,7 @@ color: #8b97d7;
 
 .info-paiement #permanence {
   text-align: center;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
@@ -324,6 +330,7 @@ color: #8b97d7;
 .modal-content {
   position: absolute;
   background-color: #fff;
+  background-color: #fffea7;
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 5px;
