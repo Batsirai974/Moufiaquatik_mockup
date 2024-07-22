@@ -1,0 +1,92 @@
+@media (max-width: 430px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* Navbar  """"""""""""""""""""""""""""""""""""""""""" */
+    .nav-container {
+        position: fixed;
+        top: 0;
+        display: flex;
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .logo-container {
+        width: 110%;
+        height: 40px;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .logo-container .logo {
+        height: 40px;
+    }
+
+    .list-items-nav {
+        padding: 10px 20px;
+        font-size: 0.9em;
+    }
+
+    .list-items-nav .item {
+        padding-bottom: 10px;
+    }
+
+    .facebook-icone-nav {
+        right: 10px;
+    }
+
+    .facebook-icone-nav img {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Accueil  """""""""""""""""""""""""""""""""""""""" */
+    .accueil-container {
+        position: relative;
+        top: 65px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .img-sport-loisirs {
+        display: none;
+    }
+
+    .accueil-container .img-container {
+        position: relative;
+        width: 310px;
+        height: 200px;
+        background-color: aquamarine;
+    }
+
+    .img-container img {
+        object-position: 0;
+    }
+
+    .pass-loisir-container {
+        display: none;
+    }
+
+    /* Galerie  '''''''''''''''''''''''''''''''' */
+    .cards-section {
+            width: 310px;
+            margin:  auto;
+    }
+
+    .card-container{
+        width: 310px;
+    }
+
+
+    .facebook-icone-main {
+        display: none;
+    }
+
+}

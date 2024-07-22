@@ -1,26 +1,83 @@
 
 // * Start Show / Hide Nav bar """"""""""""""
 
+// let startScroll = window.scrollY;
+
+// window.onscroll = function() {
+//     let currentScrolpas = window.scrollY;
+
+//             if(startScroll > currentScrolpas) {
+//                 document.querySelector('.nav-container').style.top = "0";
+                
+//             }else {
+//                 document.querySelector('.nav-container').style.top = '-100px';
+//             }
+            
+//             startScroll = currentScrolpas;
+    
+// }
+
+// test 01
+
+// let navbar = document.querySelector('.nav-container');
+// let startScroll = 0;
+
+// window.onscroll = function() {
+//   let currentScroll = window.scrollY;
+//   let screenWidth = window.innerWidth;
+
+//   if (screenWidth >= 940) {
+//     // Si la largeur de l'écran est supérieure à 940px, nous appliquons le comportement de disparition de la navbar
+//     if (startScroll > currentScroll) {
+//       navbar.style.top = "0";
+//     } else {
+//       navbar.style.top = '-100px';
+//     }
+//   } else {
+//     // Si la largeur de l'écran est inférieure ou égale à 940px, nous laissons la navbar visible
+//     navbar.style.top = "0";
+//   }
+
+//   startScroll = currentScroll;
+// }
+
+// test 02 laisse la nav visible en small mais inactive fonctionnalite en big
+
+// const navbar = document.querySelector('.nav-container');
+
+// const screenWidth = window.innerWidth;
+// console.log(screenWidth);
+// window.addEventListener('resize', () => {
+//   if (screenWidth <= 320) {
+//     navbar.classList.remove('hidden');
+//     navbar.style.position = 'fixed';
+//     navbar.style.top = '0';
+//   } else {
+//   }
+// });
+
+// test 03
+
 let startScroll = window.scrollY;
-// console.log(`start scrol est égal à : ${startScroll}`);
 
 window.onscroll = function() {
-    let currentScrolpas = window.scrollY;
+  let currentScroll = window.scrollY;
+  let screenWidth = window.innerWidth;
 
-    if(startScroll > currentScrolpas) {
-        document.querySelector('.nav-container').style.top = "0";
-        
-    }else {
-        // document.getElementsByClassName('nav-container').style.top = '-100px';
-        document.querySelector('.nav-container').style.top = '-100px';
-    }
-    
-    startScroll = currentScrolpas;
-    // console.log("La position courante est égale à : " +  Math.floor(currentScrolpas));
-    
+  if (screenWidth <= 430) {
+    // Lorsque la largeur de l'écran est de 320px ou moins, afficher la barre de navigation et désactiver l'effet de défilement
+    document.querySelector('.nav-container').style.top = "0";
+    return; // Sortir de la fonction pour empêcher l'effet de défilement
+  }
+
+  if (startScroll > currentScroll) {
+    document.querySelector('.nav-container').style.top = "0";
+  } else {
+    document.querySelector('.nav-container').style.top = '-100px';
+  }
+
+  startScroll = currentScroll;
 }
-
-// console.log("La position de départ est égale à : " +  startScroll);
 
 
 //  End Show / Hide Nav bar """"""""""""""

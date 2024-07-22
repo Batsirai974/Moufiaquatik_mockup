@@ -114,23 +114,35 @@
     width: 50px;
 }
 
+/* Media Query """"""""""""""""""""""""""""""""""""""" */
+
 @media (max-width: 940px) {
 
     .nav-container {
+        grid-area: 1 / 1 / 2 / 2;
         position: relative;
+        width: 100%;
+        height: 70px;
     }
 
     .logo-container {
         order: 2;
-        margin: 0 auto;
+        /* width: 300px; */
+        width: 10%;
+        height: 100%;
+        margin: 0 300px;
+    }
+
+    .logo-container .logo {
+        height:60px;
     }
 
     .hamburger {
         position: relative;
         align-items: center;
-        width: 30px;
-        height: 30px;
-        left: 20px;
+        width: 20px;
+        height: 20px;
+        left: 15px;
         cursor: pointer;
         border: none;
         display: flex;
@@ -152,10 +164,10 @@
     transition: transform 0.3s ease-out;
   }
   .hamburger span:nth-child(1) {
-    transform: translateY(10px);
+    transform: translateY(7px);
   }
   .hamburger span:nth-child(3) {
-    transform: translateY(-10px);
+    transform: translateY(-7px);
   }
 
   .hamburger.open span:nth-child(1) {
@@ -194,6 +206,13 @@
 
     .facebook-icone-nav {
         order: 3;
-    }    
+        position: relative;
+        right: 20px;
+    }
+
+    .facebook-icone-nav img {
+        width: 30px;
+        height: 30px;
+    }
 
 }
