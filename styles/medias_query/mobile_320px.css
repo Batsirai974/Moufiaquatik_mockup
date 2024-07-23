@@ -2,7 +2,6 @@
     .main-container {
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         width: 100%;
         overflow: hidden;
     }
@@ -50,9 +49,9 @@
     /* Accueil  """""""""""""""""""""""""""""""""""""""" */
     .accueil-container {
         position: relative;
+        display: block;
         top: 65px;
         height: 200px;
-        margin-bottom: 20px;
     }
 
     .img-sport-loisirs {
@@ -62,12 +61,14 @@
     .accueil-container .img-container {
         position: relative;
         width: 310px;
-        height: 200px;
+        margin: 0 auto;
         background-color: aquamarine;
     }
 
     .img-container img {
+        object-fit: cover;
         object-position: 0;
+
     }
 
     .pass-loisir-container {
@@ -76,12 +77,16 @@
 
     /* Galerie  '''''''''''''''''''''''''''''''' */
     .cards-section {
-            width: 310px;
-            margin:  auto;
+        position:  relative;
+        top: 100px;
+        width: 310px;
+        display: block;
+        margin: 0 auto;
     }
-
+    
     .card-container{
         width: 310px;
+        
     }
 
 
