@@ -81,10 +81,10 @@
                   <label for="sexe" class="special-field">Sexe</label>
                           <div class="sexe-fields-box">
                               <div class="sex-field">
-                                  <input type="checkbox"  id="sex-option" value="femme">Femme
+                                  <input type="checkbox" class="sex-option"  id="sex-option-f" value="femme">Femme
                               </div>
                               <div class="sex-field">
-                                  <input type="checkbox"  id="sex-option" value="homme">Homme
+                                  <input type="checkbox" class="sex-option"  id="sex-option-h" value="homme">Homme
                               </div>
                           </div>
                         
@@ -95,36 +95,33 @@
                 
 
                 <ul class="multi-select hidden">
-                    
-                    <fieldset>
-                        <legend>Natation Adultes</legend>
-                        <li>
-                            <input type="checkbox" class="tarif-value" id="option1" name="options" value="option1" data-tarif="230">
-                            <label for="option1">Adultes Débutants</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" class="tarif-value" id="option1" name="options" value="option1"  data-tarif="230">
-                            <label for="option1">Adultes Perfectionnment</label>
-                        </li>
-                    </fieldset>
-                    <fieldset>
-                        <legend>AquaGym</legend>
-                        <li>
-                            <input type="checkbox" class="tarif-value" id="option2" name="options" value="option2" data-tarif="230">
-                            <label for="option2">Aqua-Forme</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" class="tarif-value" id="option2" name="options" value="option2" data-tarif="230">
-                            <label for="option2">Aqua-Palmes</label>
-                        </li>
-                        <li>
-                            <input type="checkbox" class="tarif-value" id="option4" name="options" value="option4" data-tarif="130">
-                            <label for="option4">Aqua-Bike</label>
-                        </li>
-                    </fieldset>
-
-
-                </ul>
+                  <fieldset class="activite-A">
+                      <legend>Natation Adultes</legend>
+                      <li>
+                          <input type="checkbox" class="tarif-value option1" id="option1" name="options" value="option1" data-tarif="230">
+                          <label for="option1">Adultes Débutants</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" class="tarif-value option1" id="option2" name="options" value="option2" data-tarif="230">
+                          <label for="option2">Adultes Perfectionnment</label>
+                      </li>
+                  </fieldset>
+                  <fieldset class="activite-B">
+                      <legend>AquaGym</legend>
+                      <li>
+                          <input type="checkbox" class="tarif-value" id="option3" name="options-aquaform" value="option3" data-tarif="230">
+                          <label for="option3">Aqua-Forme</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" class="tarif-value" id="option4" name="options-aquapalmes" value="option4" data-tarif="230">
+                          <label for="option4">Aqua-Palmes</label>
+                      </li>
+                      <li>
+                          <input type="checkbox" class="tarif-value" id="option5" name="options-aquabike" value="option5" data-tarif="130">
+                          <label for="option5">Aqua-Bike</label>
+                      </li>
+                  </fieldset>
+              </ul>
             </div>
             <!--End liste choix activités -->
 
@@ -152,12 +149,14 @@
                 <ul>
                   <legend>Mode de paiement choisi</legend>
                   <li>
-                    <input type="checkbox" id="option-paiement" name="option-paiement">
-                    <label for="option-paiement">Espèce</label>
-                    <input type="checkbox" id="option-paiement"  class="cheque-option" name="option-paiement">
-                    <label for="option-paiement">Chèque</label>
-                    <input type="checkbox" id="option-paiement" name="option-paiement">
-                    <label for="option-paiement">virement</label>
+                    <input type="checkbox" class="option-paiement" id="option-paiement1" name="option-paiement">
+                    <label for="option-paiement1">Espèce</label>
+
+                    <input type="checkbox" class="option-paiement cheque-option" id="option-paiement2"  class="cheque-option" name="option-paiement">
+                    <label for="option-paiement2">Chèque</label>
+                    
+                    <input type="checkbox" class="option-paiement" id="option-paiemen3" name="option-paiement">
+                    <label for="option-paiement3">virement</label>
                   </li>
                 </ul>
                 <div class="modal" id="myModal">

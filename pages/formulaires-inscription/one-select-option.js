@@ -1,5 +1,5 @@
 // Sélectionner un seul choix pour le type sexe
-const sexeOption = document.querySelectorAll("#sex-option");
+const sexeOption = document.querySelectorAll(".sex-option");
 // console.log(sexeOption);
 
 sexeOption.forEach(checkOption => {
@@ -14,20 +14,70 @@ sexeOption.forEach(checkOption => {
 
 // Sélectionner une seule activitée
 
-const options = document.querySelectorAll("#option1");
+// const options = document.querySelectorAll(".option1");
 
-options.forEach(option => {
-    option.addEventListener('change', () => {
-        options.forEach(otherOption => {
-            if (otherOption != option) {
-                otherOption.checked= false;
-            }
-        })
-    });
-})
+// options.forEach(option => {
+//     option.addEventListener('change', () => {
+//         options.forEach(otherOption => {
+//             if (otherOption != option) {
+//                 otherOption.checked= false;
+//             }
+//         })
+//     });
+// })
+
+// Afficher montant cotisation
+
+// const multiSelect2 = document.querySelector('.multi-select');
+// const checkboxes = multiSelect2.querySelectorAll('input[type="checkbox"]');
+// let tarifElement = document.getElementById('tarif-value');
+
+// Tarifs pour chaque case à cocher
+// const tarifs = {
+//     option1: 230,
+//     option2: 230,
+//     option3: 230,
+//     option5: 130  //option spécial Aqua-Bike
+// };
+
+// Tarifs pour les combinaisons de case a  cocher
+// const comboTarifs = {
+    // 2: 350,  //Tarif si deux case a cocher hors aqua-bike sont cocher
+    // 3: 580   // Tarif si les trois case a cocher sont sélectionner
+// };
+
+// checkboxes.forEach(checkbox => {
+//     checkbox.addEventListener('change', () => {
+//         let tarif = 0;
+//         const checkedCount = Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
+//         const checkedOptions = Array.from(checkboxes).filter(checkbox => checkbox.checked).map(checkbox => checkbox.id);
+
+        // Appliquer les tarifs individuels pour chaque case à cocher
+    // checkedOptions.forEach(option => {
+    //     if (option === 'option4') {
+    //       tarif += parseInt(Array.from(checkboxes).find(checkbox => checkbox.id === 'option4').dataset.tarif);
+    //     } else {
+    //       tarif += tarifs[option];
+    //     }
+    //   });
+  
+      // Appliquer les tarifs pour les combinaisons de case à cocher
+//       if (checkedCount === 2 && !checkedOptions.includes('option4')) {
+//         tarif = comboTarifs[2];
+//       } else if (checkedCount === 3 && !checkedOptions.includes('option4')) {
+//           tarif = comboTarifs[3];
+//         }
+        
+//         tarifElement.textContent = `${tarif} €`
+//     });
+// });
+
+
+
+
 
 // Sélectionner un seul mode paiement 
-const optionsPaiement = document.querySelectorAll("#option-paiement");
+const optionsPaiement = document.querySelectorAll(".option-paiement");
 
 optionsPaiement.forEach(option => {
     option.addEventListener('change', () => {
@@ -40,7 +90,15 @@ optionsPaiement.forEach(option => {
 })
 
 
-// Afficher montant cotisation
+
+
+
+
+
+
+// archive :
+
+// afficher montant cotisation
 
 // Méthode 1  --------------------------------------------------
 // const multiSelect2 = document.querySelector('.multi-select');
@@ -90,33 +148,10 @@ optionsPaiement.forEach(option => {
 //     });
 // });
 
-// Méthode 3  ----------------------------------------------------------
 
-const multiSelect2 = document.querySelector('.multi-select');
-const checkboxes = multiSelect2.querySelectorAll('input[type="checkbox"]');
-let tarifElement = document.getElementById('tarif-value');
 
-// Tarifs pour chaque case à cocher
-const tarifs = {
-    option1: 230,
-    option2: 230,
-    option3: 230,
-    option4: 130  //option spécial Aqua-Bike
-};
 
-// Tarifs pour les combinaisons de cacse a  cocher
-const comboTarifs = {
-    2: 350,  //Tarif si deux case a cocher hors aqua-bike sont cocher
-    3: 580   // Tarif si les trois case a cocher sont sélectionner
-};
-
-checkboxes.forEach(checkbox => {
-    checkbox.addEventListener('change', () => {
-        let tarif = 0;
-        const checkedCount = Array.from(checkboxes).filter(checkbox => checkbox.checked).length;
-        const checkedOptions = Array.from(checkboxes).filter(checkbox => checkbox.checked).map(checkbox => checkbox.id);
-
-        //  Appliquer tarif spécial Aqua-bike si elle est sélectionner
+ //  Appliquer tarif spécial Aqua-bike si elle est sélectionner
         // if (checkedOptions.includes('option4')) {
         //     tarif += parseInt(checkboxes.find(checkbox => checkbox.id === 'option4').dataset.tarif);
         // } 
@@ -134,24 +169,3 @@ checkboxes.forEach(checkbox => {
         //         tarif += tarifs[option];
         //     });
         // }
-
-        // Appliquer les tarifs individuels pour chaque case à cocher
-    checkedOptions.forEach(option => {
-        if (option === 'option4') {
-          tarif += parseInt(Array.from(checkboxes).find(checkbox => checkbox.id === 'option4').dataset.tarif);
-        } else {
-          tarif += tarifs[option];
-        }
-      });
-  
-      // Appliquer les tarifs pour les combinaisons de case à cocher
-      if (checkedCount === 2 && !checkedOptions.includes('option4')) {
-        tarif = comboTarifs[2];
-      } else if (checkedCount === 3 && !checkedOptions.includes('option4')) {
-        tarif = comboTarifs[3];
-      }
-
-        tarifElement.textContent = `${tarif} €`
-    });
-});
-

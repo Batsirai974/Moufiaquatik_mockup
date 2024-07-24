@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul class="multi-select hidden">
+        <fieldset class="activite-A">
+            <legend>Natation Adultes</legend>
+            <li>
+                <input type="checkbox" class="tarif-value option1" id="option1" name="options" value="option1" data-tarif="230">
+                <label for="option1">Adultes Débutants</label>
+            </li>
+            <li>
+                <input type="checkbox" class="tarif-value option1" id="option2" name="options" value="option2" data-tarif="230">
+                <label for="option2">Adultes Perfectionnment</label>
+            </li>
+        </fieldset>
+        <fieldset class="activite-B">
+            <legend>AquaGym</legend>
+            <li>
+                <input type="checkbox" class="tarif-value" id="option3" name="options-aquaform" value="option3" data-tarif="230">
+                <label for="option3">Aqua-Forme</label>
+            </li>
+            <li>
+                <input type="checkbox" class="tarif-value" id="option4" name="options-aquapalmes" value="option4" data-tarif="230">
+                <label for="option4">Aqua-Palmes</label>
+            </li>
+            <li>
+                <input type="checkbox" class="tarif-value" id="option5" name="options-aquabike" value="option5" data-tarif="130">
+                <label for="option5">Aqua-Bike</label>
+            </li>
+        </fieldset>
+    </ul>
+
+    <div class="Cotisation-bloc">
+      <p id="tarif">Le montant total de votre cotisation est de : <span id="tarif-value">0 €</span></p>
+      <br>
+      <p id="nb-txt">NB : si vous êtes éligibles au Pass’Sport ou au Pass Loisirs, merci de déduire le montant à la cotisation et nous transmettre le justificatif (par mail ou lors des permanences).</p>
+    </div>
+
+    <script src="test02.js"></script>
+    
+</body>
+</html>
