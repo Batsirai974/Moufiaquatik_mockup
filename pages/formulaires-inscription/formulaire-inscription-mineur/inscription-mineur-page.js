@@ -61,3 +61,80 @@ toggleListChoix.addEventListener('click', function(){
 //     });
 // })
 
+
+// Sélectionner une seule activitée
+
+// const enfOptions = document.querySelector('.enf-option');
+
+// enfOptions.forEach(option => {
+//     option.addEventListener('change', () => {
+//         enfOptions.forEach(otherOption => {
+//             if(otherOption != option) {
+//                 otherOption.checked = false;
+//             }
+//         })
+//     });
+// })
+
+// Selection unique et calcul de cotisation
+
+document.addEventListener('DOMContentLoaded', () => {
+    const checkboxes = document.querySelectorAll('.enf-option');
+    const tarifElement = document.getElementById('tarif-value');
+
+    checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                // Uncheck all other checkboxes
+                checkboxes.forEach((otherCheckbox) => {
+                    if (otherCheckbox !== checkbox) {
+                        otherCheckbox.checked = false;
+                    }
+                });
+                // Set the tarif value to 230
+                tarifElement.textContent = '230 €';
+            } else {
+                // Reset the tarif value to 0 when no checkbox is selected
+                tarifElement.textContent = '0 €';
+            }
+        });
+    });
+});
+
+
+
+
+// affichage modale instruction cheque
+
+const blocPaiement = document.querySelector(".paiement-bloc")
+const checkboxes_p = blocPaiement.querySelectorAll('input[type="checkbox"]');
+const modal = document.getElementById('myModal');
+const closeCheqBtn = document.querySelector('.closeChequeBtn');
+
+checkboxes_p.forEach((checkbox) => {
+  checkbox.addEventListener('change', function() {
+    if (this.checked) {
+      // Deselect all other checkboxes_p
+      checkboxes_p.forEach((otherCheckbox) => {
+        if (otherCheckbox !== this) {
+          otherCheckbox.checked = false;
+        }
+      });
+      // Show modal if .cheque-option is checked
+      if (this.classList.contains('cheque-option')) {
+        modal.style.display = 'block';
+      } else {
+        modal.style.display = 'none';
+      }
+    } else {
+      // If the checkbox is unchecked, hide the modal
+      modal.style.display = 'none';
+    }
+  });
+});
+
+// Écouter le clic sur le bouton "Fermer" pour masquer la modale
+  closeCheqBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+  modal.style.display = 'none';
+});

@@ -120,15 +120,14 @@
           </div>
           <div class="formGroupe">
               <label for="sexe" class="special-field">Sexe</label>
-                      <div class="sexe-fields-box">
-                          <div class="sex-field">
-                              <input type="checkbox" name="option-sex" id="sex-option" value="femme">Femme
-                           </div>
-                           <div class="sex-field">
-                              <input type="checkbox" name="option-sex" id="sex-option" value="homme">Homme
-                          </div>
-                          
-                      </div>
+                <div class="sexe-fields-box">
+                  <div class="sex-field">
+                      <input type="checkbox" class="sex-option"  id="sex-option-f" value="femme">Femme
+                  </div>
+                  <div class="sex-field">
+                      <input type="checkbox" class="sex-option"  id="sex-option-h" value="homme">Homme
+                  </div>
+            </div>
                  
           </div>
 
@@ -137,40 +136,85 @@
 
               <ul class="multi-select hidden">
                   <li>
-                      <input type="checkbox" id="option1" name="options" value="option1">
+                      <input type="checkbox" class="enf-option" id="option1" name="options" value="option1">
                       <label for="option1">Jardin Aquatique</label>
                   </li>
                   <fieldset>
                       <legend>Ecole de Natation Française</legend>
                       <li>
-                          <input type="checkbox" id="option1" name="options" value="option1">
-                          <label for="option1">Etoile de mer 1</label>
+                          <input type="checkbox" class="enf-option" id="option2" name="options" value="option2">
+                          <label for="option2">Etoile de mer 1</label>
                       </li>
                       <li>
-                          <input type="checkbox" id="option1" name="options" value="option1">
-                          <label for="option1">Etoile de mer 2</label>
+                          <input type="checkbox" class="enf-option" id="option3" name="options" value="option3">
+                          <label for="option3">Etoile de mer 2</label>
                       </li>
                       <li>
-                          <input type="checkbox" id="option1" name="options" value="option1">
-                          <label for="option1">Zourite 1</label>
+                          <input type="checkbox" class="enf-option" id="option4" name="options" value="option4">
+                          <label for="option4">Zourite 1</label>
                       </li>
                       <li>
-                          <input type="checkbox" id="option1" name="options" value="option1">
-                          <label for="option1">Zourite 2</label>
+                          <input type="checkbox" class="enf-option" id="option5" name="options" value="option5">
+                          <label for="option5">Zourite 2</label>
                       </li>
                       <li>
-                          <input type="checkbox" id="option1" name="options" value="option1">
-                          <label for="option1">Requin 1</label>
+                          <input type="checkbox" class="enf-option" id="option6" name="options" value="option6">
+                          <label for="option6">Requin 1</label>
                       </li>
                       <li>
-                          <input type="checkbox" id="option1" name="options" value="option1">
-                          <label for="option1">Marlin / Ados</label>
+                          <input type="checkbox" class="enf-option" id="option7" name="options" value="option7">
+                          <label for="option7">Marlin / Ados</label>
                       </li>
                   </fieldset>
 
               </ul>
           </div>
           <!--End liste choix activités -->
+
+          <div class="Cotisation-bloc">
+            <p id="tarif">Le montant total de votre cotisation est de : <span id="tarif-value">0 €</span></p>
+            <br>
+            <p id="nb-txt">NB : si vous êtes éligible au Pass’Sport ou au Pass Loisirs, merci de déduire le montant à la cotisation et nous transmettre le justificatif (par mail ou lors des permanences).</p>
+          </div>
+
+
+          <!-- Start Mode paiement ----------------------------->
+          <div class="paiement-bloc">
+            <h2>Mode de paiement</h2>
+            <div class="info-paiement">
+              <h4>Vous souhaitez payer par chèque ou en espèces?</h4>
+              <p>Présentez-vous directement au bureau pendant les heures d'ouverture <strong>(Paiement possible en 3 fois en 3 chèques)</strong></p>
+              <!-- <p id="permanence"><span>Permanence le : <br>lundi, mercredi et vendredi de 16h15 à 18h00</span></p> -->
+              <p id="permanence"><span>Permanence tous les jours sauf Sam. et Dim.
+                <br>du 29 Juil. au 09 Août 2024<br>
+                de 16h15 à 18h00</span></p>
+              <h4>Vous préférez effectuer votre règlement par virement bancaire?</h4>
+              <p>Nous vous communiquons les informations nécessaires par mail après votre inscription.</p>
+            </div>
+            <div class="choix-reglement">
+              <ul>
+                <legend>Mode de paiement choisi</legend>
+                <li>
+                  <input type="checkbox" class="option-paiement" id="option-paiement1" name="option-paiement">
+                  <label for="option-paiement1">Espèce</label>
+                  <input type="checkbox" class="option-paiement cheque-option" id="option-paiement2"  class="cheque-option" name="option-paiement">
+                  <label for="option-paiement2">Chèque</label>
+                  
+                  <input type="checkbox" class="option-paiement" id="option-paiemen3" name="option-paiement">
+                  <label for="option-paiement3">virement</label>
+                </li>
+              </ul>
+              <div class="modal" id="myModal">
+                
+                <div class="modal-content">
+                  <button class="closeChequeBtn">X</button>
+                  <p>Merci de libeller votre ou vos chèque(s) à l’ordre de Moufia Aquatik</p>
+                </div>
+              </div>
+            </div>
+          </div>
+                      <!-- End Mode paiement ----------------------------->
+          
 
           <div class="formGroupe">
               <input type="submit" value="Envoyer" class="buttonSub">
