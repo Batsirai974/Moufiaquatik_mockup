@@ -100,6 +100,32 @@ checkboxes.forEach((checkbox) => {
   });
 });
 
+// Affichage modale instruction aqua-bike
+
+const checkboxAquabike = document.querySelector('.option-bike');
+const modale = document.querySelector('.modale-aqua-bike');
+const closeAquabikeBtn = document.querySelector('.closeModal');
+
+// Afficher ou masquer la modale
+function toggleModale() {
+    if (checkboxAquabike.checked) {
+        modale.style.display = 'block'; // Afficher la modale
+    } else {
+        modale.style.display = 'none'; // Masquer la modale
+    }
+}
+
+// Écouter les changements sur la checkbox
+checkboxAquabike.addEventListener('change', toggleModale);
+
+// Écouter le clic sur le bouton "Fermer" pour masquer la modale
+closeAquabikeBtn.addEventListener('click', (e)=>{
+  e.preventDefault();
+
+  modale.style.display = 'none';
+});
+
+
 
 
 // affichage modale instruction cheque
@@ -107,6 +133,7 @@ checkboxes.forEach((checkbox) => {
 const blocPaiement = document.querySelector(".paiement-bloc")
 const checkboxes_p = blocPaiement.querySelectorAll('input[type="checkbox"]');
 const modal = document.getElementById('myModal');
+const closeCheqBtn = document.querySelector('.closeChequeBtn');
 
 checkboxes_p.forEach((checkbox) => {
   checkbox.addEventListener('change', function() {
@@ -128,4 +155,10 @@ checkboxes_p.forEach((checkbox) => {
       modal.style.display = 'none';
     }
   });
+});
+
+// Écouter le clic sur le bouton "Fermer" pour masquer la modale
+  closeCheqBtn.addEventListener('click', (e)=>{
+    e.preventDefault();
+  modal.style.display = 'none';
 });

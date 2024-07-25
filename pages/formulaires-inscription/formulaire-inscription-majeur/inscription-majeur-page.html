@@ -117,13 +117,17 @@
                           <label for="option4">Aqua-Palmes</label>
                       </li>
                       <li>
-                          <input type="checkbox" class="tarif-value" id="option5" name="options-aquabike" value="option5" data-tarif="130">
+                          <input type="checkbox" class="tarif-value option-bike" id="option5" name="options-aquabike" value="option5" data-tarif="130">
                           <label for="option5">Aqua-Bike</label>
                       </li>
                   </fieldset>
               </ul>
             </div>
             <!--End liste choix activités -->
+            <div class="modale-aqua-bike">
+              <button class="closeModal">X</button>
+              <p>Aqua-Bike :<br><br>100€ / 10 Séances + 30€ de cotisation.<br>Si vous êtes inscrit à une autre activité les 30€ de cotisation sont à déduires.</p>
+            </div>
 
             <div class="Cotisation-bloc">
               <p id="tarif">Le montant total de votre cotisation est de : <span id="tarif-value">0 €</span></p>
@@ -143,7 +147,6 @@
                   de 16h15 à 18h00</span></p>
                 <h4>Vous préférez effectuer votre règlement par virement banquaire?</h4>
                 <p>Nous vous communiquons les informations nécessaires par mail après votre inscription.</p>
-                
               </div>
               <div class="choix-reglement">
                 <ul>
@@ -160,7 +163,9 @@
                   </li>
                 </ul>
                 <div class="modal" id="myModal">
+                  
                   <div class="modal-content">
+                    <button class="closeChequeBtn">X</button>
                     <p>Merci de libeller votre ou vos chèque(s) à l’ordre de Moufia Aquatik</p>
                   </div>
                 </div>
