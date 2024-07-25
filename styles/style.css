@@ -369,6 +369,7 @@
 .footer-horaire {
   padding: 20px;
   font-size: 0.9em;
+  width: 250px;
 }
 
 .footer-horaire img {
@@ -378,7 +379,11 @@
 .footer-horaire  h3 {
   font-weight: 400;
   font-size: 1.2em;
+}
+
+.footer-horaire p{
   padding-bottom: 20px;
+  font-weight:200;
 }
 
 .footer-horaire .permamence-list {
