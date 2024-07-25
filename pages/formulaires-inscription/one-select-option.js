@@ -12,19 +12,26 @@ sexeOption.forEach(checkOption => {
     });
 })
 
-// Sélectionner une seule activitée
+// Sélectionner une seule date
 
-// const options = document.querySelectorAll(".option1");
+// script.js
 
-// options.forEach(option => {
-//     option.addEventListener('change', () => {
-//         options.forEach(otherOption => {
-//             if (otherOption != option) {
-//                 otherOption.checked= false;
-//             }
-//         })
-//     });
-// })
+document.addEventListener('DOMContentLoaded', () => {
+    const checkboxesDate = document.querySelectorAll('.date-option');
+
+    checkboxesDate.forEach((checkbox) => {
+        checkbox.addEventListener('change', () => {
+            if (checkbox.checked) {
+                checkboxesDate.forEach((otherCheckbox) => {
+                    if (otherCheckbox !== checkbox) {
+                        otherCheckbox.checked = false;
+                    }
+                });
+            }
+        });
+    });
+});
+
 
 // Afficher montant cotisation
 

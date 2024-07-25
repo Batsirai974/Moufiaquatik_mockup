@@ -191,7 +191,7 @@ font-size: 20px;
 
   /* Start liste choix activité */
 
-  .choix-activites {
+  .choix-dates {
     max-width: 450px;
     margin: 0 auto;
     padding: 20px;
@@ -200,7 +200,7 @@ font-size: 20px;
     border-radius: 5px;
   }
 
-  .choix-activites h2 {
+  .choix-dates h2 {
     /* color: #555; */
     color: #8b97d7;
     font-size: 20px;
@@ -211,7 +211,7 @@ font-size: 20px;
     cursor: pointer;
   }
   
-  .choix-activites h2:hover {
+  .choix-dates h2:hover {
     color: #374ab1;
 
   }
