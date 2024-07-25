@@ -42,6 +42,37 @@
         padding-bottom: 0.8em;
     }
 
+    /* Sous liste Club """"""""""""""""""""""""""""""""" */
+    .sous-list-club {
+        /* opacity: 1; */
+        /* visibility: visible; */
+        padding: 10px;
+        border-radius: 10px;
+        top: 150px;
+        left: 120px;
+        width: 160px;
+        font-size: 0.8em;
+    }
+
+    .sous-list-club .item-sous-list-club {
+        height: auto;
+        margin: 10px 0px;
+        padding: 0;
+        /* background-color: tomato; */
+    }
+    
+    .sous-list-club li a {
+        margin: 0;
+        padding: 0;
+        /* background-color: aquamarine; */
+    }
+
+    .sous-list-club .item-sous-list-club a::after {
+        display: none;
+    }
+
+    /* Facebook """"""""""""""""""""""""""""""" */
+
     .facebook-icone-nav {
         /* right: 10px; */
         right: 0.8em;
@@ -108,3 +139,8 @@
     }
 
 }
+
+/* Modales """"""""""""""""""""""""""""""" */
+
+
+/*  pre-inscription ---------------------- */
