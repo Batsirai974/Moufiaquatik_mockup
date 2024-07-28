@@ -239,3 +239,123 @@ body {
   /* height: 50px; */
   font-size: 2em;
 }
+
+
+/** Media query max-width 425px """""""""""""""""""""""""""""""""""""""*/
+
+@media (max-width: 426px) {
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* nav */
+  
+  .planning-tarif-container {
+    position: relative;
+    height:700px;
+  }
+  
+  .aqua-palmes-planning-tarif-content {
+    width: 300px;
+    height: 480px;
+    top: 120px;
+    padding: 0 10px;
+  }
+  
+  .aqua-palmes-planning-tarif-content h2 {
+    font-size: 1.6em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  .aqua-palmes-planning-tarif-content h2 + p {
+
+  }
+  
+  .horaire-container  {
+    width: 100%;
+  }
+  
+  .horaire-container h3 {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .horaire-01 {
+    font-size: 0.9em;
+  }
+
+  .tarif-container {
+    font-size: 0.9em;
+    width: 250px;
+    padding: 10px;
+  }
+
+  .tarif-container p {
+    font-size:1.1em;
+    font-weight: 600;
+  }
+
+  .tarif-container span {
+    font-size: 0.8em;
+  }
+
+  .tarif-btn-go {
+    top: 350px;
+  }
+
+  /* media query footer */
+  .footer-container {
+    display: flex;
+  }
+  
+  .content-footer {
+    flex-direction: column;
+  
+  }
+  
+  .footer-horaire {
+    order: 2;
+    font-size: 0.8em;
+  }
+  
+  /* .footer-horaire img  */
+  
+  .footer-horaire  h3 {
+    padding-bottom: 0;
+  }
+  
+  .footer-horaire p {
+    padding-bottom: 10px;
+  }
+  
+  /* .footer-horaire .permamence-list */
+  
+  .footer-sponsors {
+    width: 100%;
+    order: 1;
+  
+  }
+  
+  /* .footer-sponsors h2 */
+  
+  .footer-sponsors img {
+    height: 3em;
+  }
+  
+  .footer-assoc {
+    order: 3;
+    font-size: 0.8em;
+  }
+  
+  .footer-assoc p:hover {
+    color: #fff;
+  }
+  
+  .facebook-icone-footer img {
+    width: 2em;
+  }
+}

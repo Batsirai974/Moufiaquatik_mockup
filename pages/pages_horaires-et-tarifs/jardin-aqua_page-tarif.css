@@ -230,3 +230,106 @@ body {
   /* height: 50px; */
   font-size: 2em;
 }
+
+
+/** Media query max-width 425px """""""""""""""""""""""""""""""""""""""*/
+
+@media (max-width: 426px) {
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* nav */
+  
+  .planning-tarif-container {
+    position: relative;
+    height: 650px;
+  }
+  
+  .jardin-aqua-planning-tarif-content {
+    width: 300px;
+    height: 450px;
+    top: 120px;
+    padding: 0 10px;
+  }
+  
+  .jardin-aqua-planning-tarif-content h2 {
+    font-size: 1.6em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .horaire-container  {
+    width: 260px;
+    font-size: 1.1em;
+  }
+
+  .places-dispo {
+    font-size: 0.9em;
+  }
+  
+  .tarif-container {
+    font-size: 1em;
+    width: 250px;
+    
+  }
+
+  .tarif-btn-go {
+    top: 330px;
+  }
+
+  /* media query footer */
+  .footer-container {
+    display: flex;
+  }
+  
+  .content-footer {
+    flex-direction: column;
+  
+  }
+  
+  .footer-horaire {
+    order: 2;
+    font-size: 0.8em;
+  }
+  
+  /* .footer-horaire img  */
+  
+  .footer-horaire  h3 {
+    padding-bottom: 0;
+  }
+  
+  .footer-horaire p {
+    padding-bottom: 10px;
+  }
+  
+  /* .footer-horaire .permamence-list */
+  
+  .footer-sponsors {
+    width: 100%;
+    order: 1;
+  
+  }
+  
+  /* .footer-sponsors h2 */
+  
+  .footer-sponsors img {
+    height: 3em;
+  }
+  
+  .footer-assoc {
+    order: 3;
+    font-size: 0.8em;
+  }
+  
+  .footer-assoc p:hover {
+    color: #fff;
+  }
+  
+  .facebook-icone-footer img {
+    width: 2em;
+  }
+}

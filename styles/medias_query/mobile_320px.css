@@ -1,3 +1,9 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 @media (max-width: 430px) {
     .main-container {
         display: flex;
@@ -138,9 +144,61 @@
         display: none;
     }
 
+    /* media query footer ****************************/
+    
+    .footer-container {
+        display: flex;
+      }
+      
+      .content-footer {
+        flex-direction: column;
+      
+      }
+      
+      .footer-horaire {
+        order: 2;
+        font-size: 0.8em;
+      }
+      
+      /* .footer-horaire img  */
+      
+      .footer-horaire  h3 {
+        padding-bottom: 0;
+      }
+      
+      .footer-horaire p {
+        padding-bottom: 10px;
+      }
+      
+      /* .footer-horaire .permamence-list */
+      
+      .footer-sponsors {
+        width: 100%;
+        order: 1;
+      
+      }
+      
+      /* .footer-sponsors h2 */
+      
+      .footer-sponsors img {
+        height: 3em;
+      }
+      
+      .footer-assoc {
+        order: 3;
+        font-size: 0.8em;
+      }
+      
+      .footer-assoc p:hover {
+        color: #fff;
+      }
+      
+      .facebook-icone-footer img {
+        width: 2em;
+      }
 }
 
-/* Modales """"""""""""""""""""""""""""""" */
 
+  
+  
 
-/*  pre-inscription ---------------------- */

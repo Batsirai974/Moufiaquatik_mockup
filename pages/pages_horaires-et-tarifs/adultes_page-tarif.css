@@ -264,3 +264,136 @@ body {
   /* height: 50px; */
   font-size: 2em;
 }
+
+
+
+
+/** Media query max-width 425px """""""""""""""""""""""""""""""""""""""*/
+
+@media (max-width: 426px) {
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* nav */
+  
+  .planning-tarif-container {
+    position: relative;
+    height:850px;
+  }
+  
+  .planning-tarif-content {
+    width: 300px;
+    height: 680px;
+    top: 120px;
+    padding: 0 10px;
+  }
+  
+  .planning-tarif-content h2 {
+    font-size: 1.6em;
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+  
+  .horaire-container  {
+    width: 100%;
+  }
+  
+  .horaire-container h3 {
+    font-size: 1.1em;
+    text-align: center;
+  }
+
+  .planning-01 {
+    border: 2px solid #72f367
+  }
+
+  .places-dispo {
+    font-size: 0.8em;
+    font-weight: 300;
+  }
+  
+  .tarif-container {
+    font-size: 0.9em;
+    width: 250px;
+    padding: 0;
+  }
+
+  .tarif-container p {
+    font-size:1.1em;
+    font-weight: 600;
+  }
+
+  .promo {
+    width: 250px;
+    font-size: 1em;
+  }
+  
+  .promo p {
+
+  }
+
+  .promo span {
+    font-size: 0.9em;
+    font-weight: 450;
+  }
+
+  .tarif-btn-go {
+    top: 570px;
+  }
+
+  /* media query footer */
+  .footer-container {
+    display: flex;
+  }
+  
+  .content-footer {
+    flex-direction: column;
+  
+  }
+  
+  .footer-horaire {
+    order: 2;
+    font-size: 0.8em;
+  }
+  
+  /* .footer-horaire img  */
+  
+  .footer-horaire  h3 {
+    padding-bottom: 0;
+  }
+  
+  .footer-horaire p {
+    padding-bottom: 10px;
+  }
+  
+  /* .footer-horaire .permamence-list */
+  
+  .footer-sponsors {
+    width: 100%;
+    order: 1;
+  
+  }
+  
+  /* .footer-sponsors h2 */
+  
+  .footer-sponsors img {
+    height: 3em;
+  }
+  
+  .footer-assoc {
+    order: 3;
+    font-size: 0.8em;
+  }
+  
+  .footer-assoc p:hover {
+    color: #fff;
+  }
+  
+  .facebook-icone-footer img {
+    width: 2em;
+  }
+}

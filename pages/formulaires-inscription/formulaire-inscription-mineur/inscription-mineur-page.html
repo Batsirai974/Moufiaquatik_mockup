@@ -91,28 +91,28 @@
           <h3>Formulaire d'<strong>Inscription</strong></h3>
           <p class="sous-titre">(personne mineur)</p>
           <div class="formGroupe field-anime">
-              <label for="nom">Nom <span>(de l'enfant)</span></label>
-              <input type="text" id="nom" required >
+              <label for="nom_enfant">Nom <span>(de l'enfant)</span></label>
+              <input type="text" id="nomnom_enfant" name="nom_enfant" required >
           </div>
           <div class="formGroupe field-anime">
-              <label for="prenom">Prénom <span>(de l'enfant)</span></label>
-              <input type="text" id="prenom" required>
+              <label for="prenom_enfant">Prénom <span>(de l'enfant)</span></label>
+              <input type="text" id="prenom_enfant" name="prenom_enfant" required>
           </div>
           <div class="formGroupe field-anime">
-              <label for="mail">Adresse mail @ <span>(du représentant légal)</span></label>
-              <input type="email" id="mail" required>
+              <label for="email">Adresse mail @ <span>(du représentant légal)</span></label>
+              <input type="email" id="email" name="email" required>
           </div>
           <div class="formGroupe field-anime">
-              <label for="nom">Nom <span>(du représentant légal)</span></label>
-              <input type="text" id="nom" required >
+              <label for="nom_parent">Nom <span>(du représentant légal)</span></label>
+              <input type="text" id="nom_parent" name="nom_parent" required >
           </div>
           <div class="formGroupe field-anime">
-              <label for="prenom">Prénom <span>(du représentant légal)</span></label>
-              <input type="text" id="prenom" required>
+              <label for="prenom_parent">Prénom <span>(du représentant légal)</span></label>
+              <input type="text" id="prenom_parent" name="prenom_parent" required>
           </div>
           <div class="formGroupe field-anime">
-              <label for="phone">Telephone <span>(du représentant légal)</span></label>
-              <input type="tel" id="phone">
+              <label for="tel">Telephone <span>(du représentant légal)</span></label>
+              <input type="tel" id="tel" name="tel">
           </div>
           <div class="formGroupe">
               <label for="birthday" class="special-field">Date de Naissance </label>
@@ -122,10 +122,10 @@
               <label for="sexe" class="special-field">Sexe</label>
                 <div class="sexe-fields-box">
                   <div class="sex-field">
-                      <input type="checkbox" class="sex-option"  id="sex-option-f" value="femme">Femme
+                      <input type="checkbox" class="sex-option"  id="sex-option-f" name="sexe[]" value="femme">Femme
                   </div>
                   <div class="sex-field">
-                      <input type="checkbox" class="sex-option"  id="sex-option-h" value="homme">Homme
+                      <input type="checkbox" class="sex-option"  id="sex-option-h" name="sexe[]" value="homme">Homme
                   </div>
             </div>
                  
@@ -136,34 +136,34 @@
 
               <ul class="multi-select hidden">
                   <li>
-                      <input type="checkbox" class="enf-option" id="option1" name="options" value="option1">
-                      <label for="option1">Jardin Aquatique</label>
+                      <input type="checkbox" class="enf-option" id="option-jardin" name="options-jardin" value="option-jardin">
+                      <label for="option-jardin">Jardin Aquatique</label>
                   </li>
                   <fieldset>
                       <legend>Ecole de Natation Française</legend>
                       <li>
-                          <input type="checkbox" class="enf-option" id="option2" name="options" value="option2">
-                          <label for="option2">Etoile de mer 1</label>
+                          <input type="checkbox" class="enf-option" id="option-etoile1" name="option-etoile1" value="option-etoile1">
+                          <label for="option-etoile1">Etoile de mer 1</label>
                       </li>
                       <li>
-                          <input type="checkbox" class="enf-option" id="option3" name="options" value="option3">
-                          <label for="option3">Etoile de mer 2</label>
+                          <input type="checkbox" class="enf-option" id="option-etoile2" name="option-etoile2" value="option-etoile2">
+                          <label for="option-etoile2">Etoile de mer 2</label>
                       </li>
                       <li>
-                          <input type="checkbox" class="enf-option" id="option4" name="options" value="option4">
-                          <label for="option4">Zourite 1</label>
+                          <input type="checkbox" class="enf-option" id="option-zourite1" name="option-zourite1" value="option-zourite1">
+                          <label for="option-zourite1">Zourite 1</label>
                       </li>
                       <li>
-                          <input type="checkbox" class="enf-option" id="option5" name="options" value="option5">
-                          <label for="option5">Zourite 2</label>
+                          <input type="checkbox" class="enf-option" id="option-zourite2" name="option-zourite2" value="option-zourite2">
+                          <label for="option-zourite2">Zourite 2</label>
                       </li>
                       <li>
-                          <input type="checkbox" class="enf-option" id="option6" name="options" value="option6">
-                          <label for="option6">Requin 1</label>
+                          <input type="checkbox" class="enf-option" id="option-requin1" name="option-requin1" value="option-requin1">
+                          <label for="option-requin1">Requin 1</label>
                       </li>
                       <li>
-                          <input type="checkbox" class="enf-option" id="option7" name="options" value="option7">
-                          <label for="option7">Marlin / Ados</label>
+                          <input type="checkbox" class="enf-option" id="option-marlinAdos" name="option-marlinAdos" value="option-marlinAdos">
+                          <label for="option-marlinAdos">Marlin / Ados</label>
                       </li>
                   </fieldset>
 
@@ -197,7 +197,8 @@
                 <li>
                   <input type="checkbox" class="option-paiement" id="option-paiement1" name="option-paiement">
                   <label for="option-paiement1">Espèce</label>
-                  <input type="checkbox" class="option-paiement cheque-option" id="option-paiement2"  class="cheque-option" name="option-paiement">
+
+                  <input type="checkbox" class="option-paiement cheque-option" id="option-paiement2" name="option-paiement">
                   <label for="option-paiement2">Chèque</label>
                   
                   <input type="checkbox" class="option-paiement" id="option-paiemen3" name="option-paiement">

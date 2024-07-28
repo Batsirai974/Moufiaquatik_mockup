@@ -58,9 +58,9 @@ body {
     transform: translateX(-100%);
   }
 
-  .item {
+  /* .item {
 
-  }
+  } */
 
   .item a {
     text-decoration: none;
@@ -328,18 +328,18 @@ body {
     height: 1.5em;
   }
 
-  .list-items-nav .item {
+  /* .list-items-nav .item {
 
-  }
+  } */
 
   .pre-inscription-container {
     position: relative;
     height: 100vh;
   }
 
-  .pre-inscription-overlay {
+  /* .pre-inscription-overlay {
 
-  }
+  } */
 
   .pre-inscription-content {
     position: relative;

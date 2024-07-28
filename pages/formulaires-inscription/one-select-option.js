@@ -14,8 +14,6 @@ sexeOption.forEach(checkOption => {
 
 // Sélectionner une seule date
 
-// script.js
-
 document.addEventListener('DOMContentLoaded', () => {
     const checkboxesDate = document.querySelectorAll('.date-option');
 

@@ -13,6 +13,7 @@ body {
     /* grid-template: 70px 700px 1000px 10% / 100px repeat(3, 1fr) 100px; */
     grid-template: 100px 1100px 1fr 300px / 150px repeat(3, 1fr) 150px;
     z-index: 1;
+    width: 100vw;
     background-image:url(../../images/fond-piscine-original.jpg);
     background-color: rgb(100, 187, 245);
   }
@@ -120,6 +121,7 @@ body {
 .places-dispo {
   text-align: end;
   font-size: 0.85em;
+  color: #555;
 }
 
 .places-dispo span {
@@ -142,9 +144,7 @@ body {
   font-weight: 700;
 }
 
-.promo {
-  /* border: 2px solid #9daac5; */
-  /* border: 2px solid #72f367; */
+/* .promo {
   border: 2px solid #fedf17;
   border-radius: 5px;
   width: auto;
@@ -163,7 +163,7 @@ body {
 
 .promo span strong {
   font-size: 1.3rem;
-}
+} */
 
 .tarif-btn-go {
   position: absolute;
@@ -285,3 +285,102 @@ body {
   /* height: 50px; */
   font-size: 2em;
 }
+
+
+
+/** Media query max-width 425px """""""""""""""""""""""""""""""""""""""*/
+
+@media (max-width: 426px) {
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  /* nav */
+  
+  .planning-tarif-container {
+    position: relative;
+    height: 1100px;
+  }
+  
+  .planning-tarif-content {
+    width: 300px;
+    height: 900px;
+    top: 120px;
+    padding: 0 10px;
+  }
+  
+  .planning-tarif-content h2 {
+    font-size: 1.6em;
+  }
+  .horaire-container  {
+    padding: 20px 2px 0px 5px;
+  
+  }
+  
+  .tarif-container {
+    font-size: 1em;
+    width: 200px;
+  }
+
+  .tarif-btn-go {
+    bottom:30px;
+  }
+
+  /* media query footer */
+  .footer-container {
+    display: flex;
+  }
+  
+  .content-footer {
+    flex-direction: column;
+  
+  }
+  
+  .footer-horaire {
+    order: 2;
+    font-size: 0.8em;
+  }
+  
+  /* .footer-horaire img  */
+  
+  .footer-horaire  h3 {
+    padding-bottom: 0;
+  }
+  
+  .footer-horaire p {
+    padding-bottom: 10px;
+  }
+  
+  /* .footer-horaire .permamence-list */
+  
+  .footer-sponsors {
+    width: 100%;
+    order: 1;
+  
+  }
+  
+  /* .footer-sponsors h2 */
+  
+  .footer-sponsors img {
+    height: 3em;
+  }
+  
+  .footer-assoc {
+    order: 3;
+    font-size: 0.8em;
+  }
+  
+  .footer-assoc p:hover {
+    color: #fff;
+  }
+  
+  .facebook-icone-footer img {
+    width: 2em;
+  }
+}
+
+
+
