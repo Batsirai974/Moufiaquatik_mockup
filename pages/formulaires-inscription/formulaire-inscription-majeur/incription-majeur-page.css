@@ -6,19 +6,16 @@
 
 
 body {
-    font-family: Montserrat, sans-serif;
-    background: #333;
-    /* height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
+  font-family: "Poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #333;
 }
 
 .main-container {
     display: grid;
     /* grid-template: 70px 700px 1000px 10% / 100px repeat(3, 1fr) 100px; */
-    grid-template: 100px 1600px 1fr 300px / 150px repeat(3, 1fr) 150px;
+    grid-template: 100px 2000px 1fr 300px / 150px repeat(3, 1fr) 150px;
     z-index: 1;
+    width: 100vw;
     /* background-image:url(fond-piscine-original.jpg); */
     background-image:url(../../../images/fond-piscine-original.jpg);
     background-color: rgb(100, 187, 245);
@@ -26,25 +23,54 @@ body {
 
     /* START ---------- Nav-Bar ---------------*/
 
-.nav-container {
-    grid-area: 1 / 1 / 2 / 6;
-    position: fixed;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 200;
-    transition: 0.8s;
-    background: #ffffff;
-    box-shadow: inset 0px -5px 0px #fedf17;
+    .nav-container {
+      grid-area: 1 / 1 / 2 / 6;
+      position: fixed;
+      height: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      z-index: 200;
+      transition: 0.8s;
+      background: #ffffff;
+      box-shadow: inset 0px -5px 0px #fedf17;
+    }
+  
+    .logo-container .logo {
+      height: 100px;
+      margin-left: 30px;
   }
-
+  
   .list-items-nav {
-    width: 60%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    width: 100%;
+    list-style-type: none;
+    font-size: 1.3em;
+    font-weight: 500;
+    padding: 10px 20px;
   }
- 
-  /* END ---------- Nav-Bar ---------------*/
-
+  
+    /* .list-items-nav li {
+    } */
+  
+    .list-items-nav .item a {
+      text-decoration: none;
+      color: #333;
+  }
+  
+    .facebook-icone-nav {
+      position: absolute;
+      right: 30px;
+  }
+  
+  .facebook-icone-nav img {
+      height: 50px;
+      width: 50px;
+  }
+    /* END ---------- Nav-Bar ---------------*/
 
 
 
@@ -72,7 +98,7 @@ body {
     top: 50px;
     left: 50%;
     transform: translate(-50%);
-
+    margin-bottom: 20px;
     width: 500px;
     height: auto;
     padding: 25px;
@@ -476,19 +502,187 @@ background: none;
   color: #fedf17;
 }
 
+  /* * Media query for moblie ********************/
 
+  @media (max-width: 426px) {
 
+    .main-container {
+      display: flex;
+      flex-direction: column;
+      /* overflow: hidden; */
+    }
+  
+    /* nav """"""""""""""""""""""""""""""""""""""""""""""""""""*/
+    .nav-container {
+      height: 70px;
+    }
+  
+    .logo-container {
+      order: 2;
+      margin: 0 auto;
+    }
+  
+    .logo-container .logo {
+      height: 60px;
+      width: auto
+    }
+  
+    .list-items-nav {
+      order: 1;
+      width: auto;
+      font-size: 1em;
+    }
+  
+    .facebook-icone-nav {
+      right: 15px;
+    }
+    
+    .facebook-icone-nav img {
+      height: 30px;
+      width: 30px;
+  
+    }
+  
+    /* Body """""""""""""""""""""""""""""""""""""""""""""""""" */
+    
+    .inscription-majeur-container {
+      height: 2500px;
+    }
+    
+    
+    .inscription-majeur-content  {
+      top: 100px;
+      width: 300px;
+      height: auto;
+    }
+  
+    .formBloc h3 {
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+  
+    .formBloc h3 strong {
+      font-weight: 800;
+  }
+  
+    .formBloc .sous-titre {
+    margin-bottom: 25px;
+    font-size: 1em;
+    }
+  
+    .formBloc .formGroupe label {
+      font-size: 1em;
+    }
+  
+    .formBloc .formGroupe span {
+      font-size: 0.9em;
+    
+    }
+  
+    .choix-activites h2 {
+      font-size: 1em;
+      margin-bottom: 20px;
+  
+    }
+  
+    .multi-select label {
+      font-size: 0.9em;
+    }
+  
+    .multi-select fieldset legend {
+      font-size: 1em;
+      text-align: center;
+      }
+  
+      .paiement-bloc h2 {      
+        font-size: 1em;
+        font-weight: 500;
+        margin-bottom: 15px;
+    }
+  
+    .info-paiement {
+      margin-bottom: 20px;
+      line-height: 1.2;
+      font-size: 0.9em;
+      text-align: center;
+      }
+  
+      .choix-reglement {
+        width: 100%;
+      }
+  
+      /* .choix-reglement li {
+      } */
+  
+      .choix-reglement label {
+        font-size: 0.8em;
+        }
 
-/* Animation */
+        .modale-aqua-bike {
+          width: 230px;
+          padding: 20px;
+          transform: translate(5%, -150%);
+          font-size: 0.8em;
+          display: none;
+        }
 
-.field-anime:focus-within label,
-.field-anime.animation label {
-  top: 0px;
-  transform: translateY(-100%);
-  color: #8b97d7;
-}
-
-.field-anime:focus-within input,
-.field-anime.animation input {
-  border-bottom-color: #8b97d7;
-}
+        .modal {
+          top: -300px;
+          right: 0;
+          bottom: 0;
+          left: 0px;
+        } 
+  
+      /* media query footer """""""""""""""""""""""""""""""""""*/
+      .footer-container {
+        display: flex;
+      }
+      
+      .content-footer {
+        flex-direction: column;
+      
+      }
+      
+      .footer-horaire {
+        order: 2;
+        font-size: 0.8em;
+      }
+      
+      /* .footer-horaire img  */
+      
+      .footer-horaire  h3 {
+        padding-bottom: 0;
+      }
+      
+      .footer-horaire p {
+        padding-bottom: 10px;
+      }
+      
+      /* .footer-horaire .permamence-list */
+      
+      .footer-sponsors {
+        width: 100%;
+        order: 1;
+      
+      }
+      
+      /* .footer-sponsors h2 */
+      
+      .footer-sponsors img {
+        height: 3em;
+      }
+      
+      .footer-assoc {
+        order: 3;
+        font-size: 0.8em;
+      }
+      
+      .footer-assoc p:hover {
+        color: #fff;
+      }
+      
+      .facebook-icone-footer img {
+        width: 2em;
+      }
+  }
+  

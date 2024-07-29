@@ -26,6 +26,10 @@
     border-radius: 10px;
     overflow: hidden;
   }
+
+  .img-enf {
+    object-fit: cover;
+  }
   
   .card .card-img {
     position: relative;

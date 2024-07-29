@@ -262,10 +262,6 @@ body {
     margin-top: 25px;
     margin-bottom: 10px;
   }
-
-  .aqua-bike-planning-tarif-content h2 + p {
-
-  }
   
   .horaire-container  {
     width: 100%;
@@ -280,8 +276,6 @@ body {
     font-size: 0.9em;
   }
 
-
-  
   .tarif-container {
     font-size: 0.9em;
     width: 250px;
@@ -301,7 +295,7 @@ body {
     top: 380px;
   }
 
-  /* media query footer */
+  /* media query footer """"""""""""""""""""""""""""""""*/
   .footer-container {
     display: flex;
   }

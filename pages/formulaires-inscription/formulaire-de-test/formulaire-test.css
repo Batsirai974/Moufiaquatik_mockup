@@ -6,12 +6,9 @@
 
 
 body {
-    font-family: Montserrat, sans-serif;
+    font-family: "Poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #333;
-    /* height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
+    
 }
 
 .main-container {
@@ -19,6 +16,7 @@ body {
     /* grid-template: 70px 700px 1000px 10% / 100px repeat(3, 1fr) 100px; */
     grid-template: 100px 600px 1fr 300px / 150px repeat(3, 1fr) 150px;
     z-index: 1;
+    width: 100vw;
     /* background-image:url(fond-piscine-original.jpg); */
     background-image:url(../../../images/fond-piscine-original.jpg);
     background-color: rgb(100, 187, 245);
@@ -39,17 +37,44 @@ body {
     box-shadow: inset 0px -5px 0px #fedf17;
   }
 
-  .list-items-nav {
-    width: 60%;
-  }
+  .logo-container .logo {
+    height: 100px;
+    margin-left: 30px;
+}
+
+.list-items-nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  width: 100%;
+  list-style-type: none;
+  font-size: 1.3em;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+  /* .list-items-nav li {
+  } */
+
+  .list-items-nav .item a {
+    text-decoration: none;
+    color: #333;
+}
+
+  .facebook-icone-nav {
+    position: absolute;
+    right: 30px;
+}
+
+.facebook-icone-nav img {
+    height: 50px;
+    width: 50px;
+}
  
   /* END ---------- Nav-Bar ---------------*/
 
 
-  
-  
-  
-  
   .inscription-test-container {
     grid-area: 2/1/5/6;
     width: 100%;
@@ -93,25 +118,26 @@ body {
 
   /* Form -----------------------*/
 
-.formBloc h3 strong {
-    color: #5260ad;
-    font-weight: 900;
-}
-
-.formBloc h3 {
+  
+  .formBloc h3 {
     color: #666;
-    font-size: 28px;
+    font-size: 1.9em;
     font-weight: 500;
     /* margin-bottom: 45px; */
     text-align: center;
-}
+  }
 
-.formBloc .sous-titre {
-margin-bottom: 50px;
-text-align: center;
-color: #666;
-font-size: 20px;
-}
+  .formBloc h3 strong {
+      color: #5260ad;
+      font-weight: 900;
+  }
+
+  .formBloc .sous-titre {
+  margin-bottom: 50px;
+  text-align: center;
+  color: #666;
+  font-size: 1.2em;
+  }
 
 .formBloc .formGroupe {
     position: relative;
@@ -125,7 +151,7 @@ font-size: 20px;
     left: 0px;
     transform: translateY(-50%);
     color: #aaa;
-    font-size: 18px;
+    font-size: 1.2em;
     transition: 0.4s ease-out;
 }
 
@@ -160,7 +186,7 @@ font-size: 20px;
 }
 
 .formBloc .formGroupe span {
-  font-size: 16px;
+  font-size: 1em;
 
 }
 
@@ -173,7 +199,7 @@ font-size: 20px;
     background: none;
     border-bottom: 3px solid #aaa;
     color: #666;
-    font-size: 20px;
+    font-size: 1.2em;
     transition: 0.4s ease-out;
 }
 
@@ -203,7 +229,7 @@ font-size: 20px;
   .choix-dates h2 {
     /* color: #555; */
     color: #8b97d7;
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: 600;
     /* margin-bottom: 40px; */
     margin-bottom: 30px;
@@ -212,14 +238,14 @@ font-size: 20px;
   }
   
   .choix-dates h2:hover {
-    color: #374ab1;
+    color: #3762b1;
 
   }
 
 .multi-select {
     list-style-type: none;
     padding: 0;
-    font-size: 18px;
+    font-size: 1.1em;
     color: #555;
   }
 
@@ -248,7 +274,7 @@ font-size: 20px;
   }
 
 .multi-select fieldset legend {
-    font-size: 20px;
+    font-size: 1.2em;
     padding: 20px 0px 15px 0;
     color: #8b97d7;
 }
@@ -280,89 +306,231 @@ font-size: 20px;
     border: 3px solid #fff;
 }
 
-/* START  -----  FOOTER  ------------------------- */
+  /* START  -----  FOOTER  ------------------------- */
 
-.footer-container {
-  grid-area: 5/1/6/6;
-  background: #333;
-  z-index: 100;
-  flex-shrink: 0;
-}
+  .footer-container {
+    grid-area: 4/1/5/6;
+    background: #333;
+    z-index: 100;
+    flex-shrink: 0;
+  }
+  
+  .content-footer {
+    display: flex;
+    width: 100%;
+    color: #f1f1f1;
+  }
+  
+  .footer-horaire {
+    padding: 20px;
+    font-size: 0.9em;
+  }
+  
+  .footer-horaire img {
+    width: 200px;
+  }
+  
+  .footer-horaire  h3 {
+    font-weight: 400;
+    font-size: 1.2em;
+    padding-bottom: 20px;
+  }
+  
+  .footer-horaire .permamence-list {
+    list-style-type: none;
+  }
+  
+  .footer-sponsors {
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    padding: 20px 15px
+    /* margin: 0 auto; */
+  }
+  
+  .footer-sponsors h2 {
+    display: block;
+    width: 1000px;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    padding-bottom: 30px;
+    color: #fff;
+  }
+  
+  .footer-sponsors img {
+    height: 120px;
+    margin: 0 15px;
+  }
+  
+  /* .footer-other {
+  
+  } */
+  
+  .footer-assoc {
+    font-size: .9em;
+    padding: 20px;
+    line-height: 1.8;
+  }
+  
+  .footer-assoc p:hover {
+    color: #fedf17;
+  }
+  
+  .facebook-icone-footer {
+    position: relative;
+    margin-right: 25px;
+  
+  }
+  
+  .facebook-icone-footer img {
+    height: 30px;
+    width: 30px;
+  }
+  #logo-admin {
+    /* height: 50px; */
+    font-size: 2em;
+  }
 
-.content-footer {
-  display: flex;
-  width: 100%;
-  color: #f1f1f1;
-}
+/** Media query for mobile ********************************/
 
-.footer-horaire {
-  padding: 20px;
-  font-size: 0.9em;
-}
+@media (max-width: 426px) {
 
-.footer-horaire img {
-  width: 200px;
-}
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    /* overflow: hidden; */
+  }
 
-.footer-horaire  h3 {
-  font-weight: 400;
-  font-size: 1.2em;
-  padding-bottom: 20px;
-}
+  /* nav """"""""""""""""""""""""""""""""""""""""""""""""""""*/
+  .nav-container {
+    height: 70px;
+  }
 
-.footer-horaire .permamence-list {
-  list-style-type: none;
-}
+  .logo-container {
+    order: 2;
+    margin: 0 auto;
+  }
 
-.footer-sponsors {
-  width: 1000px;
-  display: flex;
-  justify-content: center;
-  padding: 20px 15px
-  /* margin: 0 auto; */
-}
+  .logo-container .logo {
+    height: 60px;
+    width: auto
+  }
 
-.footer-sponsors h2 {
-  display: block;
-  width: 1000px;
-  font-family: "Poppins", sans-serif;
-  font-size: 1.5em;
-  text-align: center;
-  padding-bottom: 30px;
-  color: #fff;
-}
+  .list-items-nav {
+    order: 1;
+    width: auto;
+    font-size: 1em;
+  }
 
-.footer-sponsors img {
-  height: 120px;
-  margin: 0 15px;
-}
+  .facebook-icone-nav {
+    right: 15px;
+  }
+  
+  .facebook-icone-nav img {
+    height: 30px;
+    width: 30px;
 
-/* .footer-other {
+  }
 
-} */
+  /* Body """""""""""""""""""""""""""""""""""""""""""""""""" */
+  
+  .inscription-test-container {
+    height: 1500px;
+  }
+  
+  
+  .inscription-test-content  {
+    top: 100px;
+    width: 300px;
+    height: 1200px;
+  }
 
-.footer-assoc {
-  font-size: .9em;
-  padding: 20px;
-  line-height: 1.8;
-}
+  .formBloc h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    text-align: center;
+  }
 
-.footer-assoc p:hover {
-  color: #fedf17;
-}
+  .formBloc h3 strong {
+      font-weight: 800;
+  }
 
+  .formBloc .sous-titre {
+  margin-bottom: 30px;
+  font-size: 0.8em;
+  }
 
+  .formBloc .formGroupe label {
+    font-size: 1em;
+  }
 
-/* Animation */
+  .formBloc .formGroupe span {
+    font-size: 0.9em;
+  
+  }
 
-.field-anime:focus-within label,
-.field-anime.animation label {
-  top: 0px;
-  transform: translateY(-100%);
-  color: #8b97d7;
-}
+  .choix-dates h2 {
+    font-size: 1em;
+    font-weight: 600;
+    /* margin-bottom: 40px; */
+    margin-bottom: 10px;
+    cursor: cell;
+  }
 
-.field-anime:focus-within input,
-.field-anime.animation input {
-  border-bottom-color: #8b97d7;
+  .multi-select label {
+    font-size: 0.8em;
+  }
+
+    /* media query footer """""""""""""""""""""""""""""""""""*/
+    .footer-container {
+      display: flex;
+    }
+    
+    .content-footer {
+      flex-direction: column;
+    
+    }
+    
+    .footer-horaire {
+      order: 2;
+      font-size: 0.8em;
+    }
+    
+    /* .footer-horaire img  */
+    
+    .footer-horaire  h3 {
+      padding-bottom: 0;
+    }
+    
+    .footer-horaire p {
+      padding-bottom: 10px;
+    }
+    
+    /* .footer-horaire .permamence-list */
+    
+    .footer-sponsors {
+      width: 100%;
+      order: 1;
+    
+    }
+    
+    /* .footer-sponsors h2 */
+    
+    .footer-sponsors img {
+      height: 3em;
+    }
+    
+    .footer-assoc {
+      order: 3;
+      font-size: 0.8em;
+    }
+    
+    .footer-assoc p:hover {
+      color: #fff;
+    }
+    
+    .facebook-icone-footer img {
+      width: 2em;
+    }
 }

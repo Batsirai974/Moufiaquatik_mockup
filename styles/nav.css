@@ -114,9 +114,12 @@
     width: 50px;
 }
 
-/* Media Query """"""""""""""""""""""""""""""""""""""" */
+/** Media Query """"""""""""""""""""""""""""""""""""""" */
+
 
 @media (max-width: 940px) {
+
+    /* Nav media 940  */
 
     .nav-container {
         grid-area: 1 / 1 / 2 / 2;
