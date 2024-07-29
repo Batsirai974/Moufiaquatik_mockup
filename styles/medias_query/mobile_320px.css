@@ -25,6 +25,10 @@
         padding: 0.8em;
     }
 
+    .hamburger  {
+        border: none;
+    }
+
     .logo-container {
         width: 110%;
         height: 40px;
@@ -143,6 +147,85 @@
     .facebook-icone-main {
         display: none;
     }
+
+
+    /* Modales ************************************** */
+
+    .btn-toggle  {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .btn-toggle::before {
+        width: 5px;
+        height: 5px;
+        left: 4px;
+    }
+
+    .btn-toggle::after {
+        width: 5px;
+        height: 5px;
+        left: 10px;
+    }
+
+    .tarifs-modal-container {
+        position: absolute;
+        width: 100vw;
+      }
+
+    .tarifs-overlay-modale  {
+        height: 900vh;
+    }
+
+    .tarifs-content {
+        position: relative;
+        top: 80px;
+        width: 300px;
+        font-size: 1em;
+      }
+      .tarifs-container .tarifs-drop::before  {
+        top: 40px;
+        left: 55px;
+        width: 30px;
+        height: 30px;
+      }
+      .tarifs-container .tarifs-drop::after {
+        top: 20px;
+        left: 100px;
+        width: 15px;
+        height: 15px;
+      }
+      /* .tarifs-titre-container {
+        
+      } */
+      .tarifs-titre-container h1 {
+        font-size: 1em;
+      }
+
+      .tarifs-container .tarifs-drop {
+        width: 300px;
+        height: 320px
+      }
+
+      .tarifs-container .tarifs-drop .tarifs-content  {
+        
+      }
+
+      .tarifs-container .tarifs-drop .tarifs-content h2 {
+        position: relative;
+        top: -80px;
+        font-size: 1.5em;
+      }
+      .tarifs-container .tarifs-drop .tarifs-content p {
+        position: relative;
+        top: -80px
+      }
+
+      .tarifs-content a {
+        top: -80px
+      }
+
 
     /* media query footer ****************************/
     

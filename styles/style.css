@@ -268,13 +268,12 @@
 
 .tarifs-modal-container.active {
   visibility: visible;
-  /* background: #333333d3; */
 }
 
 /* End TARIFS SECTION  ------------------------------------ */
 
 /*  Start Formulaire pre-Inscription ------------------------*/
-.pre-inscription-modale-container {
+/* .pre-inscription-modale-container {
   position: relative;
   display: flex;
   justify-content: center;
@@ -287,7 +286,7 @@
 
 .pre-inscription-modale-container.active {
   visibility: visible;
-}
+} */
 /*  End Formulaire pre-Inscription --------------------------------*/
 
 /* Start ABOUT SECTION  -------------------------------- */

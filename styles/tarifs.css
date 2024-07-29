@@ -75,7 +75,6 @@ root {
 
 .tarifs-container {
   position: relative;
-  /* position: absolute; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,14 +82,12 @@ root {
   padding: 20px 0;
   gap: 40px 60px;
   width: 85%;
-  /* background: #b5ecf8; */
 }
 
 .tarifs-container .tarifs-drop {
   position: relative;
   width: 380px;
   height: 350px;
-  /* background: #333; */
   background: #b5ecf8;
   box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
     25px 35px 20px rgba(0, 0, 0, 0.05), 25px 30px 30px rgba(0, 0, 0, 0.05),
@@ -171,11 +168,7 @@ root {
   height: 70px;
   background: #eff0f4;
   background: transparent;
-  border-radius: 50%;
-  /* box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.2),
-    inset -2px -5px 10px rgba(255, 255, 255, 1),
-    15px 15px 10px rgba(0, 0, 0, 0.05),
-    15px 15px 10px rgba(0, 0, 0, 0.25); */
+  /* border-radius: 50%; */
   display: flex;
   justify-content: center;
   align-items: center;
