@@ -1,101 +1,93 @@
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+@import url(/styles/reset.css);
 
 body {
-    font-family: "Poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #333;
-    
+  font-family: "Poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #333;
 }
 
 .main-container {
-    display: grid;
-    /* grid-template: 70px 700px 1000px 10% / 100px repeat(3, 1fr) 100px; */
-    grid-template: 100px 600px 1fr 300px / 150px repeat(3, 1fr) 150px;
-    z-index: 1;
-    width: 100vw;
-    /* background-image:url(fond-piscine-original.jpg); */
-    background-image:url(../../../images/fond-piscine-original.jpg);
-    background-color: rgb(100, 187, 245);
-  }
+  display: grid;
+  grid-template: 100px 1300px 1fr 300px / 150px repeat(3, 1fr) 150px;
+  z-index: 1;
+  width: 100vw;
+  background-image:url(../../../images/fond-piscine-original.jpg);
+  background-color: rgb(100, 187, 245);
+}
 
-    /* START ---------- Nav-Bar ---------------*/
-
+/* MARK: Nav-Bar  Start -------------------*/ 
 .nav-container {
-    grid-area: 1 / 1 / 2 / 6;
-    position: fixed;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    z-index: 200;
-    transition: 0.8s;
-    background: #ffffff;
-    box-shadow: inset 0px -5px 0px #fedf17;
-  }
+grid-area: 1 / 1 / 2 / 6;
+position: fixed;
+height: 100px;
+width: 100%;
+display: flex;
+align-items: center;
+z-index: 200;
+transition: 0.8s;
+background: #ffffff;
+box-shadow: inset 0px -5px 0px #fedf17;
+}
 
-  .logo-container .logo {
-    height: 100px;
-    margin-left: 30px;
+.logo-container .logo {
+height: 100px;
+margin-left: 30px;
 }
 
 .list-items-nav {
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  gap: 2em;
-  width: 100%;
-  list-style-type: none;
-  font-size: 1.3em;
-  font-weight: 500;
-  padding: 10px 20px;
+position: absolute;
+display: flex;
+justify-content: center;
+gap: 2em;
+width: 100%;
+list-style-type: none;
+font-size: 1.3em;
+font-weight: 500;
+padding: 10px 20px;
 }
 
-  /* .list-items-nav li {
-  } */
+/* .list-items-nav li {
+} */
 
-  .list-items-nav .item a {
-    text-decoration: none;
-    color: #333;
+.list-items-nav .item a {
+text-decoration: none;
+color: #333;
 }
 
-  .facebook-icone-nav {
-    position: absolute;
-    right: 30px;
+.facebook-icone-nav {
+position: absolute;
+right: 30px;
 }
 
 .facebook-icone-nav img {
-    height: 50px;
-    width: 50px;
+height: 50px;
+width: 50px;
 }
- 
-  /* END ---------- Nav-Bar ---------------*/
+/* END ---------- Nav-Bar ---------------*/
 
 
-  .inscription-test-container {
-    grid-area: 2/1/5/6;
-    width: 100%;
-    height: 1350px;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-  }
+/* MARK: Main Body  Start*/
 
-  .inscription-test-overlay {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    background: #333333d3;
-    /* transform: translateX(-50%); */
-    transition: opacity 0.4s 0.2s ease-out;
+.inscription-test-container {
+  grid-area: 2/1/5/6;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.inscription-test-overlay {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
 }
 
 .inscription-test-content {
-  position: absolute;
+  position: relative;
   top: 50px;
+  left: 50%;
+  transform: translate(-50%);
   width: 500px;
   height: auto;
   padding: 25px;
@@ -103,434 +95,427 @@ body {
   border-radius: 10px;
 }
 
-  .inscription-test-content {
-    position: relative;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 500px;
-    height: auto;
-    padding: 25px;
-    background: #fff;
-    border-radius: 10px;
+
+/* MARK: Form -----------------------*/
+
+.formBloc h3 strong {
+  color: #5260ad;
+  font-weight: 900;
 }
 
-
-  /* Form -----------------------*/
-
-  
-  .formBloc h3 {
-    color: #666;
-    font-size: 1.9em;
-    font-weight: 500;
-    /* margin-bottom: 45px; */
-    text-align: center;
-  }
-
-  .formBloc h3 strong {
-      color: #5260ad;
-      font-weight: 900;
-  }
-
-  .formBloc .sous-titre {
-  margin-bottom: 50px;
-  text-align: center;
+.formBloc h3 {
   color: #666;
-  font-size: 1.2em;
-  }
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.formBloc .sous-titre {
+margin-bottom: 50px;
+text-align: center;
+color: #666;
+font-size: 20px;
+}
 
 .formBloc .formGroupe {
-    position: relative;
-    display: flex;
-    /* margin-bottom: 50px; */
-    margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  /* margin-bottom: 50px; */
+  margin-bottom: 40px;
 }
 .formBloc .formGroupe label {
-    position: absolute;
-    top: 50%;
-    left: 0px;
-    transform: translateY(-50%);
-    color: #aaa;
-    font-size: 1.2em;
-    transition: 0.4s ease-out;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 18px;
+  transition: 0.4s ease-out;
 }
 
 .formBloc .formGroupe .special-field {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  color: #8b97d7;
-
-  /* background: lightblue; */
+position: absolute;
+left: 0px;
+top: 0px;
+color: #8b97d7;
 }
 
 .formBloc .sexe-fields-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  width: 100%;
-  height: 40px;
-  /* background-color: tomato; */
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+width: 100%;
+height: 40px;
 }
 
 .formBloc .sexe-fields-box .sex-field{
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  /* background: lightpink; */
-  width: 100px;
-  height: 25px;
+display: flex;
+justify-content: start;
+align-items: center;
+width: 100px;
+height: 25px;
+font-size: 18px;
+color: #555;
+}
+
+.formBloc .formGroupe span {
+font-size: 16px;
+}
+
+.formBloc .formGroupe input {
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 3px solid #aaa;
+  color: #666;
+  font-size: 20px;
+  transition: 0.4s ease-out;
+}
+
+.formBloc .formGroupe input[type="date"] {
+color: #aaa;
+}
+
+#option1 {
+height: 15px;
+}
+
+/* MARK: choix activité */
+
+.choix-dates{
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 1.2em;
+  border: 1px solid #8b97d7;
+  border-radius: 5px;
+}
+
+.choix-dates h2 {
+  /* color: #555; */
+  color: #8b97d7;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.choix-dates h2:hover {
+  color: #374ab1;
+
+}
+
+.multi-select {
+  list-style-type: none;
+  padding: 0;
   font-size: 18px;
   color: #555;
 }
 
-.formBloc .formGroupe span {
-  font-size: 1em;
-
+.multi-select.hidden {
+  display: none;
 }
 
-.formBloc .formGroupe input {
-    display: block;
-    width: 100%;
-    padding: 10px 0px;
-    border: none;
-    outline: none;
-    background: none;
-    border-bottom: 3px solid #aaa;
-    color: #666;
-    font-size: 1.2em;
-    transition: 0.4s ease-out;
+.multi-select li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
-
-
-.formBloc .formGroupe input[type="date"] {
-  /* text-align: center; */
-  /* padding-left: 40px; */
-  color: #aaa;
+.multi-select input[type="checkbox"] {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
-#option1 {
-  height: 15px;
+.multi-select label {
+  cursor: pointer;
 }
 
-  /* Start liste choix activité */
-
-  .choix-dates {
-    max-width: 450px;
-    margin: 0 auto;
-    padding: 20px;
-    /* border: 1px solid #ccc; */
-    border: 1px solid #8b97d7;
-    border-radius: 5px;
-  }
-
-  .choix-dates h2 {
-    /* color: #555; */
-    color: #8b97d7;
-    font-size: 1.2em;
-    font-weight: 600;
-    /* margin-bottom: 40px; */
-    margin-bottom: 30px;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .choix-dates h2:hover {
-    color: #3762b1;
-
-  }
-
-.multi-select {
-    list-style-type: none;
-    padding: 0;
-    font-size: 1.1em;
-    color: #555;
-  }
-
-  .multi-select.hidden {
-    display: none;
-  }
-  
-  .multi-select li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .multi-select input[type="checkbox"] {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  
-  .multi-select label {
-    cursor: pointer;
-  }
-
-  .multi-select fieldset {
-    border: none;
-    padding: 10px;
-  }
+.multi-select fieldset {
+  border: none;
+  padding: 10px;
+}
 
 .multi-select fieldset legend {
-    font-size: 1.2em;
-    padding: 20px 0px 15px 0;
-    color: #8b97d7;
+  font-size: 20px;
+  padding: 20px 0px 15px 0;
+  color: #8b97d7;
 }
 
-  /* End liste choix activité */
+/* End liste choix activité */
 
 
 
 /* button submit */
 
 .formBloc .formGroupe .buttonSub {
-    display: block;
-    width: auto;
-    margin: 30px auto;
-    padding: 15px 60px;
-    border: 3px solid #8b97d7;
-    border-radius: 999px;
-    background-image: linear-gradient(to right, transparent 50%, #5260ad 50%, #8b97d7);
-    background-size: 200%;
-    color: #8b97d7;
-    font-size: 24px;
-    font-weight: 500;
-    cursor: pointer;
+  display: block;
+  width: auto;
+  margin: 30px auto;
+  padding: 15px 60px;
+  border: 3px solid #8b97d7;
+  border-radius: 999px;
+  background-image: linear-gradient(to right, transparent 50%, #5260ad 50%, #8b97d7);
+  background-size: 200%;
+  color: #8b97d7;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .formBloc .formGroupe .buttonSub:hover {
-    color: #fff;
-    background-position: 100%;
-    border: 3px solid #fff;
+  color: #fff;
+  background-position: 100%;
+  border: 3px solid #fff;
 }
 
-  /* START  -----  FOOTER  ------------------------- */
+/* MARK:footer ***************************/
 
-  .footer-container {
-    grid-area: 4/1/5/6;
-    background: #333;
-    z-index: 100;
-    flex-shrink: 0;
-  }
-  
-  .content-footer {
-    display: flex;
-    width: 100%;
-    color: #f1f1f1;
-  }
-  
-  .footer-horaire {
-    padding: 20px;
-    font-size: 0.9em;
-  }
-  
-  .footer-horaire img {
-    width: 200px;
-  }
-  
-  .footer-horaire  h3 {
-    font-weight: 400;
-    font-size: 1.2em;
-    padding-bottom: 20px;
-  }
-  
-  .footer-horaire .permamence-list {
-    list-style-type: none;
-  }
-  
-  .footer-sponsors {
-    width: 1000px;
-    display: flex;
-    justify-content: center;
-    padding: 20px 15px
-    /* margin: 0 auto; */
-  }
-  
-  .footer-sponsors h2 {
-    display: block;
-    width: 1000px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.5em;
-    text-align: center;
-    padding-bottom: 30px;
-    color: #fff;
-  }
-  
-  .footer-sponsors img {
-    height: 120px;
-    margin: 0 15px;
-  }
-  
-  /* .footer-other {
-  
-  } */
-  
-  .footer-assoc {
-    font-size: .9em;
-    padding: 20px;
-    line-height: 1.8;
-  }
-  
-  .footer-assoc p:hover {
-    color: #fedf17;
-  }
-  
-  .facebook-icone-footer {
-    position: relative;
-    margin-right: 25px;
-  
-  }
-  
-  .facebook-icone-footer img {
-    height: 30px;
-    width: 30px;
-  }
-  #logo-admin {
-    /* height: 50px; */
-    font-size: 2em;
-  }
+.footer-container {
+grid-area: 4/1/5/6;
+background: #333;
+z-index: 100;
+flex-shrink: 0;
+}
 
-/** Media query for mobile ********************************/
+.content-footer {
+display: flex;
+width: 100%;
+color: #f1f1f1;
+}
+
+.footer-horaire {
+padding: 20px;
+font-size: 0.9em;
+}
+
+.footer-horaire img {
+width: 200px;
+}
+
+.footer-horaire  h3 {
+font-weight: 400;
+font-size: 1.2em;
+}
+
+.footer-horaire p {
+padding-bottom: 20px;
+}
+
+.footer-horaire .permamence-list {
+list-style-type: none;
+}
+
+.footer-sponsors {
+width: 1000px;
+display: flex;
+justify-content: center;
+padding: 20px 15px
+}
+
+.footer-sponsors h2 {
+display: block;
+width: 1000px;
+font-family: "Poppins", sans-serif;
+font-size: 1.5em;
+text-align: center;
+padding-bottom: 30px;
+color: #fff;
+}
+
+.footer-sponsors img {
+height: 120px;
+margin: 0 15px;
+}
+
+/* .footer-other {
+
+} */
+
+.footer-assoc {
+font-size: .9em;
+padding: 20px;
+line-height: 1.8;
+}
+
+.footer-assoc p:hover {
+color: #fedf17;
+}
+
+.facebook-icone-footer {
+position: relative;
+margin-right: 25px;
+
+}
+
+.facebook-icone-footer img {
+height: 30px;
+width: 30px;
+}
+#logo-admin {
+/* height: 50px; */
+font-size: 2em;
+}
+
+/* MARK: Anime Champs Form*/
+
+.formBloc .formGroupe:focus-within label,
+.formBloc .formGroupe.animation label {
+    top: 0px;
+    transform: translateY(-100%);
+    color: #8b97d7;
+}
+
+.formBloc .formGroupe:focus-within input,
+.formBloc .formGroupe.animation input {
+    border-bottom-color: #8b97d7;
+}   
+
+
+/** MARK: Media query *************************************************************/
 
 @media (max-width: 426px) {
 
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    /* overflow: hidden; */
-  }
+.main-container {
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+}
 
-  /* nav """"""""""""""""""""""""""""""""""""""""""""""""""""*/
-  .nav-container {
-    height: 70px;
-  }
+/* MARK:mQ_nav """"""""""""""""""""""""""""""""""""""""""""""""""""*/
+.nav-container {
+  height: 70px;
+}
 
-  .logo-container {
-    order: 2;
-    margin: 0 auto;
-  }
+.logo-container {
+  order: 2;
+  margin: 0 auto;
+}
 
-  .logo-container .logo {
-    height: 60px;
-    width: auto
-  }
+.logo-container .logo {
+  height: 60px;
+  width: auto
+}
 
-  .list-items-nav {
-    order: 1;
-    width: auto;
-    font-size: 1em;
-  }
+.list-items-nav {
+  order: 1;
+  width: auto;
+  font-size: 1em;
+}
 
-  .facebook-icone-nav {
-    right: 15px;
-  }
-  
-  .facebook-icone-nav img {
-    height: 30px;
-    width: 30px;
+.facebook-icone-nav {
+  right: 15px;
+}
 
-  }
+.facebook-icone-nav img {
+  height: 30px;
+  width: 30px;
 
-  /* Body """""""""""""""""""""""""""""""""""""""""""""""""" */
-  
-  .inscription-test-container {
-    height: 1500px;
-  }
-  
-  
-  .inscription-test-content  {
-    top: 100px;
-    width: 300px;
-    height: 1200px;
-  }
+}
 
-  .formBloc h3 {
-    font-size: 1.5em;
-    font-weight: 500;
-    text-align: center;
-  }
+/* MARK:mQ_Body """""""""""""""""""""""""""""""""""""""""""""""""" */
 
-  .formBloc h3 strong {
-      font-weight: 800;
-  }
+.inscription-test-container {
+  height: 1500px;
+}
 
-  .formBloc .sous-titre {
+
+.inscription-test-content  {
+  top: 100px;
+  width: 300px;
+  height: auto
+}
+
+.formBloc h3 {
+  font-size: 1.2em;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.formBloc h3 strong {
+  font-weight: 800;
+}
+
+.formBloc .sous-titre {
   margin-bottom: 30px;
   font-size: 0.8em;
-  }
+  margin-bottom: 20px;
+}
 
-  .formBloc .formGroupe label {
-    font-size: 1em;
-  }
+.formBloc .formGroupe label {
+  font-size: 1em;
+}
 
-  .formBloc .formGroupe span {
-    font-size: 0.9em;
+.formBloc .formGroupe span {
+  font-size: 0.9em;
+}
+
+.choix-dates h2 {
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 10px;
+  cursor: cell;
+}
+
+.multi-select label {
+  font-size: 0.8em;
+}
+
+  /* MARK:mQ_footer """""""""""""""""""""""""""""""""""*/
+  .footer-container {
+    display: flex;
+  }
+  
+  .content-footer {
+    flex-direction: column;
   
   }
-
-  .choix-dates h2 {
-    font-size: 1em;
-    font-weight: 600;
-    /* margin-bottom: 40px; */
-    margin-bottom: 10px;
-    cursor: cell;
-  }
-
-  .multi-select label {
+  
+  .footer-horaire {
+    order: 2;
     font-size: 0.8em;
   }
-
-    /* media query footer """""""""""""""""""""""""""""""""""*/
-    .footer-container {
-      display: flex;
-    }
-    
-    .content-footer {
-      flex-direction: column;
-    
-    }
-    
-    .footer-horaire {
-      order: 2;
-      font-size: 0.8em;
-    }
-    
-    /* .footer-horaire img  */
-    
-    .footer-horaire  h3 {
-      padding-bottom: 0;
-    }
-    
-    .footer-horaire p {
-      padding-bottom: 10px;
-    }
-    
-    /* .footer-horaire .permamence-list */
-    
-    .footer-sponsors {
-      width: 100%;
-      order: 1;
-    
-    }
-    
-    /* .footer-sponsors h2 */
-    
-    .footer-sponsors img {
-      height: 3em;
-    }
-    
-    .footer-assoc {
-      order: 3;
-      font-size: 0.8em;
-    }
-    
-    .footer-assoc p:hover {
-      color: #fff;
-    }
-    
-    .facebook-icone-footer img {
-      width: 2em;
-    }
+  
+  /* .footer-horaire img  */
+  
+  .footer-horaire  h3 {
+    padding-bottom: 0;
+  }
+  
+  .footer-horaire p {
+    padding-bottom: 10px;
+  }
+  
+  /* .footer-horaire .permamence-list */
+  
+  .footer-sponsors {
+    width: 100%;
+    order: 1;
+  
+  }
+  
+  /* .footer-sponsors h2 */
+  
+  .footer-sponsors img {
+    height: 3em;
+  }
+  
+  .footer-assoc {
+    order: 3;
+    font-size: 0.8em;
+  }
+  
+  .footer-assoc p:hover {
+    color: #fff;
+  }
+  
+  .facebook-icone-footer img {
+    width: 2em;
+  }
 }

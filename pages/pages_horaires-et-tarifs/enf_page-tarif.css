@@ -18,7 +18,7 @@ body {
     background-color: rgb(100, 187, 245);
   }
 
-  /* START ---------- Nav-Bar ---------------*/
+  /* START MARK: Nav-Bar ---------------*/
 
 .nav-container {
     grid-area: 1 / 1 / 2 / 6;
@@ -42,7 +42,7 @@ body {
   
   
   /* END ---------- Nav-Bar ---------------*/
-  
+  /* MARK: Main body */
 .planning-tarif-container {
     grid-area: 2/1/5/6; 
     position: relative;
@@ -198,7 +198,7 @@ body {
   background: rgba(255, 255, 255, 0.5);
 }
 
-/* START  -----  FOOTER  ------------------------- */
+/* START MARK: FOOTER  ------------------------- */
 
 .footer-container {
   grid-area: 4/1/5/6;

@@ -1,9 +1,4 @@
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
+@import url(/styles/reset.css);
 
 body {
   font-family: "Poppins", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -11,132 +6,127 @@ body {
 }
 
 .main-container {
-    display: grid;
-    /* grid-template: 70px 700px 1000px 10% / 100px repeat(3, 1fr) 100px; */
-    grid-template: 100px 2000px 1fr 300px / 150px repeat(3, 1fr) 150px;
-    z-index: 1;
-    width: 100vw;
-    /* background-image:url(fond-piscine-original.jpg); */
-    background-image:url(../../../images/fond-piscine-original.jpg);
-    background-color: rgb(100, 187, 245);
-  }
+  display: grid;
+  grid-template: 100px 2000px 1fr 300px / 150px repeat(3, 1fr) 150px; 
+  z-index: 1;
+  width: 100vw;
+  background-image: url(../../../images/fond-piscine-original.jpg);
+  background-color: rgb(100, 187, 245);
+}
 
-    /* START ---------- Nav-Bar ---------------*/
+/* MARK: Nav-Bar ---------------*/
+.nav-container {
+  grid-area: 1 / 1 / 2 / 6;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  z-index: 200;
+  transition: 0.8s;
+  background: #ffffff;
+  box-shadow: inset 0px -5px 0px #fedf17;
+}
 
-    .nav-container {
-      grid-area: 1 / 1 / 2 / 6;
-      position: fixed;
-      height: 100px;
-      width: 100%;
-      display: flex;
-      align-items: center;
-      z-index: 200;
-      transition: 0.8s;
-      background: #ffffff;
-      box-shadow: inset 0px -5px 0px #fedf17;
-    }
-  
-    .logo-container .logo {
-      height: 100px;
-      margin-left: 30px;
-  }
-  
-  .list-items-nav {
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    gap: 2em;
-    width: 100%;
-    list-style-type: none;
-    font-size: 1.3em;
-    font-weight: 500;
-    padding: 10px 20px;
-  }
-  
-    /* .list-items-nav li {
+.logo-container .logo {
+  height: 100px;
+  margin-left: 30px;
+}
+
+.list-items-nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  width: 100%;
+  list-style-type: none;
+  font-size: 1.3em;
+  font-weight: 500;
+  padding: 10px 20px;
+}
+
+/* .list-items-nav li {
     } */
-  
-    .list-items-nav .item a {
-      text-decoration: none;
-      color: #333;
-  }
-  
-    .facebook-icone-nav {
-      position: absolute;
-      right: 30px;
-  }
-  
-  .facebook-icone-nav img {
-      height: 50px;
-      width: 50px;
-  }
-    /* END ---------- Nav-Bar ---------------*/
+
+.list-items-nav .item a {
+  text-decoration: none;
+  color: #333;
+}
+
+.facebook-icone-nav {
+  position: absolute;
+  right: 30px;
+}
+
+.facebook-icone-nav img {
+  height: 50px;
+  width: 50px;
+}
+/* END ---------- Nav-Bar ---------------*/
 
 
+/* MARK: Main body */
 
+.inscription-majeur-container {
+  grid-area: 2/1/5/6;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
 
-  .inscription-majeur-container {
-    grid-area: 2/1/5/6;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
-  }
+.inscription-majeur-overlay {
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+  background: #333333d3;
+  transition: opacity 0.4s 0.2s ease-out;
+}
 
-  .inscription-majeur-overlay {
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    background: #333333d3;
-    /* transform: translateX(-50%); */
-    transition: opacity 0.4s 0.2s ease-out;
-}  
-
-  .inscription-majeur-content {
-    position: relative;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%);
-    margin-bottom: 20px;
-    width: 500px;
-    height: auto;
-    padding: 25px;
-    background: #fff;
-    border-radius: 10px;
+.inscription-majeur-content {
+  position: relative;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 500px;
+  height: auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 10px;
 }
 
 
-  /* Form -----------------------*/
+/*MARK: Form -----------------------*/
 
 .formBloc h3 strong {
-    color: #5260ad;
-    font-weight: 900;
+  color: #5260ad;
+  font-weight: 900;
 }
 
 .formBloc h3 {
-    color: #666;
-    font-size: 28px;
-    font-weight: 500;
-    margin-bottom: 50px;
-    text-align: center;
+  color: #666;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 
 .formBloc .formGroupe {
-    position: relative;
-    display: flex;
-    /* margin-bottom: 50px; */
-    margin-bottom: 40px;
+  position: relative;
+  display: flex;
+  /* margin-bottom: 50px; */
+  margin-bottom: 40px;
 }
+
 .formBloc .formGroupe label {
-    position: absolute;
-    top: 50%;
-    left: 0px;
-    transform: translateY(-50%);
-    color: #aaa;
-    font-size: 18px;
-    transition: 0.4s ease-out;
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  transform: translateY(-50%);
+  color: #aaa;
+  font-size: 18px;
+  transition: 0.4s ease-out;
 }
 
 .formBloc .formGroupe .special-field {
@@ -144,8 +134,6 @@ body {
   left: 0px;
   top: 0px;
   color: #8b97d7;
-
-  /* background: lightblue; */
 }
 
 .formBloc .sexe-fields-box {
@@ -158,11 +146,10 @@ body {
   /* background-color: tomato; */
 }
 
-.formBloc .sexe-fields-box .sex-field{
+.formBloc .sexe-fields-box .sex-field {
   display: flex;
   justify-content: start;
   align-items: center;
-  /* background: lightpink; */
   width: 100px;
   height: 25px;
   font-size: 18px;
@@ -171,27 +158,22 @@ body {
 
 .formBloc .formGroupe span {
   font-size: 16px;
-
 }
 
 .formBloc .formGroupe input {
-    display: block;
-    width: 100%;
-    padding: 10px 0px;
-    border: none;
-    outline: none;
-    background: none;
-    border-bottom: 3px solid #aaa;
-    color: #666;
-    font-size: 20px;
-    transition: 0.4s ease-out;
+  display: block;
+  width: 100%;
+  padding: 10px 0px;
+  border: none;
+  outline: none;
+  background: none;
+  border-bottom: 3px solid #aaa;
+  color: #666;
+  font-size: 20px;
+  transition: 0.4s ease-out;
 }
 
-
-
 .formBloc .formGroupe input[type="date"] {
-  /* text-align: center; */
-  /* padding-left: 40px; */
   color: #aaa;
 }
 
@@ -199,108 +181,104 @@ body {
   height: 15px;
 }
 
-  /* Start liste choix activité */
+/* MARK:choix activité */
 
-  .choix-activites {
-    max-width: 450px;
-    margin: 0 auto;
-    padding: 20px;
-    /* border: 1px solid #ccc; */
-    border: 1px solid #8b97d7;
-    border-radius: 5px;
-  }
+.choix-activites {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 1.2em;
+  border: 1px solid #8b97d7;
+  border-radius: 5px;
+}
 
-  .choix-activites h2 {
-    /* color: #555; */
-    color: #8b97d7;
-    font-size: 20px;
-    font-weight: 600;
-    /* margin-bottom: 40px; */
-    margin-bottom: 30px;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .choix-activites h2:hover {
-    color: #374ab1;
+.choix-activites h2 {
+  color: #8b97d7;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  text-align: center;
+  cursor: pointer;
+}
 
-  }
+.choix-activites h2:hover {
+  color: #374ab1;
+
+}
 
 .multi-select {
-    list-style-type: none;
-    padding: 0;
-    font-size: 18px;
-    color: #555;
-  }
+  list-style-type: none;
+  padding: 0;
+  font-size: 18px;
+  color: #555;
+}
 
-  .multi-select li:first-child {
-    margin-left: 8px;
-  }
+.multi-select li:first-child {
+  margin-left: 8px;
+}
 
-  .multi-select.hidden {
-    display: none;
-  }
-  
-  .multi-select li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-  }
-  
-  .multi-select input[type="checkbox"] {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
-  
-  .multi-select label {
-    cursor: pointer;
-  }
+.multi-select.hidden {
+  display: none;
+}
 
-  .multi-select fieldset {
-    border: none;
-    padding: 10px;
-  }
+.multi-select li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.multi-select input[type="checkbox"] {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.multi-select label {
+  cursor: pointer;
+}
+
+.multi-select fieldset {
+  border: none;
+  padding: 10px;
+}
 
 .multi-select fieldset legend {
-font-size: 20px;
-padding: 20px 0px 15px 0;
-/* color: #5260ad; */
-color: #8b97d7;
-/* background-color: tomato; */
+  font-size: 20px;
+  padding: 20px 0px 15px 0;
+  color: #8b97d7;
 }
 
-  /* End liste choix activité */
+/* End liste choix activité */
 
-  /* Start Montant cotisation */
-  .Cotisation-bloc {
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #8b97d7;
-  }
+/* MARK: Montant cotisation */
+.cotisation-bloc {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #8b97d7;
+  text-align: center;
+}
 
-  #nb-txt {
-    font-size: 0.8em;
-    color: #333;
-  }
+#nb-txt {
+  font-size: 0.8em;
+  color: #333;
+}
 
-  /* End Montant cotisation */
+/* End Montant cotisation */
 
-  /* Start mode de paiement ----------------------- */
+/* MARK: mode de paiement ----------------------- */
 
 .paiement-bloc {
-    max-width: 450px;
-    margin: 20px auto;
-    padding: 20px;
-    /* border: 1px solid #ccc; */
-    border: 1px solid #8b97d7;
-    border-radius: 5px;
+  max-width: 450px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #8b97d7;
+  border-radius: 5px;
 }
 
-.paiement-bloc h2 {      color: #8b97d7;
-      font-size: 20px;
-      font-weight: 600;
-      margin-bottom: 20px;
-      text-align: center;
+.paiement-bloc h2 {
+  color: #8b97d7;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .info-paiement {
@@ -329,7 +307,7 @@ color: #8b97d7;
   color: #5260ad;
 }
 
-.choix-reglement li{
+.choix-reglement li {
   position: relative;
   list-style-type: none;
   padding: 10px 20px
@@ -339,7 +317,7 @@ color: #8b97d7;
   margin-right: 20px;
 }
 
-/* Style pour la modale aquabike */
+/* MARK: modale aquabike */
 
 .modale-aqua-bike {
   position: absolute;
@@ -355,11 +333,11 @@ color: #8b97d7;
 }
 
 .closeModal {
-position: absolute;
-top: 5px;
-right: 5px;
-border: none;
-background: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background: none;
 }
 
 .closeModal:hover {
@@ -367,11 +345,10 @@ background: none;
   color: #374ab1;
 }
 
-/* Styles pour la modale chèque*/
+/* MARK: modale chèque*/
 
 .modal {
-  display: none; /* La modale est cachée par défaut */
-  /* display: block; */
+  display: none;
   position: relative;
   z-index: 50;
   top: -180px;
@@ -405,36 +382,36 @@ background: none;
   scale: 1.2;
   color: #374ab1;
 }
-  /* End mode de paiement ----------------------- */
+/* End mode de paiement ----------------------- */
 
 
-/* button submit */
+/* MARK: submit */
 
 .formBloc .formGroupe .buttonSub {
-    display: block;
-    width: auto;
-    margin: 30px auto;
-    padding: 15px 60px;
-    border: 3px solid #8b97d7;
-    border-radius: 999px;
-    background-image: linear-gradient(to right, transparent 50%, #5260ad 50%, #8b97d7);
-    background-size: 200%;
-    color: #8b97d7;
-    font-size: 24px;
-    font-weight: 500;
-    cursor: pointer;
+  display: block;
+  width: auto;
+  margin: 30px auto;
+  padding: 15px 60px;
+  border: 3px solid #8b97d7;
+  border-radius: 999px;
+  background-image: linear-gradient(to right, transparent 50%, #5260ad 50%, #8b97d7);
+  background-size: 200%;
+  color: #8b97d7;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .formBloc .formGroupe .buttonSub:hover {
-    color: #fff;
-    background-position: 100%;
-    border: 3px solid #fff;
+  color: #fff;
+  background-position: 100%;
+  border: 3px solid #fff;
 }
 
-/* START  -----  FOOTER  ------------------------- */
+/* MARK:footer ***************************/
 
 .footer-container {
-  grid-area: 5/1/6/6;
+  grid-area: 4/1/5/6;
   background: #333;
   z-index: 100;
   flex-shrink: 0;
@@ -455,9 +432,12 @@ background: none;
   width: 200px;
 }
 
-.footer-horaire  h3 {
+.footer-horaire h3 {
   font-weight: 400;
   font-size: 1.2em;
+}
+
+.footer-horaire p {
   padding-bottom: 20px;
 }
 
@@ -470,7 +450,7 @@ background: none;
   display: flex;
   justify-content: center;
   padding: 20px 15px
-  /* margin: 0 auto; */
+    /* margin: 0 auto; */
 }
 
 .footer-sponsors h2 {
@@ -502,187 +482,220 @@ background: none;
   color: #fedf17;
 }
 
-  /* * Media query for moblie ********************/
+.facebook-icone-footer {
+  position: relative;
+  margin-right: 25px;
 
-  @media (max-width: 426px) {
+}
 
-    .main-container {
-      display: flex;
-      flex-direction: column;
-      /* overflow: hidden; */
-    }
-  
-    /* nav """"""""""""""""""""""""""""""""""""""""""""""""""""*/
-    .nav-container {
-      height: 70px;
-    }
-  
-    .logo-container {
-      order: 2;
-      margin: 0 auto;
-    }
-  
-    .logo-container .logo {
-      height: 60px;
-      width: auto
-    }
-  
-    .list-items-nav {
-      order: 1;
-      width: auto;
-      font-size: 1em;
-    }
-  
-    .facebook-icone-nav {
-      right: 15px;
-    }
-    
-    .facebook-icone-nav img {
-      height: 30px;
-      width: 30px;
-  
-    }
-  
-    /* Body """""""""""""""""""""""""""""""""""""""""""""""""" */
-    
-    .inscription-majeur-container {
-      height: 2500px;
-    }
-    
-    
-    .inscription-majeur-content  {
-      top: 100px;
-      width: 300px;
-      height: auto;
-    }
-  
-    .formBloc h3 {
-      font-size: 1.2em;
-      font-weight: 500;
-    }
-  
-    .formBloc h3 strong {
-      font-weight: 800;
+.facebook-icone-footer img {
+  height: 30px;
+  width: 30px;
+}
+
+#logo-admin {
+  /* height: 50px; */
+  font-size: 2em;
+}
+
+/* MARK: Anime Champs Form*/
+
+.formBloc .formGroupe:focus-within label,
+.formBloc .formGroupe.animation label {
+    top: 0px;
+    transform: translateY(-100%);
+    color: #8b97d7;
+}
+
+.formBloc .formGroupe:focus-within input,
+.formBloc .formGroupe.animation input {
+    border-bottom-color: #8b97d7;
+}   
+
+
+/** MARK: Media query *****************************/
+
+
+@media (max-width: 426px) {
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
   }
-  
-    .formBloc .sous-titre {
+
+  /* MARK: nav 425px""""""""""""""""""""""""""""""""""""""""""""""""""""*/
+  .nav-container {
+    height: 70px;
+  }
+
+  .logo-container {
+    order: 2;
+    margin: 0 auto;
+  }
+
+  .logo-container .logo {
+    height: 60px;
+    width: auto
+  }
+
+  .list-items-nav {
+    order: 1;
+    width: auto;
+    font-size: 1em;
+  }
+
+  .facebook-icone-nav {
+    right: 15px;
+  }
+
+  .facebook-icone-nav img {
+    height: 30px;
+    width: 30px;
+  }
+
+  /* MARK: Body 425px"""""""""""""""""""""""""""""""""""""""""""""""""" */
+
+  .inscription-majeur-container {
+    height: 2500px;
+  }
+
+
+  .inscription-majeur-content {
+    top: 100px;
+    width: 300px;
+    height: auto;
+  }
+
+  .formBloc h3 {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .formBloc h3 strong {
+    font-weight: 800;
+  }
+
+  /* .formBloc .sous-titre {
     margin-bottom: 25px;
     font-size: 1em;
-    }
-  
-    .formBloc .formGroupe label {
-      font-size: 1em;
-    }
-  
-    .formBloc .formGroupe span {
-      font-size: 0.9em;
-    
-    }
-  
-    .choix-activites h2 {
-      font-size: 1em;
-      margin-bottom: 20px;
-  
-    }
-  
-    .multi-select label {
-      font-size: 0.9em;
-    }
-  
-    .multi-select fieldset legend {
-      font-size: 1em;
-      text-align: center;
-      }
-  
-      .paiement-bloc h2 {      
-        font-size: 1em;
-        font-weight: 500;
-        margin-bottom: 15px;
-    }
-  
-    .info-paiement {
-      margin-bottom: 20px;
-      line-height: 1.2;
-      font-size: 0.9em;
-      text-align: center;
-      }
-  
-      .choix-reglement {
-        width: 100%;
-      }
-  
-      /* .choix-reglement li {
-      } */
-  
-      .choix-reglement label {
-        font-size: 0.8em;
-        }
+    margin-bottom: 20px;
+  } */
 
-        .modale-aqua-bike {
-          width: 230px;
-          padding: 20px;
-          transform: translate(5%, -150%);
-          font-size: 0.8em;
-          display: none;
-        }
-
-        .modal {
-          top: -300px;
-          right: 0;
-          bottom: 0;
-          left: 0px;
-        } 
-  
-      /* media query footer """""""""""""""""""""""""""""""""""*/
-      .footer-container {
-        display: flex;
-      }
-      
-      .content-footer {
-        flex-direction: column;
-      
-      }
-      
-      .footer-horaire {
-        order: 2;
-        font-size: 0.8em;
-      }
-      
-      /* .footer-horaire img  */
-      
-      .footer-horaire  h3 {
-        padding-bottom: 0;
-      }
-      
-      .footer-horaire p {
-        padding-bottom: 10px;
-      }
-      
-      /* .footer-horaire .permamence-list */
-      
-      .footer-sponsors {
-        width: 100%;
-        order: 1;
-      
-      }
-      
-      /* .footer-sponsors h2 */
-      
-      .footer-sponsors img {
-        height: 3em;
-      }
-      
-      .footer-assoc {
-        order: 3;
-        font-size: 0.8em;
-      }
-      
-      .footer-assoc p:hover {
-        color: #fff;
-      }
-      
-      .facebook-icone-footer img {
-        width: 2em;
-      }
+  .formBloc .formGroupe label {
+    font-size: 1em;
   }
-  
+
+  .formBloc .formGroupe span {
+    font-size: 0.9em;
+  }
+
+  .choix-activites h2 {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 10px;
+    cursor: cell;
+  }
+
+  .multi-select label {
+    font-size: 0.8em;
+  }
+
+  .multi-select fieldset legend {
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .paiement-bloc h2 {
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .info-paiement {
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-size: 0.9em;
+    text-align: center;
+  }
+
+  .choix-reglement {
+    width: 100%;
+  }
+
+  /* .choix-reglement li {
+      } */
+
+  .choix-reglement label {
+    font-size: 0.8em;
+  }
+
+  .modale-aqua-bike {
+    width: 230px;
+    padding: 20px;
+    transform: translate(5%, -150%);
+    font-size: 0.8em;
+    display: none;
+  }
+
+  .modal {
+    top: -230px;
+    right: 0;
+    bottom: 0;
+    left: 0px;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
+  /* MARK: footer 425px """""""""""""""""""""""""""""""""""*/
+  .footer-container {
+    display: flex;
+  }
+
+  .content-footer {
+    flex-direction: column;
+
+  }
+
+  .footer-horaire {
+    order: 2;
+    font-size: 0.8em;
+  }
+
+  /* .footer-horaire img  */
+
+  .footer-horaire h3 {
+    padding-bottom: 0;
+  }
+
+  .footer-horaire p {
+    padding-bottom: 10px;
+  }
+
+  /* .footer-horaire .permamence-list */
+
+  .footer-sponsors {
+    width: 100%;
+    order: 1;
+
+  }
+
+  /* .footer-sponsors h2 */
+
+  .footer-sponsors img {
+    height: 3em;
+  }
+
+  .footer-assoc {
+    order: 3;
+    font-size: 0.8em;
+  }
+
+  .footer-assoc p:hover {
+    color: #fff;
+  }
+
+  .facebook-icone-footer img {
+    width: 2em;
+  }
+}

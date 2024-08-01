@@ -1,4 +1,4 @@
-// anime champ formulaire ---------------------
+// MARK: anime champ formulaire ---------------------
 
 const inputs = document.querySelectorAll('.field-anime');
 
@@ -21,7 +21,7 @@ for (let i = 0; i < inputs.length; i++) {
 
 
 
-// Toggle liste choix -------------------------------------
+// MARK: Toggle liste choix -------------------------------------
 
 const toggleListChoix = document.querySelector('.toggle-options');
 const multiSelect = document.querySelector('.multi-select');
@@ -36,7 +36,7 @@ toggleListChoix.addEventListener('click', function(){
 
 
 
-// Calcul cotisation et parametre selection
+// MARK: Calcul cotisation et parametre selection
 
 const activiteA = document.querySelector('.activite-A');
 const blocChoix = document.querySelector('.multi-select')
@@ -100,8 +100,9 @@ checkboxes.forEach((checkbox) => {
   });
 });
 
-// Affichage modale instruction aqua-bike
+// MARK: Modale
 
+// Affichage modale instruction aqua-bike
 const checkboxAquabike = document.querySelector('.option-bike');
 const modale = document.querySelector('.modale-aqua-bike');
 const closeAquabikeBtn = document.querySelector('.closeModal');
@@ -109,9 +110,9 @@ const closeAquabikeBtn = document.querySelector('.closeModal');
 // Afficher ou masquer la modale
 function toggleModale() {
     if (checkboxAquabike.checked) {
-        modale.style.display = 'block'; // Afficher la modale
+        modale.style.display = 'block';
     } else {
-        modale.style.display = 'none'; // Masquer la modale
+        modale.style.display = 'none'; 
     }
 }
 
@@ -128,8 +129,7 @@ closeAquabikeBtn.addEventListener('click', (e)=>{
 
 
 
-// affichage modale instruction cheque
-
+// Affichage modale instruction cheque
 const blocPaiement = document.querySelector(".paiement-bloc")
 const checkboxes_p = blocPaiement.querySelectorAll('input[type="checkbox"]');
 const modal = document.getElementById('myModal');

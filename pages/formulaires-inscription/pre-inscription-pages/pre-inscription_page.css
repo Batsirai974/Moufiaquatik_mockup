@@ -24,7 +24,7 @@ body {
 
   }
 
-    /* START ---------- Nav-Bar ---------------*/
+/* MARK: Nav-Bar ---------------*/
 
 .nav-container {
   grid-area: 1 / 1 / 2 / 6;
@@ -81,7 +81,9 @@ padding: 10px 20px;
 
 /* END ---------- Nav-Bar ---------------*/
 
-  
+
+  /*MARK: Main body*  */
+
 .pre-inscription-container {
     grid-area: 2/1/5/6;
     width: 100%;
@@ -187,79 +189,94 @@ padding: 10px 20px;
 }
 
 
-/* START  -----  FOOTER  ------------------------- */
+/* MARK:footer ***************************/
 
 .footer-container {
-    grid-area: 4/1/5/-1;
-    background: #333;
-    z-index: 100;
-    flex-shrink: 0;
-  }
+  grid-area: 4/1/5/6;
+  background: #333;
+  z-index: 100;
+  flex-shrink: 0;
+}
+
+.content-footer {
+  display: flex;
+  width: 100%;
+  color: #f1f1f1;
+}
+
+.footer-horaire {
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+.footer-horaire img {
+  width: 200px;
+}
+
+.footer-horaire  h3 {
+  font-weight: 400;
+  font-size: 1.2em;
+  padding-bottom: 20px;
+}
+
+.footer-horaire .permamence-list {
+  list-style-type: none;
+}
+
+.footer-sponsors {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  padding: 20px 15px
+  /* margin: 0 auto; */
+}
+
+.footer-sponsors h2 {
+  display: block;
+  width: 1000px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 30px;
+  color: #fff;
+}
+
+.footer-sponsors img {
+  height: 120px;
+  margin: 0 15px;
+}
+
+/* .footer-other {
+
+} */
+
+.footer-assoc {
+  font-size: .9em;
+  padding: 20px;
+  line-height: 1.8;
+}
+
+.footer-assoc p:hover {
+  color: #fedf17;
+}
+
+.facebook-icone-footer {
+  position: relative;
+  margin-right: 25px;
+
+}
+
+.facebook-icone-footer img {
+  height: 30px;
+  width: 30px;
+}
+#logo-admin {
+  /* height: 50px; */
+  font-size: 2em;
+}
   
-  .content-footer {
-    display: flex;
-    width: 100%;
-    color: #f1f1f1;
-  }
   
-  .footer-horaire {
-    padding: 20px;
-    font-size: 0.9em;
-  }
-  
-  .footer-horaire img {
-    width: 200px;
-  }
-  
-  .footer-horaire  h3 {
-    font-weight: 400;
-    font-size: 1.2em;
-    padding-bottom: 20px;
-  }
-  
-  .footer-horaire .permamence-list {
-    list-style-type: none;
-  }
-  
-  .footer-sponsors {
-    width: 1000px;
-    display: flex;
-    justify-content: center;
-    padding: 20px 15px
-    /* margin: 0 auto; */
-  }
-  
-  .footer-sponsors h2 {
-    display: block;
-    width: 1000px;
-    font-family: "Poppins", sans-serif;
-    font-size: 1.5em;
-    text-align: center;
-    padding-bottom: 30px;
-    color: #fff;
-  }
-  
-  .footer-sponsors img {
-    height: 120px;
-    margin: 0 15px;
-  }
-  
-  /* .footer-other {
-  
-  } */
-  
-  .footer-assoc {
-    font-size: .9em;
-    padding: 20px;
-    line-height: 1.8;
-  }
-  
-  .footer-assoc p:hover {
-    color: #fedf17;
-  }
-  
-  
-/* Media Query """""""""""""""""""""""""""""""""""""""" */
+/** MARK: Media query *************************************************************/
 
 @media (max-width: 430px) {
   .main-container {
