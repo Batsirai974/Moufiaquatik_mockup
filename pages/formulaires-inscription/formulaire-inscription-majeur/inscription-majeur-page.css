@@ -248,6 +248,30 @@ body {
 
 /* End liste choix activité */
 
+/* MARK: utilisation image */
+
+.autorisation {
+  width: 100%;
+  height: auto;
+  border: 1px solid #8b97d7;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.autorisation h4 {
+  margin-bottom: 15px;
+}
+
+.autorisation .valid-autorisation {
+  display: flex;
+  justify-content: center;
+  align-items: center;gap: 30px;
+}
+
+
 /* MARK: Montant cotisation */
 .cotisation-bloc {
   margin: 20px auto;
