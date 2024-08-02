@@ -235,24 +235,6 @@
 
 /* END  --------  INFORMATION SECTION  ------------ */
 
-/* START  -------- jardin aqua  TARIFS niv 1 ------------ */
-
-/* .jardin-aqua-tarif-niv1-container {
-  position: relative;
-  grid-area: 2/1/4/6;
-  z-index: 100;
-  visibility: hidden;
-  transition: visibility 0.4s;
-}
-
-.jardin-aqua-tarif-niv1-container.active {
-  visibility: visible;
-} */
-
-
-/* END  -------- jardin aqua  TARIFS niv 1 ------------ */
-
-
 /* START  --------  TARIFS SECTION  ------------ */
 
 .tarifs-modal-container {

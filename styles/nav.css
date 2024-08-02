@@ -55,12 +55,12 @@
     border-radius: 0 0 10px 10px;
     box-shadow: -2px 5px 10px 2px rgba(70, 70, 70, 0.7);
     font-size: 1em;
-
     transition: opacity 0.2s;
     transition-delay: 300ms;
-
-    background: lightcoral;
     background: #fff;
+    /* new version */
+
+    /* background: lightcoral; */
 }
 
 .item-05:hover .sous-list-club {
@@ -69,6 +69,7 @@
     transition: opacity 0.5s,
                 visibilty 0.3s;
     transition-delay: 0ms;
+    /* new version */
     
 }
 
@@ -76,11 +77,13 @@
     height: 50px;
     transform: scale(1);
     transition: transform 0.2s;
+    /* new version */
 }
 
 .sous-list-club .item-sous-list-club:hover {
     transform: scale(1.06);
     transform: translateX(5px);
+    /* new version */
 }
 
 

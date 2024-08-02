@@ -308,3 +308,77 @@ function toggleContactModale() {
 }
 
 // End contact modale -----------------------------
+
+
+// masquer le menu lorsque l'on click sur un lien
+// version 01
+// const menu = document.querySelector('.list-items-nav');
+// const links = menu.querySelectorAll('a');
+// const clubToggle = document.querySelector('.club-toggle');
+// const sousLinks = document.querySelectorAll('.sous-list-club a');
+
+// links.forEach(link => {
+//     link.addEventListener('click', (event) => {
+        // ne pas fermer le menu si le lien clicque est "le club"
+        // if(link === clubToggle) {
+        //     event.preventDefault();
+            // Ajoute ou retire la classe active pour afficher / masquer la sous-liste
+        //     link.parentElement.classList.toggle('active');
+        // }else {
+            // Fermer le menu pour tous les autres liens
+//             menu.classList.remove('open');
+//         }
+//     });
+// });
+
+// Ajouter des écouteurs d'événements aux sous-liens
+// sousLinks.forEach(link => {
+//     link.addEventListener('click', () => {
+//       menu.classList.remove('open');
+//     });
+//   });
+
+// version 02
+document.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.list-items-nav');
+    const links = menu.querySelectorAll('a');
+    const clubToggle = document.querySelector('.club-toggle');
+    const sousLinks = document.querySelectorAll('.sous-list-club a');
+  
+    const toggleNav = () => {
+      hamburgerToggler.classList.toggle('open');
+      const ariaToggle = hamburgerToggler.getAttribute('aria-expanded') === 'true' ? 'false' : 'true';
+      hamburgerToggler.setAttribute('aria-expanded', ariaToggle);
+      menu.classList.toggle('open');
+    };
+  
+    const closeNav = () => {
+      if (hamburgerToggler.classList.contains('open')) {
+        hamburgerToggler.classList.remove('open');
+        hamburgerToggler.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('open');
+      }
+    };
+  
+    links.forEach(link => {
+      link.addEventListener('click', (event) => {
+        // Si le lien cliqué est "Le Club", ne pas fermer le menu
+        if (link === clubToggle) {
+          event.preventDefault();
+          // Ajoute ou retire la classe active pour afficher/masquer la sous-liste
+          link.parentElement.classList.toggle('active');
+        } else {
+          // Fermer le menu pour tous les autres liens
+          closeNav();
+        }
+      });
+    });
+  
+    // Ajouter des écouteurs d'événements aux sous-liens
+    sousLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        closeNav();
+      });
+    });
+  });
+  

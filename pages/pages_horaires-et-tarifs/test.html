@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="../../styles/style.css"> -->
+    <link rel="stylesheet" href="../../styles/nav.css" />
+    <!-- <link rel="stylesheet" href="../../styles/medias_query/mobile_320px.css" /> -->
+  </head>
+  <body>
+    <!-- Nav bar------------------------------------------>
+    <nav class="nav-container">
+      <div class="logo-container">
+        <img
+          class="logo"
+          src="../../images/logo/customLogo_bkg Alpha0.png"
+          alt="Logo Moufia-Aquatik"
+        />
+      </div>
+      <button
+        class="hamburger"
+        type="button"
+        aria-label="toggle navigation"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="list-items-nav">
+        <li class="item item-01">
+          <a href="#">Accueil</a>
+        </li>
+        <li class="item item-02">
+          <a href="#">Inscription</a>
+        </li>
+        <li class="item item-03">
+          <a href="#">Activités</a>
+        </li>
+        <li class="item item-04 tarifs-toggle">
+          <a href="#">Planning & Tarifs</a>
+        </li>
+        <li class="item item-05">
+          <a href="#">Le Club</a>
+          <ul class="sous-list-club">
+            <li class="item-sous-list-club about-toggle">
+              <a href="#">A propos du club</a>
+            </li>
+            <li class="item-sous-list-club educ-toggle">
+              <a href="#">Educateurs</a>
+            </li>
+            <li class="item-sous-list-club information-toggle">
+              <a href="#">Documents Association</a>
+            </li>
+            <li class="item-sous-list-club item-bottom rpgd-toggle">
+              <a href="#">Mention légale - RGPD</a>
+            </li>
+          </ul>
+        </li>
+        <li class="item item-06 contact-toggle">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+      <a class="facebook-icone-nav" href="#"
+        ><img src="../../images/facebook-1-svgrepo-com.svg" alt="logo facebook"
+      /></a>
+    </nav>
+    <!-- END Nav  --------------------------------------->
+    <style>
+      .logo-container .logo {
+        height: 100px;
+        margin-left: 30px;
+      }
+      .hamburger {
+        display: none;
+      }
+      .list-items-nav {
+        position: relative;
+        width: 70%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        gap: 30px;
+        list-style-type: none;
+        font-family: "Poppins";
+        font-size: 1.3em;
+        font-weight: 500;
+      }
+      .list-items-nav .item {
+        padding-bottom: 20px;
+      }
+      .item::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 1.5px;
+        background: #000;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-out;
+        will-change: transform;
+      }
+      .item:hover::after {
+        transform: scaleX(1);
+      }
+      .list-items-nav .item a {
+        text-decoration: none;
+        color: #333;
+      }
+      .sous-list-club {
+        /* position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        top: 100px;
+        list-style: none;
+        padding: 10px 20px;
+        border-radius: 0 0 10px 10px;
+        box-shadow: -2px 5px 10px 2px rgba(70, 70, 70, 0.7);
+        font-size: 1em;
+        transition: opacity 0.2s;
+        transition-delay: 300ms;
+        background: #fff; */
+      }
+      .item-05:hover .sous-list-club {
+        visibility: visible;
+        opacity: 1;
+        transition: opacity 0.5s, visibilty 0.3s;
+        transition-delay: 0ms;
+      }
+      .sous-list-club .item-sous-list-club {
+        height: 50px;
+        transform: scale(1);
+        transition: transform 0.2s;
+      }
+      .sous-list-club .item-sous-list-club:hover {
+        transform: scale(1.06);
+        transform: translateX(5px);
+      }
+      .sous-list-club .item-sous-list-club a::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 10px;
+        height: 1.5px;
+        top: 25px;
+        left: -10px;
+        background: #000;
+        transform: scaleX(0);
+        transition: transform 0.3s ease-out;
+        will-change: transform;
+      }
+      .sous-list-club .item-sous-list-club a:hover::after {
+        transform: scaleX(1);
+      }
+      .facebook-icone-nav {
+        position: absolute;
+        right: 30px;
+      }
+      .facebook-icone-nav img {
+        height: 50px;
+        width: 50px;
+      }
+      /* media query maxwidth 430px */
+      @media (max-width: 430px) {
+        .nav-container {
+          /* position: fixed; */
+          position: relative;
+          top: 0;
+          display: flex;
+          width: 100%;
+          height: 4em;
+          align-items: center;
+          padding: 0.8em;
+          z-index: 200;
+          transition: 0.8s;
+          background: #ffffff;
+          box-shadow: inset 0px -5px 0px #fedf17;
+        }
+        .logo-container {
+          order: 2;
+          width: 10%;
+          height: 40px;
+          margin: 0;
+          display: flex;
+          justify-content: center;
+        }
+        .logo-container .logo {
+          height: 2.5em;
+        }
+        .hamburger {
+          position: relative;
+          align-items: center;
+          width: 20px;
+          height: 20px;
+          left: 15px;
+          cursor: pointer;
+          border: none;
+          display: flex;
+          background: #fafafa;
+        }
+        .hamburger span {
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: #333;
+          position: absolute;
+          pointer-events: none;
+          transition: opacity 0.3s 0.15s ease-out;
+        }
+        .hamburger span:nth-child(1),
+        .hamburger span:nth-child(3) {
+          transition: transform 0.3s ease-out;
+        }
+        .hamburger span:nth-child(1) {
+          transform: translateY(7px);
+        }
+        .hamburger span:nth-child(3) {
+          transform: translateY(-7px);
+        }
+
+        .hamburger.open span:nth-child(1) {
+          transform: translate(0) rotate(135deg);
+        }
+        .hamburger.open span:nth-child(2) {
+          opacity: 0;
+          transition: opacity 0s ease-out;
+        }
+        .hamburger.open span:nth-child(3) {
+          transform: translate(0) rotate(-135deg);
+        }
+        .list-items-nav {
+          position: absolute;
+          order: 1;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: flex-start;
+          gap: 0;
+          top: 100%;
+          left: 0;
+          width: auto;
+          height: 100vh;
+          /* padding: 15px 50px 15px 20px; */
+          padding: 0.8em 1.1em;
+          font-size: 0.9em;
+          border-right: 1px solid #c5c5c6;
+          background-color: #fafafa;
+          transform: translate(-100%);
+          transition: transform 0.3s ease-out;
+        }
+        .open {
+          transform: translate(0%);
+        }
+        .list-items-nav .item {
+          padding-bottom: 0.8em;
+        }
+        .sous-list-club .item-sous-list-club {
+
+        }
+        .sous-list-club li a {
+
+        }
+        .sous-list-club .item-sous-list-club a::after {
+
+        }
+        /* Facebook """"""""""""""""""""""""""""""" */
+        .facebook-icone-nav {
+          order: 3;
+          position: relative;
+          right: 0.8em;
+        }
+        .facebook-icone-nav img {
+          width: 1.5em;
+          height: 1.5em;
+        }
+      }
+    </style>
+
+    <script>
+      // * Start Show / Hide Nav bar """"""""""""""
+      let startScroll = window.scrollY;
+      window.onscroll = function () {
+        let currentScroll = window.scrollY;
+        let screenWidth = window.innerWidth;
+        if (screenWidth <= 430) {
+          // Lorsque la largeur de l'écran est de 320px ou moins, afficher la barre de navigation et désactiver l'effet de défilement
+          document.querySelector(".nav-container").style.top = "0";
+          return; // Sortir de la fonction pour empêcher l'effet de défilement
+        }
+        if (startScroll > currentScroll) {
+          document.querySelector(".nav-container").style.top = "0";
+        } else {
+          document.querySelector(".nav-container").style.top = "-100px";
+        }
+        startScroll = currentScroll;
+      };
+      //  End Show / Hide Nav bar """"""""""""""
+
+      //   Start anime hamburger  """""""""""""""""
+      const hamburgerToggler = document.querySelector(".hamburger");
+      const navLinksContainer = document.querySelector(".list-items-nav");
+      const toggleNav = () => {
+        hamburgerToggler.classList.toggle("open");
+        const ariaToggle =
+          hamburgerToggler.getAttribute("aria-expanded") === "true"
+            ? "false"
+            : "true";
+        hamburgerToggler.setAttribute("aria-expanded", ariaToggle);
+        navLinksContainer.classList.toggle("open");
+      };
+      hamburgerToggler.addEventListener("click", toggleNav);
+      new ResizeObserver((entries) => {
+        if (entries[0].contentRect.width <= 900) {
+          navLinksContainer.style.transition = "transform 0.3s ease-out";
+        } else {
+          navLinksContainer.style.transition = "none";
+        }
+      }).observe(document.body);
+      //   End anime hamburger  """""""""""""""""
+      // Animation texte pass Sport et pass loisir
+      setTimeout(() => {
+        document
+          .querySelector(".pass-loisir-container")
+          .classList.add("animate");
+      }, 3502); // ajouter la classe animate après 1.5 seconde
+    </script>
+  </body>
+</html>
